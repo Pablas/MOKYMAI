@@ -31,3 +31,14 @@ p {
 #melynas {
     color: blue;
 }
+
+.preke {
+    background: orangered;
+    margin: 20px;
+}
+
+.pabrauktas {
+    text-decoration: underline;
+}
+
+.baltas {color: white;}
