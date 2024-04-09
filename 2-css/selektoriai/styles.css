@@ -8,18 +8,6 @@ h1 {
     text-transform: uppercase;
 }
 
-.pirma {
-    color: red;
-    margin: 20px;
-    border-style: none;
-}
-
-p {
-    border-style: dashed;
-    border-color: white;
-    margin: 10px;
-    font-size: 20px;}
-
 li {
     font-style: italic;
 }
@@ -29,5 +17,17 @@ h2 {
 }
 
 p {
-    font-size: 12px;
+    font-size: 25px;
+}
+
+#tekstas {
+    border-left: 3px solid black;
+}
+
+#paryskintas {
+    font-weight: 800;
+}
+
+#melynas {
+    color: blue;
 }
