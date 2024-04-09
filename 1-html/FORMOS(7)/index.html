@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formos</title>
+</head>
+<body>
+    <h1>Formos</h1>
+
+    <h2>Prisijungimo forma</h2>
+
+    <form>
+        <input type="text" placeholder="NICKNAME">
+        <input type="password" placeholder="PASSWORD">
+        <!-- Abu apačioje atlieka tąpatį veiksmą, mygtukai -->
+        <input type="submit" value="LOG IN">
+        <button type="submit">LOGIN</button>
+    </form>
+
+    <h2>Prisijungimo forma su label</h2>
+
+    <form>
+        <!-- required reiškia reikalauja šio dalyko įvedimas -->
+        <label for="emailasInput">EMAIL:</label>
+        <input type="email" id="emailasInput" placeholder="EMAIL@EMAIL.EMAIL" required>
+        <br>
+        <label for="passwordas">PASSWORD:</label>
+        <input type="password" id="passwordas" placeholder="SLAPTAS">
+        <br>
+        <input type="submit" value="LOGIN">
+    </form>
+
+    <h2>Įvairi forma</h2>
+
+    <form>
+        <label for="pavadinimas">Pavadinimas:</label>
+        <input type="text" id="pavadinimas">
+        <br>
+        <label for="spalva">Spalva:</label>
+        <input type="color" id="spalva">
+        <br>
+        <label for="nuotrauka">Pgrd. Foto:</label>
+        <input type="file" id="nuotrauka">
+        <br>
+        <label for="data">DATA:</label>
+        <input type="date" id="data">
+    </form>
+
+    <h2>Informacijos atnaujinimo forma</h2>
+
+    <form>
+        <label for="produktas">Produkto pavadinimas:</label>
+        <input type="text" id="produktas" value="Kamuolys">
+        <br>
+        <label for="kaina">Produkto kaina</label>
+        <input type="number" id="kaina" min="0" step="0.1" value="4">
+        <br>
+        <input type="submit" value="Atnaujinti">
+    </form>
+
+    <h2>Išjungti laukelį</h2>
+
+    <form>
+        <input type="text" value="input1" readonly>        
+        <input type="text" value="input2" disabled>
+    </form>
+
+    <h2>Kontaktinė forma</h2>
+
+    <form>
+        <label for="vardas">Jūsų vardas:</label> <br>
+        <input type="text" id="vardas"> <br>
+        <label for="email2">Jūsų el. paštas:</label> <br>
+        <input type="email" id="email2"> <br>
+        <label for="tekstas">Jūsų žinutė:</label> <br>
+        <textarea id="tekstas" cols="20" rows="5"></textarea> <br>
+        <button type="submit">Pateikti</button>
+    </form>
+
+    <h2>Filtrai</h2>
+
+    <form>
+        <div style="border: 1px solid black;">
+            <label>Prieinamumas:</label>
+            <br>
+            <input type="radio" id="turime-prekyboje" name="prieinamumas" value="turime">
+            <label for="turime-prekyboje">Turime prekyboje</label>
+            <!-- ARBA<label>
+                
+                <input type="radio">
+                Turime prekyboje
+            </label> 
+            
+            -->
+            <br>
+            <input type="radio" id="atvykstancios" name="prieinamumas" value="atvykstancios">
+            <label for="atvykstancios">Atvykstančios</label>
+            <br>
+            <input type="radio" id="isparduota" name="prieinamumas" value="isparduota">
+            <label for="isparduota">Išparduota</label>
+            <br>
+        </div>
+        <div style="border: 1px solid black">
+            <label>Gamintojai:</label>
+            <br>
+            <label>
+                <input type="checkbox" name="gamintojai" value="nike">
+                Nike
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="gamintojai" value="adidas">
+                Adidas
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="gamintojai" value="puma">
+                Puma
+            </label>
+            </label>
+        </div>
+        <div style="border: 1px solid black">
+            <label for="miestas">Miestas:</label>
+            <select id="miestas">
+                <option value="vilnius">Vilnius</option>
+                <option value="kaunas">Kaunas</option>
+                <option value="klaipeda">Klaipėda</option>
+                <option value="siauliai">Šiauliai</option>
+            </select>
+        </div>
+        
+        <div style="border: 1px solid black;">
+            <label for="metai-nuo">Leidybos metai nuo:</label>
+            <select id="metai-nuo">
+                <option>1990</option>
+                <option>1991</option>
+                <option>1992</option>
+                <option>1993</option>
+                <option>1994</option>
+                <option>1995</option>
+            </select>
+        </div>
+    </form>
+
+
+
+</body>
+</html>
