@@ -12,6 +12,12 @@ li {
     font-style: italic;
 }
 
+
+/* important, kad nenumuštu kitų, overridintu visus mygtukus */
+li:hover {
+    color: royalblue !important ;
+}
+
 h2 {
     color: bisque;
 }
@@ -74,4 +80,36 @@ ol li {
 
 .mokymai-skiltis .kursas h3 {
     color: blueviolet;
+}
+
+a {
+    background: red;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: 0.2s all; 
+}
+
+/* mygtukas pakeist tik background, nes jau a elementas nusakytas, tai čia reikia surašyti tik ką pakeičia: */
+a:hover {
+    background-color: darkred;
+}
+
+/* taikyti ne ant tiesioginio elemento: */
+.tevinis {
+    background: lightblue;
+}
+
+.tevinis button {
+    background: silver;
+    transition: 0.2s all;
+}
+
+.tevinis:hover button {
+    background: lightgreen;
+}
+
+.tevinis button:hover {
+    background: gold;
 }
