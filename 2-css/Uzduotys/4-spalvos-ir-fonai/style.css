@@ -1,0 +1,23 @@
+h1 {
+    color: white;
+}
+
+.kvadratukas1 {
+    background-image: url("img/629052-hills-snow-houses-white-winter-cold-mountains-sky-sun-clouds-weather-trees-landscape.jpg");
+}
+
+.kvadratukas2 {
+    background-image: url("img/94839546-beautiful-winter-landscape-in-the-mountains-cold-weather-snow-on-hills-black-forest-germany.jpg");
+}
+
+.kvadratukas3 {
+    background-image: url("img/94839546-beautiful-winter-landscape-in-the-mountains-cold-weather-snow-on-hills-black-forest-germany.jpg");
+}
+
+.kvadratuko-h1 {
+    background: rgba(0, 0, 0, 0.50);
+}
+
+.p-p {
+    background: rgba(255, 255, 255, 0.5);
+}
