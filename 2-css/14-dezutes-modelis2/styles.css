@@ -61,4 +61,40 @@ body {
     border: 2px solid grey;
     margin: 0px auto;
     box-sizing: border-box;
+    box-shadow: 10px 10px 0 black;
+}
+
+.renginiai {
+    background: greenyellow;
+    padding: 30px;
+}
+
+.renginiai .renginys {
+    background: rgba(255, 255, 255, 0.5);
+    width: 300px;
+    box-sizing: border-box;
+    margin: 25px auto;
+}
+
+.renginiai h2, .renginiai p {
+    margin: 0;
+}
+
+.renginiai .renginys .virsus {
+    background: #222;
+    color: white;
+    padding: 20px 40px;
+}
+
+.renginiai .renginys .apacia {
+    padding: 20px 40px;
+}
+
+.renginiai .renginys a {
+    background: red;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
 }
