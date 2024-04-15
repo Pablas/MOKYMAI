@@ -1,26 +1,40 @@
+body {
+    margin: 0;
+}
+
 .pirmas {
     background: orange;
     padding: 30px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 80px;
 }
 
 .antras {
     background: lightblue;
     padding: 100px 30px 80px 50px;
+    margin: 100px;
 }
 
 .trecias {
     background: lightgreen;
     padding: 40px 90px 30px 100px;
+    margin: 30px;
+    margin-left: 100px;
 }
 
 .ketvirtas {
     background: lightsalmon;
     padding: 40px 100px 0;
+    margin: 30px 40px 30px 0;
 }
 
 .penktas {
     background: lightseagreen;
     padding: 30px 60px;
+    margin-top: -50px;
+    margin-left: -100px;
 }
 
 .sestas {
