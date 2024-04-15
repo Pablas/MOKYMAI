@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+}
+
+.centras1 {
+    background: lightcyan;
+    text-align: center;
+}
+
+.centras2 {
+    background: lightseagreen;
+    text-align: center;
+}
+
+.centras2 h2 {
+    margin: 0;
+}
+
+.centras3 {
+    text-align: center;
+}
+
+.centras4 {
+    text-align: center;
+}
+
+.centras5 {
+    background: lightgreen;
+    }
+
+.centras5 .vidinis {
+    background: yellow;
+    width: 200px;   
+    margin: 0 auto;
+}
+
+.korteles {
+    background: lightskyblue;
+    padding: 20px;
+}
+
+.korteles p {
+    margin: 0;
+}
+
+.korteles .korta {
+    background: rgba(255, 255, 255, 0.5);
+    width: 300px;
+    margin: 20px auto;
+}
+
+.plotis {
+    background: lightpink;
+    padding: 80px 30px;
+}
+
+.plotis .vidinis {
+    background: white;
+    width: 400px;
+    padding: 50px;
+    border: 2px solid grey;
+    margin: 0px auto;
+    box-sizing: border-box;
+}
