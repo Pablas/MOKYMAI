@@ -1,0 +1,30 @@
+.pirmas {
+    background: orange;
+    padding: 30px;
+}
+
+.antras {
+    background: lightblue;
+    padding: 100px 30px 80px 50px;
+}
+
+.trecias {
+    background: lightgreen;
+    padding: 40px 90px 30px 100px;
+}
+
+.ketvirtas {
+    background: lightsalmon;
+    padding: 40px 100px 0;
+}
+
+.penktas {
+    background: lightseagreen;
+    padding: 30px 60px;
+}
+
+.sestas {
+    background: lightskyblue;
+    padding: 50px;
+    padding-bottom: 30px;
+}
