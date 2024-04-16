@@ -1,0 +1,187 @@
+body {
+    margin: 0;
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("img/bck-1.jpeg");
+}
+
+.blokas {
+    padding-top: 90px;
+    padding-left: 135px;
+    padding: auto;
+    text-align: left;
+}
+
+.block1 {
+    width: 602px;
+    height: 430px;
+    border-radius: 95px 51px 179px 60px;
+    margin-bottom: 26px;
+}
+
+.blokas .p1 {
+    margin-bottom: 12px;
+    margin-top: 26px;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+}
+
+.p1-1 {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+
+.block1 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 95px 51px 179px 60px;    
+    object-fit: cover;
+
+}
+
+.juodos-linijos {
+    border: 1px solid black;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    width: 1211px;
+    padding: 3px;
+    margin-bottom: 25px;
+}
+
+.block2 h1 {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    width: 764px;
+    margin-top: 0;
+    margin-bottom: 17px;
+
+}
+
+.smallblock2 {
+    width: 834px;
+    background: rgba(255, 255, 255, 0.45);
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding:  16px 32px 16px 32px;
+    border-radius: 17px;
+    text-align: center;
+}
+
+.p2-1 {
+    margin: 0 auto;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24.2px;
+    text-align: left;
+}
+
+.p2-2 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    color: rgba(15, 67, 128, 1);
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.melyna-linija {
+    width: 1211px;
+    border: 7px solid rgba(84, 15, 128, 1);
+    margin-top: 0;
+    margin-bottom: 22px;
+}
+
+.block3 {
+    background: rgba(84, 15, 128, 1);
+    width: 723px;
+    padding: 60px 0 60px 0;
+    margin-bottom: 57.62px;
+    margin-top: 0;
+    border-radius: 25px;
+}
+
+.p3-1 {
+    color: rgba(255, 255, 255, 1);
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0 123.56px 0 ;
+    line-height: 19.36px;
+}
+
+.p3-2 {
+    color: rgba(255, 255, 255, 1);
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 16px 123.56px 0 ;
+    line-height: 19.36px;
+}
+
+.block4 {
+    margin: 0 0 ;
+}
+
+.block4 h1 {
+    margin: 0 0;
+    color: rgba(1, 252, 182, 1);
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    line-height: 29.05px;
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+.p4-1 {
+    line-height: 19.36px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 18px 0;
+    width: 712px;
+}
+
+.p4-r {
+    background: rgba(1, 252, 182, 1);
+    color: black;
+    text-decoration: underline;
+    padding: 1px 1px;
+}
+
+.a-2 {
+    display: inline-block;
+    margin: 0 0 14px 0;
+    background: rgba(1, 252, 182, 1);
+    color: black;
+    text-decoration: underline;
+    line-height: 19.36px;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    padding: 3px 3px 5px 6px;
+
+}
+
+.p4-2 {
+    line-height: 19.36px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 14px 0 23px 0;
+    width: 712px;
+}
+
+.block5 {
+    width: 645px;
+    height: 432px;
+    border-radius: 0px 69px 0px 199px;
+    margin-bottom: 292px;
+    margin-top: 18px;
+}
+
+.block5 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 69px 0px 199px;    
+    object-fit: cover;
+}

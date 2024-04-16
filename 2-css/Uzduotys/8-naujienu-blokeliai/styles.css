@@ -1,0 +1,57 @@
+body {
+    background: linear-gradient(180deg, #58F6EC 0%, #FBEDDD 64.58%);
+    ;
+    margin: 0;
+}
+
+.pagrindinis-blokas {
+    box-sizing: border-box;
+    text-align: center;
+    margin: 72px auto;
+}
+
+.blokas h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    margin: 0;
+    color: black;
+    line-height: 36px;
+}
+
+.blokas p {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    width: 408px;
+    margin: 0 auto;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    line-height: 14.52px;
+
+    color: black;
+}
+
+.blokas a {
+    display: inline-block;
+    background: #FCCB92;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    padding: 8px 16px 8px 16px;
+
+    color: black;
+    text-decoration: none;
+    line-height: 14.52px;
+}
+
+.blokas {
+    box-sizing: border-box;
+    background: white;
+    width: 488px;
+    margin: 30px auto;
+    padding: 50px 40px 30px 40px;
+
+    box-shadow: 5px 4px 16px 0px #331C0026;
+
+}
