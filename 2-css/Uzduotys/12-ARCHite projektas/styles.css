@@ -1,0 +1,301 @@
+body {
+    margin: 0;
+}
+
+.blokas1 {
+    text-align: center;
+    height: 824px;
+    background-image: url("img/1bck.jpg");
+    background-size: cover;
+    margin: 0 auto;
+    padding: 0;
+    width: 1920px;
+}
+
+h1 {
+    height: 144px;
+    margin: 0;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7);
+    
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 96px;
+    line-height: 144px;
+    padding: 340px 0;
+}
+
+
+.blokas2 {
+    width: 1593px;
+    text-align: center;
+    margin: 58px auto;
+}
+
+
+h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 96px;
+    text-align: left;
+    margin: 92px 0 0 0;
+}
+
+hr {
+    border: 7.5px solid rgba(27, 58, 247, 1);
+    width: 159px;
+    margin: 0 0 58px 0;
+}
+
+.blockimg {
+    box-sizing: border-box;
+    width: 1593px;
+    height: 712px;
+    margin: 0 0 62px 0;
+    padding: 288px 798px 0 0;
+}
+
+
+.blockimg2 {
+    box-sizing: border-box;
+    width: 1593px;
+    height: 712px;
+    margin: 0 0 62px 0;
+    padding: 354px 798px 0 0;
+}
+
+.block1 {
+    box-sizing: border-box;
+    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("img/pas1.jpeg");
+    background-size: cover;
+    background-position: 0 -180px;
+    
+}
+
+.block2 {
+    box-sizing: border-box;
+    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("img/pas2.jpeg");
+    background-size: cover;
+    background-position: 0 -180px;
+}
+
+.block3 {
+    box-sizing: border-box;
+    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("img/pas3.jpeg");
+    background-size: cover;
+    background-position: 0 -900px;
+}
+
+.paslauga1 {
+    box-sizing: border-box;
+    text-align: left;
+    width: 795px;
+    height: 424px;
+    padding: 64px 120px 64px 120px;
+}
+
+.paslauga1 h3, .paslauga3 h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 60px;
+    margin: 0 0 20px;
+}
+
+.paslauga1 .paslaugosp, .paslauga3 .paslaugosp {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 20px 0; 
+}
+
+.mygtukas1 {
+    box-sizing: border-box;
+    text-align: center;
+    width: 234px;
+    height: 52px;
+    background:rgba(18, 103, 21, 1);
+    padding: 10px 16px 10px 16px;
+    border-radius: 8px;
+    
+}
+
+.mp {
+    float: left;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    color: rgba(246, 245, 245, 1);
+    text-decoration: underline;
+    width: 162px;
+    height: 30px;
+    margin: 1px 8px 0 0;
+}
+
+.m1img {
+    float: right;
+    text-align: center;
+    width: 32px;
+    height: 32px;
+    margin: 0;
+}
+
+.mygtukas2 {
+    box-sizing: border-box;
+    text-align: center;
+    width: 234px;
+    height: 52px;
+    background: rgba(48, 62, 143, 1);
+    ;
+    padding: 10px 16px 10px 16px;
+    border-radius: 8px;
+    
+}
+
+.mp2 {
+    float: right;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    color: rgba(246, 245, 245, 1);
+    text-decoration: none;
+    width: 162px;
+    height: 30px;
+    margin: 1px 0 0 8px;
+}
+
+.m2img {
+    float: left;
+    text-align: center;
+    width: 32px;
+    height: 32px;
+    margin: 0;
+}
+
+.mp3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    color: rgba(246, 245, 245, 1);
+    width: 171px;
+    height: 30px;
+    margin: 0;
+    text-decoration: none;
+}
+
+.mygtukas3 {
+    box-sizing: border-box;
+    text-align: center;
+    width: 203px;
+    height: 50px;
+    background: rgba(0, 0, 0, 1);
+    padding: 10px 16px 10px 16px;
+    border-radius: 8px;
+    
+}
+
+.paslauga3 {
+    box-sizing: border-box;
+    text-align: left;
+    width: 795px;
+    height: 358;
+    padding: 0px 120px 64px 120px;
+    margin: 0;
+}
+
+.blokas3 {
+    box-sizing: border-box;
+    text-align: left;
+    width: 1920px;
+    height: 1612px;
+
+    margin: 0 auto;
+    margin-top: 145px;
+
+    padding: 111px 0 154px 0;
+
+    background: rgba(100, 149, 237, 1);
+}
+
+
+
+.h2-2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 96px;
+    margin: 0 0 0 146px;
+    width: 306px;
+}
+
+.hr-2 {
+    border: 7.5px solid rgba(27, 58, 247, 1);
+    width: 159px;
+    margin: 0 0 64px 146px;
+}
+
+.block3-1 {
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 1625px;
+    height: 1167px;
+
+    background: rgba(230, 230, 225, 0.15);
+    box-shadow: 24px 24px 43px 0px rgba(0, 0, 0, 0.25), -13px -12px 9px -6px rgba(255, 255, 255, 0.37);
+
+    border-radius: 30px;
+
+    text-align: center;
+
+    padding: 75px 150px;
+}
+
+.block3-1 img {
+    width: 1325px;
+    height: 482px;
+    border-radius: 15px;
+    object-fit: cover;
+    margin: 0 0 50px 0;
+}
+
+.block3-1 p {
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    margin: 0;
+}
+
+.mygtukas4 {
+    box-sizing: border-box;
+    text-align: center;
+    width: 203px;
+    height: 50px;
+    background: rgba(0, 0, 0, 1);
+    padding: 10px 16px 10px 16px;
+    border-radius: 8px;
+    margin: 28px 0 0 0;
+    
+}
+
+.block3-1 .mp3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    color: rgba(246, 245, 245, 1);
+    width: 171px;
+    height: 30px;    
+    text-decoration: none;
+}
+
