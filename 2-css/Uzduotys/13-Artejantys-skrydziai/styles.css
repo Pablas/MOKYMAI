@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+}
+
+.virsus {
+    box-sizing: border-box;
+
+    width: 1920px;
+    height: 513px;
+
+    margin: 0 auto;
+
+    background-image: url("img/virsaus.jpg");
+    background-size: contain;
+
+    padding: 140px 889px 139px 196px;
+}
+
+.virsus h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 200px;
+    line-height: 234.38px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+
+
+    margin: 0 auto;
+}
+
+.vidurys {
+    width: 1564px;
+    height: 2047px;
+    margin: 112px auto 177px;
+
+    /* IŠtrinti bck: */
+    background-color: rgba(128, 128, 128, 0.137);
+}
+
+h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 75px;
+    text-align: left;
+    color: rgba(7, 53, 144, 1);
+    margin: 0 0 16px 0;
+}
