@@ -1,13 +1,16 @@
 body {
     margin: 0;
     background-image: url("img/background.png");
+    background-size: cover;
 }
 
 .blokas {
+    box-sizing: border-box;
     text-align: center;
     margin: 120px auto;
     background: white;
     padding: 88px 260px 88px 260px;
+    width: 1089px;
 }
 
 .imgbox {
@@ -33,8 +36,10 @@ body {
 }
 
 .loginbox {
-    text-align: center;
-    margin: 35px 0 35px 0;
+    text-align: left;
+    margin: 35px auto;
+    width: 324px;
+
 }
 
 h1 {
