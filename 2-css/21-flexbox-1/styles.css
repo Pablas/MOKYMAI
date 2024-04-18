@@ -1,0 +1,108 @@
+/* body {
+    background: orange;
+} */
+
+/* pirma eile: */
+
+.eile1 {
+    background: green;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.eile1 .stulpelis {
+    background: rgba(255, 255, 255, 0.5);
+    width: 200px;
+}
+
+/* antra eile: */
+
+.eile2 {
+    height: 500px;
+    background: orange;
+    padding: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.eile2 .stulpelis {
+    width: 300px;
+    background: rgba(255, 255, 255, 0.5);
+    display: flex;
+}
+
+/* trečia eile: */
+
+.eile3 {
+    background: lightseagreen;
+    padding: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.eile3 .stulpelis {
+    background: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+}
+
+.eile3 .stulpelis p {
+    margin: 0;
+}
+
+/* ketvirta eile: */
+
+.eile4 {
+    background: burlywood;
+    padding: 30px;
+    display: flex;
+    gap: 30px;
+
+}
+
+.eile4 .stulpelis {
+    background: rgba(255, 255, 255, 0.5);
+    flex: 1;
+    padding: 20px;
+}
+
+.eile4 .stulpelis p {
+    margin: 0;
+}
+
+/* penkta eile: */
+
+.eile5 {
+    background: yellowgreen;
+    padding: 20px;
+    display: flex;
+    gap: 30px;
+}
+
+.eile5 p {
+    margin: 0;
+    background: yellow;
+    padding: 10px;
+    width: 20%;
+    box-sizing: border-box;
+}
+
+/* šešta eile: */
+
+.eile6 {
+    background: lightcyan;
+    padding: 30px;
+    display: flex;
+    gap: 25px;
+    justify-content: space-around;
+}
+
+.eile6 p {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+}
+
+#trecias {
+    order: -1;
+}
