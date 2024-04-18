@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+}
+
+.stulpelis1 {
+    background: orange;
+    display: flex;
+    justify-content: center;
+}
+
+.stulpelis1 p {
+    color: black;
+}
+
+
+.stulpelis2 {
+    background: red;
+    display: flex;
+    justify-content: center;
+}
+
+.stulpelis2 p {
+    background: white;
+    margin: 15px;
+}
+
+.stulpelis3 {
+    background: orange;
+    display: flex;
+    justify-content: center;
+}
+
+.stulpelis3 p {
+    box-sizing: border-box;
+    background: white;
+    padding: 20px;
+    width: 450px;
+}
+
+.stulpelis4 {
+    background: red;
+    display: flex;
+    justify-content: space-between;
+}
+
+.stulpelis4 p {
+    box-sizing: border-box;
+    background: orange;
+    width: 300px;
+    padding: 20px;
+    margin: 50px;
+
+}

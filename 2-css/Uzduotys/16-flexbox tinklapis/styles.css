@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+}
+
+.virsus {
+    background: #FFE4C4;
+    padding: 20px;
+}
+
+.virsus {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px;
+}
+
+.virsus ul {
+}
+
+.virsus ul li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+h1 {
+    margin: 0;
+}
+
+.purple1 {
+    display: flex;
+    justify-content: center;
+    background: #8A2BE2;
+    margin: 0;
+    padding: 20px;
+}
+
+.purple1 p {
+    margin: 0 100px;
+    color: white;
+    text-align: center;
+}
+
+.vidurys1 {
+    background-color: #F8F8F8;
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 40px;
+}
+
+.vidurys2 {
+    padding-top: 0;
+    background-color: #F8F8F8;
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.straipsnis {
+    width: 300px;
+    margin: 0;
+    padding: 20px;
+    border: 1px solid rgba(128, 128, 128, 0.315);
+    background: white;
+}
