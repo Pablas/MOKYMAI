@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS display</title>
+
+    <style>
+
+        .pirmas {
+            background: lightblue;
+        }
+
+        .pirmas ul li {
+            display: inline;
+        }
+
+        .navigacija {
+            background: lightcoral;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+        }
+
+        .navigacija a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .navigacija a:hover {
+            color: white;
+        }
+
+        .navigacija ul {
+            margin: 0;
+        }
+
+        .navigacija ul li {
+            display: inline-block;
+            list-style-type: none;
+            margin-left: 15px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="navigacija">
+        <div class="brand">
+            <a href="#">Kurjeris Jonas</a>
+        </div>
+        <ul>
+            <li>
+                <a href="#">nuoroda</a>
+            </li>
+            <li>
+                <a href="#">nuoroda</a>
+            </li>
+            <li>
+                <a href="#">nuoroda</a>
+            </li>
+            <li>
+                <a href="#">nuoroda</a>
+            </li>
+            <li>
+                <a href="#">nuoroda</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="pirmas">
+        <ul>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Inventore, numquam facere?</li>
+            <li>Quae, dolor assumenda!</li>
+            <li>Alias, quae fugit?</li>
+            <li>Odio, excepturi quibusdam.</li>
+        </ul>
+    </div>
+
+</body>
+</html>
