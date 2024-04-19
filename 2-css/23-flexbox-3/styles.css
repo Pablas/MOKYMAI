@@ -163,6 +163,11 @@ FOOTER
     padding: 20px 40px;
  }
 
+ footer a {
+    text-decoration: none;
+    transition: 0.2s all;
+ }
+
  footer .virsus {
     border-bottom: 2px solid silver;
     padding-bottom: 20px;
@@ -178,6 +183,14 @@ FOOTER
     flex: 1;
  }
 
+ footer .virsus a {
+    color: orange;
+ }
+
+ footer .virsus a:hover {
+    color: orangered;
+ }
+
  footer .apacia {
     justify-content: space-between;
     align-items: center;
@@ -191,4 +204,13 @@ FOOTER
     list-style-type: none;
     display: flex;
     gap: 10px;
+ }
+
+ footer .apacia .socials a {
+    color: white;
+    font-size: 20px;
+ }
+
+ footer .apacia .socials a:hover {
+    color: orangered;
  }
