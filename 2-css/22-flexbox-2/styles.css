@@ -39,12 +39,33 @@
 
 .antras {
     background: orange;
+    gap: 30px;
+}
+
+.antras .col {
+    flex: 1;
+    
+}
+
+.antras .platesnis {
+    flex: 2;
 }
 
 /* trecia eile */
 
 .trecias {
     background: lightskyblue;
+}
+
+.trecias .kairys {
+    width: 150px;
+    flex-shrink: 0;
+    background: yellowgreen;
+}
+
+.trecias .desinys {
+    background: rgba(255, 255, 255, 0.5);
+    flex-grow: 1;
 }
 
 /* ketvirta eile */
