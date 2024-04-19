@@ -1,0 +1,60 @@
+
+/* bendri stiliai: */
+.row {
+    display: flex;
+}
+
+/* pirma eile */
+
+.pirmas {
+    background: lightblue;
+    justify-content: center;
+    gap: 20px;
+    height: 500px;
+    align-items: center;
+}
+
+.pirmas .col {
+    width: 15%;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.pirmas .nr1 {
+    order: 1;
+}
+
+.pirmas .nr2 {
+    order: 2;
+}
+
+.pirmas .nr3 {
+    order: 3;
+}
+
+.pirmas .nr4 {
+    order: 4;
+}
+
+/* antra eile */
+
+.antras {
+    background: orange;
+}
+
+/* trecia eile */
+
+.trecias {
+    background: lightskyblue;
+}
+
+/* ketvirta eile */
+
+.ketvirtas {
+    background: lightgreen;
+}
+
+/* penkta eile */
+
+.penktas {
+    background: gray;
+}
