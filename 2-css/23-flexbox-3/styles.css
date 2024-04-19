@@ -6,6 +6,10 @@ body, ul, h2 {
     margin: 0;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 .blokelis {
     padding: 50px 20px;
 }
@@ -132,3 +136,19 @@ PASLAUGOS
     border: 2px solid orangered;
     padding: 8px 16px;
 }
+
+/* ========== 
+NAUJIENOS
+ ========== */
+
+ .naujienos .content {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+ }
+
+ .naujienos article {
+    background: rgb(240, 240, 240);
+    width: calc((100% - 3 * 20px) / 4);
+    padding: 10px 20px;
+ }
