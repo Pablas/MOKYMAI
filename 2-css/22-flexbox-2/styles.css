@@ -72,6 +72,13 @@
 
 .ketvirtas {
     background: lightgreen;
+    height: 800px;
+    flex-direction: column;
+}
+
+.ketvirtas .col:nth-child(2) {
+    flex-grow: 1;
+    background: rgba(255, 255, 255, 0.5);
 }
 
 /* penkta eile */
