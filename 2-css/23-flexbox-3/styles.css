@@ -152,3 +152,43 @@ NAUJIENOS
     width: calc((100% - 3 * 20px) / 4);
     padding: 10px 20px;
  }
+
+ /* ========== 
+FOOTER
+ ========== */
+
+ footer {
+    background: #222;
+    color: white;
+    padding: 20px 40px;
+ }
+
+ footer .virsus {
+    border-bottom: 2px solid silver;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+ }
+
+ footer .virsus, footer .apacia {
+    display: flex;
+
+ }
+
+ footer .virsus .col {
+    flex: 1;
+ }
+
+ footer .apacia {
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ footer .apacia p {
+    margin: 0;
+ }
+
+ footer .apacia .socials {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+ }
