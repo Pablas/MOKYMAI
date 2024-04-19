@@ -84,5 +84,15 @@
 /* penkta eile */
 
 .penktas {
-    background: gray;
+    background: lightsalmon;
+    flex-wrap: wrap;
+    padding: 30px;
+    gap: 20px;
+}
+
+.penktas .col {
+    width: calc((100% - 2 * 20px) / 3);
+    padding: 25px;
+    box-sizing: border-box;
+    background: white;
 }
