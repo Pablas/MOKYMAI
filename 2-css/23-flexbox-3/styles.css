@@ -1,0 +1,100 @@
+/* ========== 
+BENDRI STILIAI 
+ ========== */
+
+body, ul {
+    margin: 0;
+}
+
+.blokelis {
+    padding: 50px 20px;
+}
+
+.blokelis .title {
+    text-align: center;
+}
+
+/* ========== 
+NAVIGACIJA 
+ ========== */
+
+nav {
+    background: #222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav .brand a {
+    text-transform: uppercase;
+    color: rgb(207, 207, 207);
+}
+
+nav ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+nav ul a {
+    color: orange;
+    transition: 0.2s all;
+}
+
+nav ul a:hover {
+    color: orangered;
+}
+
+/* ========== 
+HEADER
+ ========== */
+
+ header {
+    background: lightgreen;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ }
+ 
+ header .turinys {
+    width: 100%;
+    max-width: 500px;
+ }
+
+ header h1 {
+    margin-top: 0;
+ }
+
+ header .mygtukai a {
+    display: inline-block;
+    text-decoration: none;
+    border: 2px solid orangered;
+    padding: 8px 16px;
+    transition: 0.2s all;
+ }
+
+a.pirminis {
+    background: orangered;
+    color: white;
+ }
+
+a.antrinis {
+    color: orangered;
+ }
+
+a.pirminis:hover {
+    background: none;
+    color: orangered;
+}
+
+a.antrinis:hover {
+    background: orangered;
+    color: white;
+}
