@@ -1,0 +1,79 @@
+body {
+    background: rgba(212, 241, 230, 1);
+    margin: 0;
+}
+
+h1 {
+    width: 1121px;
+    height: 172px;
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 72px;
+    font-weight: 800;
+    text-align: left;
+    margin: 121px auto 61px 150px;
+}
+
+.nuotraukos {
+    display: flex;
+    justify-content: center;
+    gap: 43.24px;
+    flex-wrap: wrap;
+    margin: 0 150px 59px;
+    width: 1140px;
+}
+
+.nuotraukos img {
+    border-radius: 62.9px;
+    height: 456px;
+    width: ((100% - 43.24px) / 2 );
+    object-fit: cover;
+}
+
+.frame1 {
+    flex: 1;
+}  
+
+.frame2 {
+    flex: 2;
+}
+
+.apacia {
+    box-sizing: border-box;
+    width: 1136px;
+    height: 644px;
+    padding: 56px 60px 56px 60px;
+    gap: 73px;
+    border-radius: 24px;
+    display: flex;
+    background: rgba(255, 255, 255, 1);
+    margin: 0 150px 126px 150px;
+}
+
+.txtblock {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: left;
+    margin: 0;
+
+}
+
+.txtblock p {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+    padding: 0;
+    margin: 16px 0 0 0;
+}
+
+.apacia img {
+    width: 342px;
+    height: 532px;
+    border-radius: 24px;
+    object-fit: cover;
+}
