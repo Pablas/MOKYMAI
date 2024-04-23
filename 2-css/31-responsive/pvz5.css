@@ -1,0 +1,19 @@
+.skirtingas-turinys table, 
+.skirtingas-turinys table td {
+    border: 1px solid #000;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+@media only screen and (max-width: 800px) {
+    .skirtingas-turinys .kompiuteris {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 801px) {
+    .skirtingas-turinys .telefonas{
+        display: none;
+    }
+
+}
