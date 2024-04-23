@@ -1,0 +1,66 @@
+body {
+
+}
+
+/* ==============
+BENDRI
+============== */
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* ==============
+BENDRI
+============== */
+
+nav {
+    background: #222;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+/* ==============
+HEADER
+============== */
+
+header {
+    background: royalblue;
+    color: white;
+    padding: 80px 5px;
+}
+
+/* ==============
+PASLAUGOS
+============== */
+
+.paslaugos h2 {
+    text-align: center;
+}
+
+.paslaugos .paslaugu-sarasas {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.paslauga {
+    width: calc((100% - 2 * 20px) / 3);
+}
