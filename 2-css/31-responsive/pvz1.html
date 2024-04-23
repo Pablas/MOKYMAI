@@ -23,10 +23,14 @@
             }
         }
 
+        /* 1000 - daugiau */
+
         .antras {
             background: orangered;
             font-size: 50px;
         }
+
+        /* 400px - 1000px */
 
         @media only screen and (max-width: 1000px) {
             .antras {
@@ -34,9 +38,42 @@
             }
         }
 
+        /* 0px - 400px */
+
         @media only screen and (max-width: 400px) {
             .antras {
                 font-size: 20px;
+            }
+        }
+
+        /* 0 - 500px */
+
+        .trecias {
+            background: olivedrab;
+        }
+
+        /* 500px - 900px */
+
+        @media only screen and (min-width: 500px) {
+            .trecias {
+                background: lightcoral;
+            }
+        }
+        
+
+        /* 900px - 1100px */
+
+        @media only screen and (min-width: 900px) {
+            .trecias {
+                background: lightseagreen;
+            }
+        }
+
+        /* 1100px - daugiau */
+
+        @media only screen and (min-width: 1100px) {
+            .trecias {
+                background: lightgoldenrodyellow;
             }
         }
         
@@ -53,6 +90,12 @@
     <div class="antras">
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium minus commodi qui ullam ex rem magnam quisquam enim provident? Laborum expedita iusto quaerat beatae repellendus esse quibusdam modi a quod!
+        </p>
+    </div>
+
+    <div class="trecias">
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi nostrum laborum accusamus sunt qui eveniet, rem esse dicta, ab beatae, nemo debitis! Fugit corrupti illum asperiores eaque veritatis, quibusdam neque?
         </p>
     </div>
 
