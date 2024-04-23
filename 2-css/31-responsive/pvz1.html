@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS responsive</title>
+
+    <style>
+
+        .pirmas {
+            background: orange;
+        }
+
+        @media only screen and (max-width: 800px) {
+            .pirmas {
+                background: lightblue;
+            }
+        }
+
+        @media only screen and (min-width: 800px) {
+            .pirmas {
+                font-size: 30px;
+            }
+        }
+
+        .antras {
+            background: orangered;
+            font-size: 50px;
+        }
+
+        @media only screen and (max-width: 1000px) {
+            .antras {
+                font-size: 30px;
+            }
+        }
+
+        @media only screen and (max-width: 400px) {
+            .antras {
+                font-size: 20px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class="pirmas">
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi incidunt cum veritatis repellat quam accusantium, tempora odio voluptatum tenetur? Inventore facere ea officia deserunt praesentium neque recusandae omnis veniam at!
+        </p>
+    </div>
+
+    <div class="antras">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium minus commodi qui ullam ex rem magnam quisquam enim provident? Laborum expedita iusto quaerat beatae repellendus esse quibusdam modi a quod!
+        </p>
+    </div>
+
+    
+</body>
+</html>
