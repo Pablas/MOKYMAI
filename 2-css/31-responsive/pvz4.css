@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.paslaugos {
+    background: rgb(219, 219, 219);
+}
+
+.paslaugos .container {
+    background: rgba(0, 0, 0, 0.274);
+}
+
+.paslaugos h2 {
+    margin: 0;
+    padding: 30px 0;
+}
+
+.paslaugos .paslaugu-sarasas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.paslauga {
+    background: rgba(255, 255, 255, 0.315);
+    width: calc((100% - 3 * 20px) / 4);
+    padding: 20px;
+}
+
+@media only screen and (max-width: 700px) {
+    .paslauga {
+        width: calc((100% - 2 * 20px) / 3);
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .paslauga {
+        width: calc((100% - 20px) / 2);
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .paslauga {
+        width: 100%;
+    }
+}
