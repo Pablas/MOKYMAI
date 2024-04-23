@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+.turinys {
+    width: 100%;
+    margin: 82px auto;
+    text-align: left;
+    margin: 82px 160px;
+}
+
+.turinys h1 {
+    width: 737px;
+    height: 162px;
+    font-family: "Poppins", sans-serif;
+    font-size: 72px;
+    font-weight: 700;
+    text-align: left;
+    margin: 0;
+}
+
+.blokai {
+    width: 1600px;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.blokai .gele1,
+.blokai .gele2,
+.blokai .gele3,
+.blokai .gele4 {
+    width: calc((100% - 3 * 32px) / 4);
+    height: 629px;
+    border-radius: 16px;
+    border: 1px;
+    box-shadow: 0px 2px 6px 0px #00000026;
+    text-decoration: none;
+}
+
+.blokai .gele1:hover, 
+.blokai .gele2:hover,
+.blokai .gele3:hover,
+.blokai .gele4:hover {
+    box-shadow: 0px 0px 0px 2px #84AD40, 0px 2px 6px 0px #00000026;
+}
+
+.blokai .gele1 img,
+.blokai .gele2 img,
+.blokai .gele3 img,
+.blokai .gele4 img {
+    width: 376px;
+    height: 431px;
+    object-fit: cover;
+    border-radius: 16px 16px 0 0;
+}
+
+.blokai h4 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #000000;
+    margin: 16px auto 24px 24px;
+}
+
+.blokai .p1 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #777777;
+    margin: 0 24px 24px;
+}
+
+.spalva-box {
+    margin: 0 24px 16px;
+    width: 328px;
+    height: 41px;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+}
+
+.spalva {
+    width: 96px;
+    height: 41px;
+}
+
+.spalva p {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 8px;
+    color: #7D9458;
+}
+
+.colors {
+    margin: 0;
+    width: 79px;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.juoda {
+    margin: 0;
+    background: #39362E;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+
+.rausva {
+    margin: 0;
+    background: #F3A195;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+
+.balta {
+    margin: 0;
+    background: #EFEAE6;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+
+.ruda {
+    margin: 0;
+    background: #C38364;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+
+.pirkti {
+    margin: 0;
+    width: 100px;
+    height: 41px;
+    background: transparent;
+    border: 2px solid #84AD40;
+    border-radius: 4px;
+    color: #84AD40;
+    text-decoration: none;
+}
+
+.pirkti:hover{
+    margin: 0;
+    width: 100px;
+    height: 41px;
+    background: #84AD40;
+    border: 2px solid #84AD40;
+    border-radius: 4px;
+    color: white;
+}
+
+.pirkti p {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+    padding: 12px 32px 12px 32px;
+}
