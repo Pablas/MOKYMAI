@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS atskiri konteineriai</title>
+
+    <style>
+        html, body, h1, h2, h3, p {
+            margin: 0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .pirmas {
+            background: orange;
+        }
+
+        .antras {
+            background: orangered;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="pirmas">
+        <div class="container">
+            <h1>pirmas</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+    </div>
+
+    <div class="antras">
+        <div class="container">
+            <h1>antras</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, dolore.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, dolore.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, dolore.</p>
+        </div>
+    </div>
+
+</body>
+</html>
