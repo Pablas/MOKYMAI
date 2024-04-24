@@ -1,0 +1,406 @@
+body {
+    margin: 0 auto;
+    /* 
+    font-family: "Inter", sans-serif;
+    font-family: "Poppins", sans-serif; 
+    */
+    text-align: center;    
+}
+
+.container {
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+
+@media only screen and (min-width:1320px) {
+    .header-fonas-tablet {
+        display: none;
+    }
+}
+
+
+/* ==========
+FONAI
+========== */
+
+.nav-fonas {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px 0px #E7852B21;
+}
+
+.header-fonas {
+    height: 687px;
+    /* background-image: url("img/img1.jpeg");
+    background-size: contain;
+    background-position-x: 800px;
+    background-repeat: no-repeat; */
+}   
+
+.apie-fonas {
+    height: 108px;
+    background: rgba(231, 133, 43, 1);
+}
+
+.nuomojami-fonas {
+    background: rgba(250, 250, 250, 1);
+}
+
+.footer-fonas {
+    height: 306px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: rgba(255, 255, 255, 1);
+}
+
+/* ==========
+NAVIGACIJA
+========== */
+
+nav {
+    box-sizing: border-box;
+    height: 108px;
+    padding: 30px 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+nav p {
+    width: 236px;
+    height: 48px;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+    line-height: 24px;
+    color: black;
+    margin: 0;
+}
+
+.orange-txt {
+    color: #E7852B;
+}
+
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 421px;
+    height: 30px;
+    gap: 40px;
+}
+
+.links a {
+    width: calc((100% - 3 * 40px) / 4);
+    height: 30px;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: left;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 1);
+    padding: 0px 8px 0px 8px;
+    border-radius: 20px;
+}
+
+.links a:hover {
+    height: 30px;
+    padding: 0px 8px 0px 8px;
+    border-radius: 20px;
+    background: rgba(231, 133, 43, 1);
+    color: white;
+}
+
+/* ==========
+HEADER
+========== */
+
+.virsus {
+    display: flex;
+    margin: 0;
+    gap: 27px;
+}
+
+.virsus-tablet {
+    margin: auto 76px;
+}
+
+.header {
+    box-sizing: border-box;
+    width: calc((100% - 27) / 2);
+    margin: 0;
+    padding: 181px 0;
+}
+
+.header h1 {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 82px;
+    font-weight: 600;
+    line-height: 90.2px;
+    text-align: left;
+}
+
+.header h3 {
+    margin: 0;
+    padding-top: 16px;
+    padding-bottom: 32px;
+    font-family: "Poppins", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: left;
+    color: rgba(231, 133, 43, 1);
+}
+
+.nuorodos {
+    margin: 0;
+    display: flex;
+    gap: 16px;
+}
+
+#header-o {
+    box-sizing: border-box;
+    width: 199px;
+    height: 49px;
+    padding: 16px 32px 16px 32px;
+    border-radius: 4px;
+    background: rgba(231, 133, 43, 1);
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16.94px;
+    text-align: left;
+    text-decoration: none;
+}
+
+#header-b {
+    box-sizing: border-box;
+    width: 130px;
+    height: 49px;
+    padding: 16px 32px 16px 32px;
+    border-radius: 4px;
+    border: 2px solid rgba(0, 0, 0, 1);
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16.94px;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+}
+
+.virsus img {
+    box-sizing: border-box;
+    height: 687px;
+    width: calc((100% - 27) / 2);
+
+    background-image: url("img/img1.jpeg");
+    background-size: contain;
+
+    margin: 0;
+}
+
+.header-fonas-tablet img {
+    box-sizing: border-box;
+    width: 100%;
+    height: 371px;
+    object-fit: cover;
+}
+
+
+
+
+
+/* ==========
+APIE
+========== */    
+
+.apie-fonas .container p {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;  
+    color: white;
+    margin: 0;
+    padding: 30px 0;
+}
+
+/* ==========
+NUOMOJAMI AUTO
+========== */    
+
+h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 52.8px;
+    text-align: left;
+    margin: 0;
+    padding-top: 122px;
+    margin-bottom: 40px;
+}
+
+.korteliu-box {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    padding-bottom: 120px;
+}
+
+.kortele {
+    width: ((100% - 2 * 24px) / 3);
+    box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.15);
+    padding: 80px 30px 36px 30px;
+    border-radius: 16px;
+    text-align: left;
+    background: white;
+}
+
+.kortele img {
+    width: 364px;
+    height: 232px;
+    object-fit: contain;
+    margin: 0;
+}
+
+.kortele h4 {
+    font-family: "Poppins", sans-serif;
+    font-size: 31.25px;
+    font-weight: 600;
+    line-height: 40px;
+    text-align: left;
+    margin: 0;
+}
+
+.kortele p {
+    margin: 8px 32px 8px 32px;
+    background: rgba(244, 202, 164, 1);
+    color: rgba(69, 37, 8, 1);
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: left;
+    margin: 20px 0;
+    border-radius: 8px;
+    padding: 8px 32px 8px 32px;
+}
+
+.para {
+    font-weight: 400;
+}
+
+.mygtukai {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+#kortele-o {
+    box-sizing: border-box;
+    width: 160px;
+    height: 51px;
+    padding: 16px 48px 16px 48px;
+    border-radius: 4px;
+    background: rgba(231, 133, 43, 1);
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.36px;
+    text-align: left;  
+    color: white;
+    text-decoration: none;
+    margin: 0;
+}
+
+#kortele-b {
+    box-sizing: border-box;
+    width: 171px;
+    height: 51px;
+    padding: 16px 48px 16px 48px;
+    border-radius: 4px;
+    border: 2px solid rgba(0, 0, 0, 1);
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.36px;
+    text-align: left;
+    color: black;
+    margin: 0;
+}
+
+/* ==========
+FOOTERIS
+========== */ 
+
+.apacia {
+    display: flex;
+    align-items: center;
+    gap: 125px;
+    margin: 0;
+    padding: 80px 0 0 0;
+}
+
+.apacia p {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: rgba(119, 119, 119, 1);
+    flex: 2;
+}
+
+ul {
+    list-style-type: none;
+    height: 146px;
+    padding: 10px;
+    text-align: left;
+    margin: 0;
+    flex: 1;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.bold {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+}
+
+.a-linkai {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-decoration: none;
+    color: rgba(119, 119, 119, 1);
+}
+
+.c-linkai {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    text-decoration: none;
+    color: rgba(231, 133, 43, 1);
+}
+
