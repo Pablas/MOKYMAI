@@ -1,3 +1,43 @@
+.modal-wrapper {
+    display: none;
+}
+
+.modal-wrapper .backdrop {
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+}
+
+.modal-wrapper .modal {
+    background: white;
+    width: 400px;
+    position: fixed;
+    z-index: 1100;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sonas {
+    width: 250px;
+    background: white;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 900;
+    transition: 0.2s all;
+    transform: translateX(100%);
+}
+
+.sonas-atidarytas {
+    transform: translateX(0);
+}
+
 nav {
     background: lightgreen;
     display: flex;
@@ -10,6 +50,11 @@ nav {
     top: 0;
     right: 0;
     height: 50px;
+}
+
+header {
+    background: silver;
+    padding: 80px 20px;
 }
 
 .tekstas {

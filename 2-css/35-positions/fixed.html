@@ -6,8 +6,26 @@
     <title>CSS positions: fixed</title>
 
     <link rel="stylesheet" href="fixed.css">
+    <link rel="stylesheet" href="fixed.js">
 </head>
 <body>
+
+    <div class="modal-wrapper">
+        <div class="backdrop"></div>
+        <div class="modal">
+            <h2>Modalinis langas</h2>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto, inventore.
+            </p>
+        </div>
+    </div>
+
+    <div class="sonas">
+        <h2>Įrankiai</h2>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, quod.
+        </p>
+    </div>
 
     <nav>
         <div class="brand">
@@ -25,6 +43,14 @@
             </li>
         </ul>
     </nav>
+
+
+    <header>
+        <h1>Antraštė</h1>
+        <button id="ijungti">Spausti čia</button>
+    </header>
+
+
 
     <div class="tekstas">
         <p>
@@ -85,6 +111,31 @@
         </p>
     </div>
     
+    <script>
+
+        // MODALAS
+
+        let mygtukas = document.getElementById('ijungti');
+        console.log(mygtukas);
+
+        mygtukas.addEventListener('click', function() {
+            // alert('labuka :)))')
+            let modalas = document.querySelector('.modal-wrapper');
+            modalas.style.display = 'block';
+
+
+            let fonas = document.querySelector ('.backdrop');
+
+            fonas.addEventListener('click', function() {
+                modalas.style.display = 'none';
+            })
+        })
+
+
+        // ŠONINĖ JUOSTA
+
+        let togglin
+    </script>
     
 </body>
 </html>
