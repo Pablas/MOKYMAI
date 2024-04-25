@@ -1,0 +1,76 @@
+.pirmas {
+    background: lightgreen;
+    height: 200px;
+    position: relative;
+}
+
+.pirmas button {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+.antras {
+    background: burlywood;
+    height: 200px;
+    position: relative;
+}
+
+.antras .vaikinis {
+    position: absolute;
+}
+
+.antras .vaikinis1 {
+    background: magenta;
+    top: 5px;
+    left: 10px;
+}
+
+.antras .vaikinis2 {
+    background: dodgerblue;
+    right: 30px;
+    bottom: 20%;
+}
+
+
+.trecias {
+    padding: 20px;
+    background: lightcoral;
+}
+
+.trecias h2 {
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.trecias h2 span {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100%;
+}
+
+.ketvirtas {
+    background: lightskyblue;
+    padding: 50px 20px;
+}
+
+.ketvirtas::before {
+    content: 'TESTAS';
+}
+
+.ketvirtas h2 {
+    display: inline-block;
+    position: relative;
+}
+
+.ketvirtas h2::after {
+    content: '*';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
