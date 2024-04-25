@@ -1,0 +1,92 @@
+p {
+    margin: 0;
+}
+
+.eile1 {
+    background: orange;
+    padding: 100px 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.eile1 .blokas {
+    background: white;
+}
+
+.eile1 .blokas2 {
+    position: relative;
+    top: 25px;
+}
+
+.eile1 .blokas3 {
+    position: relative;
+    top: 50px;
+}
+
+.eile2 {
+    background: lightseagreen;
+    padding: 30px;
+}
+
+.eile2 .blokas {
+    background: white;
+    width: 300px;
+    margin: 20px auto;
+}
+
+.eile2 .blokas2 {
+    position: relative;
+    left: 50px;
+    top: 50px;
+}
+
+.eile3 {
+    background: orange;
+    padding: 20px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.eile3 button {
+    padding: 15px 30px;
+    position: relative;
+    transition: 0.3s all;
+    bottom: 0px;
+}
+
+.eile3 button:hover {
+    bottom: 10px;
+}
+
+
+.eile4 {
+    background: silver;
+}
+
+.eile4 ul {
+    padding: 20px;
+    margin: 0;
+    list-style-type: none;
+    width: 200px;
+    background: royalblue;
+}
+
+.eile4 ul li {
+    transition: 0.2s all;
+    position: relative;
+    left: 0;
+}
+
+.eile4 ul li:hover {
+    left: 10px;
+}
+
+.eile4 ul li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px 20px;
+}

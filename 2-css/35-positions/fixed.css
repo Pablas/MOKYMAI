@@ -1,0 +1,77 @@
+nav {
+    background: lightgreen;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    /* NAVIGACIJAI GAL STICKY OPTIMALIAUSIAS */
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 50px;
+}
+
+.tekstas {
+    /* turi buti tiek kiek navigacija turi aukscio su padding ir viskuo: */
+    margin-top: 70px;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    
+}
+
+.messenger {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+}
+
+.messenger button {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.cookie-juosta {
+    background: white;
+    border: 2px solid red;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+
+    /* 
+    ABI AŠIS JEIGU:
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    */
+}
+
+.pirmas-prilipes {
+    width: 200px;
+    height: 200px;
+    background: lightskyblue;
+    position: fixed;
+    left: 20px;
+    bottom: 50px;    
+}
+
+.antras-prilipes {
+    width: 100px;
+    height: 100px;
+    background: lightgreen;
+    position: fixed;
+    left: 150px;
+    bottom: 50px;
+    z-index: 100;
+}
+
