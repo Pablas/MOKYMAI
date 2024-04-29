@@ -1,0 +1,7 @@
+.navbar {
+    background: bisque;
+}
+
+header {
+    background: var(--bs-gray-400);
+}
