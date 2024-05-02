@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+}
+
+nav {
+    background: #222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .brand {
+        a {
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+    }
+
+    ul.links {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        gap: 20px;
+
+        li {
+            a {
+                font-size: 12px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+
+                &:hover, 
+                &.active {
+                    color: orange;
+                }
+            }
+        }
+    }
+}
