@@ -1,6 +1,10 @@
 body {
   margin: 0; }
 
+h2 {
+  margin: 0;
+  border: 2px solid royalblue; }
+
 nav {
   background: #222;
   display: flex;
@@ -8,7 +12,7 @@ nav {
   align-items: center;
   padding: 20px 40px; }
   nav a {
-    color: white;
+    color: #f8f8f8;
     text-decoration: none; }
   nav .brand a {
     font-size: 20px;
@@ -24,6 +28,26 @@ nav {
       text-transform: uppercase;
       letter-spacing: 1px; }
       nav ul.links li a:hover, nav ul.links li a.active {
-        color: orange; }
+        color: royalblue; }
+
+header {
+  background: royalblue;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  header .content {
+    max-width: 500px;
+    text-align: center; }
+
+.paslaugos {
+  background: #f8f8f8;
+  padding: 80px 40px; }
+  .paslaugos .paslaugu-sarasas {
+    display: flex;
+    gap: 20px; }
+    .paslaugos .paslaugu-sarasas .paslauga {
+      flex: 1;
+      border: 2px solid royalblue; }
 
 /*# sourceMappingURL=stiliai.css.map */

@@ -1,16 +1,26 @@
+$spalva-pirmine: royalblue;
+$spalva-tamsi: #222;
+$spalva-sviesi: #f8f8f8;
+$borderis: 2px solid $spalva-pirmine;
+
 body {
     margin: 0;
 }
 
+h2 {
+    margin: 0;
+    border: $borderis;
+}
+
 nav {
-    background: #222;
+    background: $spalva-tamsi;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
 
     a {
-        color: white;
+        color: $spalva-sviesi;
         text-decoration: none;
     }
 
@@ -36,9 +46,37 @@ nav {
 
                 &:hover, 
                 &.active {
-                    color: orange;
+                    color: $spalva-pirmine;
                 }
             }
+        }
+    }
+}
+
+header {
+    background: $spalva-pirmine;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .content {
+        max-width: 500px;
+        text-align: center;
+    }
+}
+
+.paslaugos {
+    background: $spalva-sviesi;
+    padding: 80px 40px;
+    
+    .paslaugu-sarasas {
+        display: flex;
+        gap: 20px;
+
+        .paslauga {
+            flex: 1;
+            border: 2px solid $spalva-pirmine;
         }
     }
 }
