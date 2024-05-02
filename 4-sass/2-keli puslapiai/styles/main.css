@@ -1,3 +1,6 @@
+body {
+  margin: 0; }
+
 h1 {
   font-size: 50px;
   text-transform: uppercase; }
@@ -26,5 +29,9 @@ nav {
   display: flex; }
   .home-page .paslaugu-blokas .paslaugos .paslauga {
     flex: 1; }
+
+.about-us-page header {
+  padding: 50px;
+  background: lightblue; }
 
 /*# sourceMappingURL=main.css.map */
