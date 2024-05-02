@@ -10,6 +10,10 @@ body {
 h2 {
     margin: 0;
     border: $borderis;
+
+    @media only screen and (max-width: 768px){
+        color: red;
+    }
 }
 
 nav {
@@ -73,10 +77,15 @@ header {
     .paslaugu-sarasas {
         display: flex;
         gap: 20px;
+        flex-wrap: wrap;
 
         .paslauga {
             flex: 1;
             border: 2px solid $spalva-pirmine;
+
+            @media only screen and (max-width: 768px){
+                flex: 0 0 100%;
+            }
         }
     }
 }
