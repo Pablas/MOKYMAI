@@ -1,0 +1,13 @@
+// body {
+//     background: orange;
+// }
+
+@import 'helpers/typography';
+
+@import 'components/navbar';
+@import 'components/footer';
+
+@import 'pages/home';
+@import 'pages/about-us';
+@import 'pages/contacts';
+@import 'pages/services';

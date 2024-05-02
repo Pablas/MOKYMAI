@@ -1,0 +1,30 @@
+h1 {
+  font-size: 50px;
+  text-transform: uppercase; }
+
+nav {
+  padding: 20px 40px;
+  display: flex;
+  background: #222;
+  justify-content: space-between;
+  align-items: center; }
+  nav a {
+    color: white; }
+  nav ul.links {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    margin: 0;
+    padding: 0; }
+    nav ul.links a.active {
+      color: orange; }
+
+.home-page header {
+  background: royalblue;
+  padding: 50px; }
+.home-page .paslaugu-blokas .paslaugos {
+  display: flex; }
+  .home-page .paslaugu-blokas .paslaugos .paslauga {
+    flex: 1; }
+
+/*# sourceMappingURL=main.css.map */

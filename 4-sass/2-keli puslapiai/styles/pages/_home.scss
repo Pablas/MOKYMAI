@@ -1,0 +1,16 @@
+.home-page {
+    header {
+        background: royalblue;
+        padding: 50px;
+    }
+
+    .paslaugu-blokas {
+        .paslaugos {
+            display: flex;
+            
+            .paslauga {
+                flex: 1;
+            }
+        }
+    }
+}
