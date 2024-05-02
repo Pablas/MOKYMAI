@@ -1,6 +1,9 @@
 body {
   margin: 0; }
 
+.atitraukimas-sonu {
+  margin: 50px; }
+
 h1 {
   font-size: 50px;
   text-transform: uppercase; }
@@ -13,20 +16,35 @@ nav {
   align-items: center; }
   nav a {
     color: white; }
+  nav .brand {
+    padding: 20px; }
+    nav .brand a {
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 24px; }
   nav ul.links {
     display: flex;
     list-style-type: none;
     gap: 20px;
     margin: 0;
     padding: 0; }
-    nav ul.links a.active {
-      color: orange; }
+    nav ul.links a {
+      padding: 5px;
+      text-decoration: none;
+      transition: 0.3s all; }
+      nav ul.links a:hover {
+        text-decoration: underline;
+        color: orange; }
+      nav ul.links a.active {
+        color: orange;
+        text-decoration: underline; }
 
 .home-page header {
   background: royalblue;
   padding: 50px; }
 .home-page .paslaugu-blokas .paslaugos {
-  display: flex; }
+  display: flex;
+  gap: 20px; }
   .home-page .paslaugu-blokas .paslaugos .paslauga {
     flex: 1; }
 
