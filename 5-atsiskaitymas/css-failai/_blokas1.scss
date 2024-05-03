@@ -1,0 +1,101 @@
+.blokas1 {
+    margin: 363px 0 0 0;
+    text-align: center;
+
+
+    h1, h3 {
+        color: $white;
+    }
+
+
+    a.buy-steam {
+        display: inline-block;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 260.36px;
+        height: 60.06px;
+        border-radius: 5px;
+        background: linear-gradient(rgba(255, 181, 72, 1), rgba(243, 175, 52, 1));
+        margin: 26px auto 0;
+        text-decoration: none;
+
+
+        &:hover {
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+
+            p {
+                color: $white;
+            }
+
+            .bruksnys {
+                border: 1px solid rgba(255, 255, 255, 0.5);
+            }
+        }
+
+
+        p {
+            font-family: $font-2;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 21.79px;
+            text-align: center;
+            color: rgba(26, 25, 23, 1);
+            transition: 0.2s all;
+
+        }
+
+
+        .bruksnys {
+            width: 0px;
+            height: 23.95px;
+            border: 1px solid rgba(26, 25, 23, 0.5);
+            margin: 0 11px;
+        }
+    }
+
+    
+    a.btn-toliau {
+        position: relative;
+        display: inline-block;
+        box-sizing: border-box;
+        width: 88px;
+        height: 31.53px;
+        text-decoration: none;
+        
+        margin: 513px 0 0 0;
+
+
+        &:hover {
+            p {
+                color: $orange;
+            }
+
+            img {
+                transform: translate(0px, 10px);
+                color: $orange;
+            }
+
+        }
+   
+
+        p {
+            font-family: $font-2;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 19.07px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: $white;
+
+            margin: 0;
+
+            transition: 0.3s all;
+        }
+
+        img {
+            transition: 1s all;
+        }
+    }
+}
