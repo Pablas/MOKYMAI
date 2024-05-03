@@ -1,0 +1,102 @@
+h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 80px;
+  font-weight: 700;
+  margin: 0; }
+
+h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0; }
+
+h3 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0; }
+
+nav {
+  margin: 0;
+  display: flex;
+  justify-content: space-between; }
+  nav .logo img {
+    width: 87px;
+    height: 93px;
+    margin-top: 29px; }
+  nav .menu-juosta {
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 67.25px;
+    margin: 71px 150px 0 137px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19.07px;
+    letter-spacing: 0.1em;
+    text-align: left; }
+    nav .menu-juosta a {
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: 0.2s all; }
+      nav .menu-juosta a:hover {
+        color: #ffb548; }
+  nav .kalba {
+    box-sizing: border-box;
+    height: 20px;
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    align-items: center;
+    margin: 75px 0 0 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19.07px;
+    letter-spacing: 0.1em;
+    text-align: right;
+    text-decoration: none; }
+    nav .kalba p {
+      color: white;
+      text-transform: uppercase;
+      transition: 0.2s all; }
+      nav .kalba p:hover {
+        color: #ffb548; }
+    nav .kalba img {
+      transition: 0.2s all; }
+    nav .kalba:hover img {
+      transform: rotate(180deg); }
+  nav .ikoneles {
+    height: 30.1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+    margin: 68px 0 0 0; }
+    nav .ikoneles .xbox:hover img {
+      transform: rotate(360deg); }
+    nav .ikoneles .steam:hover img {
+      transform: rotate(360deg); }
+    nav .ikoneles img {
+      transition: 0.8s all; }
+  nav .bruksnys {
+    width: 0px;
+    height: 30px;
+    border: 0.87px;
+    border: 0.87px solid white;
+    margin: 68px 29px 0 21px; }
+
+body {
+  margin: 0; }
+
+.container {
+  max-width: 100%;
+  width: 1320px;
+  height: 200px;
+  margin: 0 auto;
+  background: #585858; }
+
+/*# sourceMappingURL=main-css.css.map */

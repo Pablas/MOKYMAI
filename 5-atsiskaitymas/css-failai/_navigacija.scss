@@ -1,0 +1,129 @@
+nav {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    
+
+    .logo {
+
+
+        img {
+            width: 87px;
+            height: 93px;
+            margin-top: 29px;
+        }
+    }
+
+
+    .menu-juosta {
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 67.25px;
+        margin: 71px 150px 0 137px;
+
+        
+        font-family: $font-2;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 19.07px;
+        letter-spacing: 0.1em;
+        text-align: left;
+
+
+        a {
+            color: $white;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: 0.2s all;
+
+            &:hover {
+                color: $orange;
+            }
+        }
+
+    }
+
+
+    .kalba {
+        box-sizing: border-box;
+        height: 20px;
+        display: flex;
+        gap: 6px;
+        justify-content: center;
+        align-items: center;
+        margin: 75px 0 0 0;
+
+        font-family: $font-2;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 19.07px;
+        letter-spacing: 0.1em;
+        text-align: right;
+        text-decoration: none;
+
+
+        p {
+            color: $white;
+            text-transform: uppercase;
+            transition: 0.2s all;
+
+
+            &:hover {
+                color: $orange;
+            }
+        }
+
+
+        img {
+            transition: 0.2s all;
+        }
+
+
+        &:hover {
+            img {
+            transform: rotate(180deg);
+            }
+        }
+    }
+
+
+    .ikoneles {
+        height: 30.1px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 17px;
+
+        margin: 68px 0 0 0;
+
+
+        .xbox:hover {
+            img {
+                transform: rotate(360deg);
+                }
+        }
+
+
+        .steam:hover {
+            img {
+                transform: rotate(360deg);
+                }
+        }
+
+        img {
+            transition: 0.8s all;
+        }
+    }
+
+
+    .bruksnys {
+        width: 0px;
+        height: 30px;
+        border: 0.87px;
+        border: 0.87px solid rgba(255, 255, 255, 1);
+
+        margin: 68px 29px 0 21px;
+    }
+}
