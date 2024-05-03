@@ -1,0 +1,155 @@
+.blokas2 {
+
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    .left-block {
+        position: relative;
+        width: 540px;
+        height: 707.27px;
+        padding: 399px 0 0 0;
+
+        color: $white;
+
+        h1 {
+            margin: 0 0 95.3px 0;
+        }
+
+        h3 {
+            margin: 0 0 12px 0;
+        }
+
+        p {
+            position: relative;
+            z-index: 5000;
+            width: 364.85px;
+            height: 173.76px;
+
+            font-family: $font-2;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 22px;
+            text-align: justify;
+
+            padding: 0 0 0 171px;
+
+            .w-span {
+                font-weight: 700;
+            }
+        }
+
+        img {
+            z-index: 1000;
+            position: absolute;
+            left: 335px;
+            top: 859px;
+        }
+        
+    }
+
+    .right-block {
+        position: relative;
+        width: 698.33px;
+        height: 707.27px;
+
+        padding: 288px 0 0 0;
+
+        .img1 {
+            z-index: 3000;
+            position: absolute;
+            width: 581.82px;
+            height: 707.27px;
+            border-radius: 10px;
+        }
+
+        .img2 {
+            z-index: 2000;
+            position: absolute;
+            width: 507.18px;
+            height: 652.49px;
+            border-radius: 10px;
+            left: 105.08px;
+            top: 311.63px;
+        }
+
+        .img3 {
+            z-index: 1000;
+            position: absolute;
+            width: 507.18px;
+            height: 592.69px;
+            border-radius: 10px;
+            left: 130.42px;
+            top: 342.43px;
+        }
+
+        .ikonele {
+            position: absolute;
+            top: 635.24px;
+            right: 0px;
+            transition: 1s all;
+
+            &:hover {
+                transform: translate(5px, 0px);
+            }
+        }
+
+        .paspaustas {
+            position: absolute;
+            top: 945.25px;
+            left: 136.94px;
+            z-index: 5000;
+        }
+
+        .nepaspaustas1 {
+            position: absolute;
+            top: 945.25px;
+            left: 214.21px;
+            z-index: 5000;
+            transition: 0.6s all;
+        }
+
+        .nepaspaustas2 {
+            position: absolute;
+            top: 945.25px;
+            left: 291.48px;
+            z-index: 5000;
+            transition: 0.6s all;
+        }
+
+        .nepaspaustas3 {
+            position: absolute;
+            top: 945.25px;
+            left: 368.75px;
+            z-index: 5000;
+            transition: 0.6s all;
+        }
+
+        .nepaspaustas4 {
+            position: absolute;
+            top: 945.25px;
+            left: 446.02px;
+            z-index: 5000;
+            transition: 0.6s all;
+        }
+
+        .active-linija {
+            position: absolute;
+            bottom: 35.5px;
+            left: 145.9px;
+            z-index: 5000;
+        }
+
+        .nepaspaustas1:hover, .nepaspaustas2:hover, .nepaspaustas3:hover, .nepaspaustas4:hover {
+            transform: translate(0px, -5px);
+        }
+
+
+    }
+
+    .linija-img {
+        z-index: 4000;
+        position: absolute;
+        top: 638px;
+    }
+}

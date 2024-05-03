@@ -139,8 +139,7 @@ nav {
     .blokas1 a.btn-toliau:hover p {
       color: #ffb548; }
     .blokas1 a.btn-toliau:hover img {
-      transform: translate(0px, 10px);
-      color: #ffb548; }
+      transform: translate(0px, 10px); }
     .blokas1 a.btn-toliau p {
       font-family: "Open Sans", sans-serif;
       font-size: 14px;
@@ -153,6 +152,113 @@ nav {
       transition: 0.3s all; }
     .blokas1 a.btn-toliau img {
       transition: 1s all; }
+
+.blokas2 {
+  position: relative;
+  display: flex;
+  justify-content: space-between; }
+  .blokas2 .left-block {
+    position: relative;
+    width: 540px;
+    height: 707.27px;
+    padding: 399px 0 0 0;
+    color: white; }
+    .blokas2 .left-block h1 {
+      margin: 0 0 95.3px 0; }
+    .blokas2 .left-block h3 {
+      margin: 0 0 12px 0; }
+    .blokas2 .left-block p {
+      position: relative;
+      z-index: 5000;
+      width: 364.85px;
+      height: 173.76px;
+      font-family: "Open Sans", sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 22px;
+      text-align: justify;
+      padding: 0 0 0 171px; }
+      .blokas2 .left-block p .w-span {
+        font-weight: 700; }
+    .blokas2 .left-block img {
+      z-index: 1000;
+      position: absolute;
+      left: 335px;
+      top: 859px; }
+  .blokas2 .right-block {
+    position: relative;
+    width: 698.33px;
+    height: 707.27px;
+    padding: 288px 0 0 0; }
+    .blokas2 .right-block .img1 {
+      z-index: 3000;
+      position: absolute;
+      width: 581.82px;
+      height: 707.27px;
+      border-radius: 10px; }
+    .blokas2 .right-block .img2 {
+      z-index: 2000;
+      position: absolute;
+      width: 507.18px;
+      height: 652.49px;
+      border-radius: 10px;
+      left: 105.08px;
+      top: 311.63px; }
+    .blokas2 .right-block .img3 {
+      z-index: 1000;
+      position: absolute;
+      width: 507.18px;
+      height: 592.69px;
+      border-radius: 10px;
+      left: 130.42px;
+      top: 342.43px; }
+    .blokas2 .right-block .ikonele {
+      position: absolute;
+      top: 635.24px;
+      right: 0px;
+      transition: 1s all; }
+      .blokas2 .right-block .ikonele:hover {
+        transform: translate(5px, 0px); }
+    .blokas2 .right-block .paspaustas {
+      position: absolute;
+      top: 945.25px;
+      left: 136.94px;
+      z-index: 5000; }
+    .blokas2 .right-block .nepaspaustas1 {
+      position: absolute;
+      top: 945.25px;
+      left: 214.21px;
+      z-index: 5000;
+      transition: 0.6s all; }
+    .blokas2 .right-block .nepaspaustas2 {
+      position: absolute;
+      top: 945.25px;
+      left: 291.48px;
+      z-index: 5000;
+      transition: 0.6s all; }
+    .blokas2 .right-block .nepaspaustas3 {
+      position: absolute;
+      top: 945.25px;
+      left: 368.75px;
+      z-index: 5000;
+      transition: 0.6s all; }
+    .blokas2 .right-block .nepaspaustas4 {
+      position: absolute;
+      top: 945.25px;
+      left: 446.02px;
+      z-index: 5000;
+      transition: 0.6s all; }
+    .blokas2 .right-block .active-linija {
+      position: absolute;
+      bottom: 35.5px;
+      left: 145.9px;
+      z-index: 5000; }
+    .blokas2 .right-block .nepaspaustas1:hover, .blokas2 .right-block .nepaspaustas2:hover, .blokas2 .right-block .nepaspaustas3:hover, .blokas2 .right-block .nepaspaustas4:hover {
+      transform: translate(0px, -5px); }
+  .blokas2 .linija-img {
+    z-index: 4000;
+    position: absolute;
+    top: 638px; }
 
 body {
   margin: 0; }
@@ -168,5 +274,11 @@ body {
   width: 100%;
   height: 1279px;
   background-image: url("../img/bck-1.png"); }
+
+.back-img-2 {
+  margin: 0;
+  width: 100%;
+  height: 1279px;
+  background-image: url("../img/bck-2.png"); }
 
 /*# sourceMappingURL=main-css.css.map */
