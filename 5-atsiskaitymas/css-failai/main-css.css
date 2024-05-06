@@ -256,9 +256,109 @@ nav {
     .blokas2 .right-block .nepaspaustas1:hover, .blokas2 .right-block .nepaspaustas2:hover, .blokas2 .right-block .nepaspaustas3:hover, .blokas2 .right-block .nepaspaustas4:hover {
       transform: translate(0px, -5px); }
   .blokas2 .linija-img {
-    z-index: 4000;
+    z-index: 8000;
     position: absolute;
     top: 638px; }
+
+.blokas3 {
+  position: relative; }
+  .blokas3 .block {
+    position: absolute;
+    width: 450px;
+    height: 439.67px;
+    top: 371.12px;
+    left: 869px; }
+    .blokas3 .block h1 {
+      color: white;
+      padding: 9.56px 0 66.75px 0; }
+    .blokas3 .block h3 {
+      color: white; }
+    .blokas3 .block .pirmas-o {
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      top: 188.96px; }
+    .blokas3 .block .antras-o {
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      top: 337.73px; }
+    .blokas3 .block .trecias-o {
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      top: 414.65px; }
+    .blokas3 .block .p-baras {
+      position: absolute;
+      left: 5.5px;
+      top: 195px;
+      width: 0px;
+      height: 142px;
+      border: 1px solid white; }
+    .blokas3 .block .pastumtas {
+      padding: 0 0 0 46.08px; }
+      .blokas3 .block .pastumtas h2 {
+        line-height: 36px;
+        letter-spacing: 2px;
+        text-align: left;
+        color: #ffb548;
+        height: 38.23px; }
+        .blokas3 .block .pastumtas h2:last-child {
+          margin-top: 36.71px; }
+      .blokas3 .block .pastumtas p {
+        font-family: "Open Sans", sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22px;
+        color: white;
+        width: 362.52px;
+        height: 77.79px;
+        margin: 8.63px 0 24.21px 0; }
+
+.blokas4 {
+  position: relative;
+  text-align: center; }
+  .blokas4 h3 {
+    height: 27.7px;
+    color: white;
+    margin: 0 auto;
+    padding-top: 233.21px;
+    padding-bottom: 8.48px; }
+  .blokas4 h1 {
+    height: 73.64px;
+    color: white;
+    margin: 0 auto; }
+  .blokas4 .sys-kvadratas {
+    position: absolute;
+    top: 512px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 573.2px;
+    height: 400.69px;
+    padding: 19.41px 19.16px;
+    background-image: url("../img/kvadratas.svg");
+    background-size: contain;
+    background-repeat: no-repeat; }
+    .blokas4 .sys-kvadratas .settings {
+      width: calc((100% - 10px) / 2);
+      height: calc((100% - 10px * 2) / 3); }
+      .blokas4 .sys-kvadratas .settings h3 {
+        padding: 0;
+        margin: 0;
+        text-align: left;
+        color: #ffb548; }
+      .blokas4 .sys-kvadratas .settings p {
+        font-family: "Open Sans", sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22px;
+        text-align: left;
+        color: white;
+        margin: 0;
+        padding: 0; }
+    .blokas4 .sys-kvadratas .big {
+      width: 100%; }
 
 body {
   margin: 0; }
@@ -273,12 +373,35 @@ body {
   margin: 0;
   width: 100%;
   height: 1279px;
-  background-image: url("../img/bck-1.png"); }
+  background-image: url("../img/bck-1.png");
+  background-size: cover; }
 
 .back-img-2 {
   margin: 0;
   width: 100%;
   height: 1279px;
-  background-image: url("../img/bck-2.png"); }
+  background-image: url("../img/bck-2.png");
+  background-size: cover; }
+
+.back-img-3 {
+  margin: 0;
+  width: 100%;
+  height: 1179px;
+  background-image: url("../img/bck-3.png");
+  background-size: cover; }
+
+.back-img-4 {
+  margin: 0;
+  width: 100%;
+  height: 1265.22px;
+  background-image: url("../img/bck-4.png");
+  background-size: cover; }
+
+.back-img-5 {
+  margin: 0;
+  width: 100%;
+  height: 1260.16px;
+  background-image: url("../img/bck-5.png");
+  background-size: cover; }
 
 /*# sourceMappingURL=main-css.css.map */

@@ -1,0 +1,82 @@
+.blokas3 {
+    position: relative;
+
+    .block {
+        position: absolute;
+        width: 450px;
+        height: 439.67px;
+        top: 371.12px;
+        left: 869px;
+
+        h1 {
+            color: $white;
+            padding: 9.56px 0 66.75px 0;
+        }
+
+        h3 {
+            color: $white;
+        }
+
+        .pirmas-o {
+            position: absolute;
+            width: 14px;
+            height: 14px;
+            top: 188.96px;
+        }
+
+        .antras-o {
+            position: absolute;
+            width: 14px;
+            height: 14px;
+            top: 337.73px;
+        }
+
+        .trecias-o {
+            position: absolute;
+            width: 14px;
+            height: 14px;
+            top: 414.65px;
+        }
+
+        .p-baras {
+            position: absolute;
+            left: 5.5px;
+            top: 195px;
+            width: 0px;
+            height: 142px;
+            border: 1px solid rgba(255, 255, 255, 1);
+        }
+
+        .pastumtas {
+
+            padding: 0 0 0 46.08px;
+
+            h2 {
+                line-height: 36px;
+                letter-spacing: 2px;
+                text-align: left;
+                color: $orange;
+                height: 38.23px;
+
+                &:last-child {
+                    margin-top: 36.71px;
+                }
+                
+            }
+
+            p {
+                font-family: $font-2;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 22px;
+                color: $white;
+                width: 362.52px;
+                height: 77.79px;
+
+                margin: 8.63px 0 24.21px 0;
+            }
+        }
+
+    }
+
+}

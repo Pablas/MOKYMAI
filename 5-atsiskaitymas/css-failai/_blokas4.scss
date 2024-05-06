@@ -1,0 +1,70 @@
+.blokas4 {
+    position: relative;
+    text-align: center;
+
+    h3 {
+        height: 27.7px;
+
+        color: $white;
+        margin: 0 auto;
+        padding-top: 233.21px;
+        padding-bottom: 8.48px;
+    }
+
+    h1 {
+        height: 73.64px;
+
+        color: $white;
+        margin: 0 auto;
+    }
+
+    .sys-kvadratas {
+        position: absolute;
+        top: 512px;
+
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        width: 573.2px;
+        height: 400.69px;
+
+        padding: 19.41px 19.16px;
+
+        background-image: url("../img/kvadratas.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+
+
+        .settings {
+            width: calc((100% - 10px) / 2);
+            height: calc((100% - 10px * 2) / 3);
+
+
+            h3 {
+                padding: 0;
+                margin: 0;
+                text-align: left;
+                color: $orange;
+            }
+
+            p { 
+                font-family: $font-2;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 22px;
+                text-align: left;
+                color: $white;
+                margin: 0;
+                padding: 0;
+            }
+        }
+
+        .big {
+            width: 100%;
+        }
+    }
+
+
+
+}   

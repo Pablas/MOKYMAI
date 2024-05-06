@@ -3,6 +3,9 @@
 @import 'navigacija.scss';
 @import 'blokas1.scss';
 @import 'blokas2.scss';
+@import 'blokas3.scss';
+@import 'blokas4.scss';
+@import 'blokas5.scss';
 
 
 body {
@@ -23,6 +26,7 @@ body {
     width: 100%;
     height: 1279px;
     background-image: url("../img/bck-1.png");
+    background-size: cover;
 }
 
 .back-img-2 {
@@ -30,5 +34,31 @@ body {
     width: 100%;
     height: 1279px;
     background-image: url("../img/bck-2.png");
+    background-size: cover;
 }
+
+.back-img-3 {
+    margin: 0;
+    width: 100%;
+    height: 1179px;
+    background-image: url("../img/bck-3.png");
+    background-size: cover;
+}
+
+.back-img-4 {
+    margin: 0;
+    width: 100%;
+    height: 1265.22px;
+    background-image: url("../img/bck-4.png");
+    background-size: cover;
+}
+
+.back-img-5 {
+    margin: 0;
+    width: 100%;
+    height: 1260.16px;
+    background-image: url("../img/bck-5.png");
+    background-size: cover;
+}
+
 
