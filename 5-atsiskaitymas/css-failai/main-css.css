@@ -1,4 +1,5 @@
 h1 {
+  color: white;
   font-family: "Bebas Neue", sans-serif;
   font-size: 80px;
   font-weight: 700;
@@ -13,6 +14,7 @@ h2 {
   margin: 0; }
 
 h3 {
+  color: white;
   font-family: "Bebas Neue", sans-serif;
   font-size: 24px;
   font-weight: 700;
@@ -108,9 +110,10 @@ nav {
     border-radius: 5px;
     background: linear-gradient(#ffb548, #f3af34);
     margin: 26px auto 0;
-    text-decoration: none; }
+    text-decoration: none;
+    transition: 0.3s all; }
     .blokas1 a.buy-steam:hover {
-      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4); }
+      transform: scale(1.1); }
       .blokas1 a.buy-steam:hover p {
         color: white; }
       .blokas1 a.buy-steam:hover .bruksnys {
@@ -139,7 +142,8 @@ nav {
     .blokas1 a.btn-toliau:hover p {
       color: #ffb548; }
     .blokas1 a.btn-toliau:hover img {
-      transform: translate(0px, 10px); }
+      transform: translate(0px, 20px);
+      opacity: 10%; }
     .blokas1 a.btn-toliau p {
       font-family: "Open Sans", sans-serif;
       font-size: 14px;
@@ -360,6 +364,119 @@ nav {
     .blokas4 .sys-kvadratas .big {
       width: 100%; }
 
+.blokas5 {
+  position: relative; }
+  .blokas5 .kairys-block {
+    position: absolute;
+    top: 442.77px;
+    width: 437.5px;
+    height: 387.3px; }
+    .blokas5 .kairys-block h3 {
+      width: 261.93px;
+      height: 27.7px; }
+    .blokas5 .kairys-block h1 {
+      padding-bottom: 50px; }
+    .blokas5 .kairys-block p {
+      margin: 0;
+      color: white;
+      font-family: "Open Sans", sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 22px;
+      text-align: left;
+      width: 434.95px;
+      height: 136.14px; }
+    .blokas5 .kairys-block button {
+      margin-top: 37.29px;
+      width: 260.36px;
+      height: 60.06px;
+      background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
+      font-family: "Open Sans", sans-serif;
+      color: black;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 21.79px;
+      text-align: center;
+      border: none;
+      border-radius: 5px;
+      transition: 0.3s all;
+      cursor: pointer; }
+      .blokas5 .kairys-block button:hover {
+        color: white;
+        transform: scale(1.1); }
+  .blokas5 .desinys-block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    position: absolute;
+    width: 639.33px;
+    height: 653.57px;
+    top: 146px;
+    left: 465px;
+    margin-left: 27.5px; }
+    .blokas5 .desinys-block .kvadratas1, .blokas5 .desinys-block .kvadratas2, .blokas5 .desinys-block .kvadratas3 {
+      box-sizing: border-box;
+      position: relative;
+      width: 453.89px;
+      background: rgba(255, 255, 255, 0.08);
+      padding: 26px 17px 22px 17px;
+      border-radius: 10px;
+      transition: 0.6s all; }
+      .blokas5 .desinys-block .kvadratas1 p, .blokas5 .desinys-block .kvadratas2 p, .blokas5 .desinys-block .kvadratas3 p {
+        font-family: "Open Sans", sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22px;
+        text-align: left;
+        color: white;
+        margin: 0;
+        width: 389.97px; }
+      .blokas5 .desinys-block .kvadratas1 h3, .blokas5 .desinys-block .kvadratas2 h3, .blokas5 .desinys-block .kvadratas3 h3 {
+        color: #ffb548;
+        width: 261.93px;
+        height: 25px;
+        margin-left: 92px; }
+      .blokas5 .desinys-block .kvadratas1 .role, .blokas5 .desinys-block .kvadratas2 .role, .blokas5 .desinys-block .kvadratas3 .role {
+        opacity: 50%;
+        width: 384.19px;
+        height: 35.46px;
+        margin-bottom: 19.88px;
+        margin-left: 92px; }
+      .blokas5 .desinys-block .kvadratas1 .date, .blokas5 .desinys-block .kvadratas2 .date, .blokas5 .desinys-block .kvadratas3 .date {
+        font-size: 14px;
+        line-height: 19.07px;
+        opacity: 50%;
+        margin-top: 15px; }
+      .blokas5 .desinys-block .kvadratas1 .ellipse, .blokas5 .desinys-block .kvadratas2 .ellipse, .blokas5 .desinys-block .kvadratas3 .ellipse {
+        width: 64.31px;
+        height: 64.31px;
+        position: absolute;
+        top: 9px;
+        left: 22.44px; }
+      .blokas5 .desinys-block .kvadratas1 .profilis, .blokas5 .desinys-block .kvadratas2 .profilis, .blokas5 .desinys-block .kvadratas3 .profilis {
+        position: absolute;
+        width: 61.92px;
+        height: 61.9px;
+        border-radius: 50%;
+        top: 10px;
+        left: 14.88px; }
+      .blokas5 .desinys-block .kvadratas1 .twitter, .blokas5 .desinys-block .kvadratas2 .twitter, .blokas5 .desinys-block .kvadratas3 .twitter {
+        position: absolute;
+        width: 18.03px;
+        height: 14.02px;
+        top: 30.33px;
+        right: 19.99px; }
+      .blokas5 .desinys-block .kvadratas1 a, .blokas5 .desinys-block .kvadratas2 a, .blokas5 .desinys-block .kvadratas3 a {
+        transition: 0.2s all; }
+      .blokas5 .desinys-block .kvadratas1 a:hover, .blokas5 .desinys-block .kvadratas2 a:hover, .blokas5 .desinys-block .kvadratas3 a:hover {
+        opacity: 50%; }
+      .blokas5 .desinys-block .kvadratas1:hover, .blokas5 .desinys-block .kvadratas2:hover, .blokas5 .desinys-block .kvadratas3:hover {
+        transform: scale(1.15); }
+    .blokas5 .desinys-block .kvadratas1 {
+      margin-left: 146.12px; }
+    .blokas5 .desinys-block .kvadratas3 {
+      margin-left: 105.79px; }
+
 body {
   margin: 0; }
 
@@ -368,6 +485,10 @@ body {
   width: 1320px;
   height: 125.5px;
   margin: 0 auto; }
+
+.back {
+  height: 7563px;
+  background: #090a0c; }
 
 .back-img-1 {
   margin: 0;

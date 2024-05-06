@@ -6,6 +6,7 @@
 @import 'blokas3.scss';
 @import 'blokas4.scss';
 @import 'blokas5.scss';
+@import 'blokas6.scss';
 
 
 body {
@@ -20,6 +21,11 @@ body {
 }
 
 // BACKGROUNDAI:
+
+.back {
+    height: 7563px; 
+    background: rgba(9, 10, 12, 1);
+}
 
 .back-img-1 {
     margin: 0;
