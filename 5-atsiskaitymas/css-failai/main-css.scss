@@ -7,6 +7,7 @@
 @import 'blokas4.scss';
 @import 'blokas5.scss';
 @import 'blokas6.scss';
+@import 'footer.scss';
 
 
 body {
@@ -65,6 +66,18 @@ body {
     height: 1260.16px;
     background-image: url("../img/bck-5.png");
     background-size: cover;
+}
+
+.back-img-6 {
+    margin: 0;
+    width: 100%;
+    height: 980.84px;
+}
+
+.back-img-7 {
+    margin: 0;
+    width: 100%;
+    height: 310.24px;
 }
 
 
