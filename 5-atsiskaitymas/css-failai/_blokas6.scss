@@ -1,13 +1,23 @@
 .blokas6 {
+    position: relative;
     display: flex;
     gap: 192.53px;
-    
 
-   img {
+    .gradient {
+        z-index: 1000;
+        position: absolute;
+        background: radial-gradient(45.43% 53.19% at 50% 50%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 46.15%, #080A0B 99.74%);
+        width: 412.35px;
+        height: 655.6px;
+    }
+
+    img {
         box-sizing: border-box;
         width: 412.35px;
         height: 655.6px;
         object-fit: cover;
+        transform: scaleX(-1);
+        object-position: -715px 0;
     }
 
     .blokas {
