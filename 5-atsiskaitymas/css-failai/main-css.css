@@ -1072,16 +1072,22 @@ body {
     left: auto;
     margin-left: 0;
     padding-top: 30px; }
-    .blokas5 .desinys-block .kvadratas1, .blokas5 .desinys-block .kvadratas2, .blokas5 .desinys-block .kvadratas3 {
+    .blokas5 .desinys-block .kvadratas1,
+    .blokas5 .desinys-block .kvadratas2,
+    .blokas5 .desinys-block .kvadratas3 {
       width: 289.98px;
       height: auto;
       padding: 9.5px 16.6px; }
-      .blokas5 .desinys-block .kvadratas1 p, .blokas5 .desinys-block .kvadratas2 p, .blokas5 .desinys-block .kvadratas3 p {
+      .blokas5 .desinys-block .kvadratas1 p,
+      .blokas5 .desinys-block .kvadratas2 p,
+      .blokas5 .desinys-block .kvadratas3 p {
         font-size: 14px;
         line-height: 19.07px;
         text-align: left;
         width: auto; }
-      .blokas5 .desinys-block .kvadratas1 h3, .blokas5 .desinys-block .kvadratas2 h3, .blokas5 .desinys-block .kvadratas3 h3 {
+      .blokas5 .desinys-block .kvadratas1 h3,
+      .blokas5 .desinys-block .kvadratas2 h3,
+      .blokas5 .desinys-block .kvadratas3 h3 {
         font-size: 21px;
         line-height: 21px;
         letter-spacing: 2px;
@@ -1089,37 +1095,49 @@ body {
         margin: 0;
         margin-left: 60px;
         font-weight: 400; }
-      .blokas5 .desinys-block .kvadratas1 .role, .blokas5 .desinys-block .kvadratas2 .role, .blokas5 .desinys-block .kvadratas3 .role {
+      .blokas5 .desinys-block .kvadratas1 .role,
+      .blokas5 .desinys-block .kvadratas2 .role,
+      .blokas5 .desinys-block .kvadratas3 .role {
         font-size: 14px;
         line-height: 22px;
         text-align: justified;
         margin: 0;
         margin-bottom: 0;
         margin-left: 60px; }
-      .blokas5 .desinys-block .kvadratas1 .date, .blokas5 .desinys-block .kvadratas2 .date, .blokas5 .desinys-block .kvadratas3 .date {
+      .blokas5 .desinys-block .kvadratas1 .date,
+      .blokas5 .desinys-block .kvadratas2 .date,
+      .blokas5 .desinys-block .kvadratas3 .date {
         font-size: 12px;
         line-height: 16.34px;
         text-align: left;
         margin-top: 10px;
         margin-bottom: 10px; }
-      .blokas5 .desinys-block .kvadratas1 .ellipse, .blokas5 .desinys-block .kvadratas2 .ellipse, .blokas5 .desinys-block .kvadratas3 .ellipse {
+      .blokas5 .desinys-block .kvadratas1 .ellipse,
+      .blokas5 .desinys-block .kvadratas2 .ellipse,
+      .blokas5 .desinys-block .kvadratas3 .ellipse {
         top: 10px;
         width: 40px;
         height: 40px; }
-      .blokas5 .desinys-block .kvadratas1 .profilis, .blokas5 .desinys-block .kvadratas2 .profilis, .blokas5 .desinys-block .kvadratas3 .profilis {
+      .blokas5 .desinys-block .kvadratas1 .profilis,
+      .blokas5 .desinys-block .kvadratas2 .profilis,
+      .blokas5 .desinys-block .kvadratas3 .profilis {
         position: absolute;
         width: 40px;
         height: 40px;
         border-radius: 50%;
         top: 10px;
         left: 14.88px; }
-      .blokas5 .desinys-block .kvadratas1 .twitter, .blokas5 .desinys-block .kvadratas2 .twitter, .blokas5 .desinys-block .kvadratas3 .twitter {
+      .blokas5 .desinys-block .kvadratas1 .twitter,
+      .blokas5 .desinys-block .kvadratas2 .twitter,
+      .blokas5 .desinys-block .kvadratas3 .twitter {
         position: absolute;
         width: 18.03px;
         height: 14px;
         top: 13.36px;
         right: 12.7px; }
-      .blokas5 .desinys-block .kvadratas1:hover, .blokas5 .desinys-block .kvadratas2:hover, .blokas5 .desinys-block .kvadratas3:hover {
+      .blokas5 .desinys-block .kvadratas1:hover,
+      .blokas5 .desinys-block .kvadratas2:hover,
+      .blokas5 .desinys-block .kvadratas3:hover {
         transform: scale(1.05); }
     .blokas5 .desinys-block .kvadratas1 {
       margin-left: 0; }
@@ -1129,6 +1147,77 @@ body {
   .back-img-6 {
     margin: 0;
     width: 100%;
-    height: 523px; } }
+    height: 523px; }
+
+  .blokas6 {
+    gap: none;
+    flex-direction: column; }
+    .blokas6 .gradient {
+      z-index: 1;
+      position: absolute;
+      width: 230.09px;
+      height: 358.67px;
+      top: 49px;
+      left: -125px; }
+    .blokas6 img {
+      position: absolute;
+      width: 230.09px;
+      height: 358.67px;
+      top: 49px;
+      left: -125px;
+      object-position: -408px 0; }
+    .blokas6 .blokas {
+      z-index: 2;
+      width: 290px;
+      height: auto;
+      padding-top: 64px; }
+      .blokas6 .blokas h1 {
+        width: auto;
+        height: 76.28px;
+        font-size: 33px;
+        font-weight: 400;
+        line-height: 33px;
+        letter-spacing: 3px;
+        text-align: left;
+        margin-left: 101.19px;
+        margin-bottom: 3.4px; }
+      .blokas6 .blokas h3 {
+        height: 27.79px;
+        width: auto;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 2px;
+        text-align: left;
+        margin-left: 101.19px;
+        margin-bottom: 0; }
+      .blokas6 .blokas p {
+        font-size: 14px;
+        line-height: 19.07px;
+        text-align: left;
+        margin: 0 0 35px 101.19px; }
+      .blokas6 .blokas form {
+        display: block; }
+        .blokas6 .blokas form input[type=email] {
+          width: 290px;
+          height: 44px;
+          border-radius: 3px;
+          font-size: 14px;
+          line-height: 19.07px;
+          text-align: left;
+          padding: 27px 0 10px 16.68px;
+          margin-bottom: 20.48px; }
+        .blokas6 .blokas form input[type=submit] {
+          width: 290px;
+          height: 44px;
+          font-size: 14px;
+          line-height: 19.07px;
+          text-align: center; }
+      .blokas6 .blokas .email-txt {
+        font-size: 12px;
+        line-height: 16.34px;
+        text-align: left;
+        top: 363px;
+        left: -86px; } }
 
 /*# sourceMappingURL=main-css.css.map */
