@@ -1,7 +1,8 @@
 @media only screen and (max-width: 320px) {
 
     .container {
-        width: 320px;
+        width: 290px;
+        padding: 0 15px;
     }
 
     // ============
@@ -12,7 +13,7 @@
         margin: 0;
         width: 100%;
         height: 650px;
-        background-position: 47%;
+        background-position: 44.5%;
     }
 
     nav {
@@ -23,7 +24,6 @@
                 width: 32.96px;
                 height: 32.96px;
                 margin-top: 9.96px;
-                margin-left: 15px;
                 margin-right: 145px;
             }
         }
@@ -47,21 +47,553 @@
 
 
     .blokas1 {
-        margin: 176.18px 0 0 0;
+        width: 100%;
+        margin: 176.18px auto 0;
+        padding: 0;
 
         h1 {
-            font-size: 33px;
+            font-size: 32px;
             line-height: 33px;
         }
 
         h3 {
+            width: 247.24px;
+            height: 40.2px;
+            margin: 0 auto;
+
             font-weight: 400;
             font-size: 18px;
             line-height: 18px;
             letter-spacing: 2px;
             margin-top: 7.6px;
         }
+
+        a.buy-steam {
+            width: 216.5px;
+            height: 44px;
+            margin: 12px auto 0;
+
+            p {
+                font-size: 14px;
+                line-height: 19.07px;
+            }
+
+            .bruksnys {
+                height: 18px;
+            }
+        }
+
+        a.btn-toliau {
+            margin: 174px 0 0 0;
+
+            p {
+                font-size: 12px;
+                line-height: 22px;
+            }
+
+
+        }
+
     }
+
+    // ============
+    // blokas2
+
+    .back-img-2 {
+        margin: 0;
+        width: 100%;
+        height: 689px;
+        background-position: 30%;
+    }
+
+    .blokas2 {
+        flex-direction: column;
+        height: auto;
+
+        .left-block {
+            padding: 0;
+            height: auto;
+
+            h1 {
+                width: 271.55px;
+                height: 90.02px;
+
+                font-size: 33px;
+                line-height: 33px;
+                margin: 5.52px 0 33.99px 0;
+            }
+
+            h3 {
+                width: 153.55px;
+                height: 16.24px;
+
+                font-size: 18px;
+                line-height: 18px;
+                margin: 19px 0 0 0;
+            }
+
+            p {
+                width: 268.61px;
+                height: auto;
+                font-size: 14px;
+                line-height: 16px;
+
+                padding: 0 0 0 21.48px;
+                margin-bottom: 51.71px;
+            }
+
+            img {
+                z-index: 1000;
+                position: absolute;
+                transform: scale(0.75);
+                left: 136px;
+                top: 303px;
+            }
+        }
+
+        .right-block {
+            padding: 0;
+
+            width: 290px;
+            height: auto;
+
+            .img1 {
+                z-index: 3000;
+                position: absolute;
+                width: 225.09px;
+                height: 273.33px;
+                border-radius: 3px;
+                margin-left: 22.79px;
+            }
+
+            .img2 {
+                z-index: 2000;
+                position: absolute;
+                border-radius: 3px;
+                width: 196.21px;
+                height: 252.16px;
+                top: 9.26px;
+                left: 63.44px;
+
+            }
+
+            .img3 {
+                z-index: 1000;
+                position: absolute;
+                border-radius: 3px;
+                width: 196.21px;
+                height: 229.05px;
+                top: 21.17px;
+                left: 73.24px;
+
+            }
+
+            .ikonele {
+                position: absolute;
+                top: 118px;
+                right: -8px;
+                transition: 1s all;
+
+                img {
+                    transform: scale(0.45);
+                }
+
+                &:hover {
+                    transform: translate(5px, 0px);
+                }
+            }
+
+            .paspaustas {
+                position: absolute;
+                z-index: 5000;
+                transform: scale(0.6);
+                top: 245px;
+                left: 72px;
+            }
+
+            .nepaspaustas1 {
+                position: absolute;
+                z-index: 5000;
+                transform: scale(0.6);
+                transition: 0.6s all;
+                top: 245px;
+                left: 102px;
+            }
+
+            .nepaspaustas2 {
+                position: absolute;
+                z-index: 5000;
+                transform: scale(0.6);
+                transition: 0.6s all;
+                top: 245px;
+                left: 132px;
+            }
+
+            .nepaspaustas3 {
+                position: absolute;
+                z-index: 5000;
+                transform: scale(0.6);
+                transition: 0.6s all;
+                top: 245px;
+                left: 162px;
+            }
+
+            .nepaspaustas4 {
+                position: absolute;
+                z-index: 5000;
+                transform: scale(0.6);
+                transition: 0.6s all;
+                top: 245px;
+                left: 192px;
+            }
+
+            .active-linija {
+                position: absolute;
+                transform: scale(0.6);
+                z-index: 5000;
+                top: 248px;
+                left: 68px;
+            }
+
+            .nepaspaustas1:hover,
+            .nepaspaustas2:hover,
+            .nepaspaustas3:hover,
+            .nepaspaustas4:hover {
+                transform: scale(0.8);
+            }
+        }
+
+        .linija-img {
+            transform: scale(0.5);
+            z-index: 8000;
+            position: absolute;
+            top: 130px;
+            left: -176px;
+        }
+
+    }
+
+    // ============
+    // blokas3
+
+    .back-img-3 {
+        margin: 0;
+        width: 100%;
+        height: 515px;
+        background-position: 34% 60%;
+    }
+
+    .blokas3 {
+
+        .block {
+            position: relative;
+            top: auto;
+            left: auto;
+            width: 290px;
+            height: auto;
+
+            margin: 0 0 0 100.84px;
+
+            h1 {
+                padding: 0;
+                font-size: 33px;
+                line-height: 33px;
+                letter-spacing: 3px;
+                text-align: left;
+                height: 57.65px;
+                font-weight: 400;
+
+            }
+
+            h3 {
+                font-size: 18px;
+                line-height: 18px;
+                letter-spacing: 2px;
+                padding-top: 82px;
+                height: 25px;
+                font-weight: 400;
+            }
+
+            .pirmas-o {
+                top: 168px;
+                left: -20px;
+            }
+    
+            .antras-o {
+                top: 318px;
+                left: -20px;
+            }
+    
+            .trecias-o {
+                top: 395.6px;
+                left: -20px;
+            }
+    
+            .p-baras {
+                top: 175px;
+                left: -14px;
+            }
+
+            .pastumtas {
+                padding: 0;
+
+                h2 {
+                font-size: 21px;
+                line-height: 21px;
+                letter-spacing: 2px;
+                width: 200px;
+                font-weight: 400;
+
+                &:last-child {
+                    margin-top: 43px;
+                }
+                }
+
+                p {
+                    width: 179.68px;
+                    height: auto;
+                    text-align: justify;
+                    font-size: 14px;
+                    line-height: 16px;
+                    margin-top: 5px;
+                    
+                }
+            }
+        }
+    }
+
+
+    // ============
+    // blokas4
+
+    .back-img-4 {
+        margin: 0;
+        width: 100%;
+        height: 719px;
+        background-position: 0 0;
+    }
+
+    .blokas4 {
+
+        h3 {
+            font-size: 18px;
+            line-height: 18px;
+            letter-spacing: 2px;
+            text-align: center;
+            font-weight: 400;
+            height: 27.67px;
+            padding: 68.86px 0 0;
+        }
+
+        h1 {
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 33px;
+            letter-spacing: 3px;
+            text-align: center;
+        }
+
+        .sys-kvadratas {
+            position: relative;
+            top: auto;
+            width: 270px;
+            height: 316.58px;
+            padding: 7px;
+            gap: 22px;
+
+            background-size: cover;
+
+            .settings {
+                width: calc((100% - 22px) / 2);
+                height: calc((100% - 22px * 2) / 3);
+                
+                h3 {
+                    font-size: 18px;
+                    line-height: 18px;
+                    letter-spacing: 2px;
+                    text-align: left;
+                    font-weight: 400;
+                    height: 23px;
+                }
+
+                p {
+                    font-size: 14px;
+                    line-height: 16px;
+                    text-align: left;
+                    font-weight: 400;
+                }
+            
+            }
+
+            .big {
+                width: 100%;
+            }
+        }
+
+    }
+
+    // ============
+    // blokas5
+
+    .back-img-5 {
+        margin: 0;
+        width: 100%;
+        height: 834px;
+        background-position: 0 0;
+    }
+
+    .blokas5 {
+
+        .kairys-block {
+            position: relative;
+            top: auto;
+            height: auto;
+
+            h3 {
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 18px;
+                letter-spacing: 2px;
+                text-align: left;
+            }
+
+            h1 {
+                font-weight: 400;
+                font-size: 33px;
+                line-height: 33px;
+                letter-spacing: 3px;
+                text-align: left;
+                padding: 0;
+            }
+
+            p {
+                width: 289.74px;
+                height: 86.91px;
+                font-size: 14px;
+                line-height: 16px;
+                text-align: justified;
+                padding-top: 35px;
+            }
+
+            button {
+                margin: 0 auto;
+                margin-top: 25px;
+                margin-left: 31px;
+                width: 216.5px;
+                height: 44px;
+
+                font-size: 14px;
+                line-height: 19.07px;
+                text-align: center;
+
+            }
+        }
+
+        .desinys-block {
+            position: relative;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            width: auto;
+            height: auto;
+            top: auto;
+            left: auto;
+            margin-left: 0;
+            padding-top: 30px;
+
+            .kvadratas1, .kvadratas2, .kvadratas3 {
+                width: 289.98px;
+                height: auto;
+                padding: 9.5px 16.6px;
+
+                p {
+                    font-size: 14px;
+                    line-height: 19.07px;
+                    text-align: left;
+                    width: auto;
+                }
+
+                h3 {
+                    font-size: 21px;
+                    line-height: 21px;
+                    letter-spacing: 2px;
+                    text-align: left;
+                    margin: 0;
+                    margin-left: 60px;
+                    font-weight: 400;
+                }
+
+                .role {
+                    font-size: 14px;
+                    line-height: 22px;
+                    text-align: justified;
+                    margin: 0;
+                    margin-bottom: 0;
+                    margin-left: 60px;
+                }
+
+                .date {
+                    font-size: 12px;
+                    line-height: 16.34px;
+                    text-align: left;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
+
+                .ellipse {
+                    top: 10px;
+                    width: 40px;
+                    height: 40px;
+                }
+
+                .profilis {
+                    position: absolute;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+    
+                    top: 10px;
+                    left: 14.88px;
+                }
+
+                .twitter {
+                    position: absolute;
+                    width: 18.03px;
+                    height: 14px;
+    
+                    top: 13.36px;
+                    right: 12.7px;
+                }
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+
+            }
+
+            .kvadratas1 {
+                margin-left: 0;
+            }
+    
+            .kvadratas3{
+                margin-left: 0;
+            }
+        }
+    }
+
+    // ============
+    // blokas6
+
+    .back-img-6 {
+        margin: 0;
+        width: 100%;
+        height: 523px;
+    }
+
+    .blokas6  {
+        
+    }
+
+
 
 
 
