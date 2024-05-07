@@ -1,0 +1,92 @@
+@media only screen and (max-width: 320px) {
+
+    .container {
+        width: 320px;
+    }
+
+    // ============
+    // navigacija
+    // blokas1
+
+    .back-img-1 {
+        margin: 0;
+        width: 100%;
+        height: 650px;
+        background-position: 47%;
+    }
+
+    nav {
+        width: 52px;
+
+        .logo {
+            img {
+                width: 32.96px;
+                height: 32.96px;
+                margin-top: 9.96px;
+                margin-left: 15px;
+                margin-right: 145px;
+            }
+        }
+
+        .lang-mygtukas {
+            margin: 18.88px 0 0 0;
+        }
+
+        .bruksnys {
+            margin: 12.83px 6.21px 0 29.5px;
+        }
+
+        .menu-juosta {
+            display: none;
+        }
+
+        .ikoneles {
+            display: none;
+        }
+    }
+
+
+    .blokas1 {
+        margin: 176.18px 0 0 0;
+
+        h1 {
+            font-size: 33px;
+            line-height: 33px;
+        }
+
+        h3 {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 18px;
+            letter-spacing: 2px;
+            margin-top: 7.6px;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

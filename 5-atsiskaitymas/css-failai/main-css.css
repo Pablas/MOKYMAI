@@ -684,7 +684,6 @@ body {
 .container {
   max-width: 100%;
   width: 1320px;
-  height: 125.5px;
   margin: 0 auto; }
 
 .back {
@@ -735,5 +734,44 @@ body {
   margin: 0;
   width: 100%;
   height: 310.24px; }
+
+@media only screen and (max-width: 320px) {
+  .container {
+    width: 320px; }
+
+  .back-img-1 {
+    margin: 0;
+    width: 100%;
+    height: 650px;
+    background-position: 47%; }
+
+  nav {
+    width: 52px; }
+    nav .logo img {
+      width: 32.96px;
+      height: 32.96px;
+      margin-top: 9.96px;
+      margin-left: 15px;
+      margin-right: 145px; }
+    nav .lang-mygtukas {
+      margin: 18.88px 0 0 0; }
+    nav .bruksnys {
+      margin: 12.83px 6.21px 0 29.5px; }
+    nav .menu-juosta {
+      display: none; }
+    nav .ikoneles {
+      display: none; }
+
+  .blokas1 {
+    margin: 176.18px 0 0 0; }
+    .blokas1 h1 {
+      font-size: 33px;
+      line-height: 33px; }
+    .blokas1 h3 {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 18px;
+      letter-spacing: 2px;
+      margin-top: 7.6px; } }
 
 /*# sourceMappingURL=main-css.css.map */
