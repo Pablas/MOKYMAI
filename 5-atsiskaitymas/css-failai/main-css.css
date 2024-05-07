@@ -511,7 +511,7 @@ nav {
       color: white; }
     .blokas6 .blokas form {
       display: flex;
-      justify-content: center;
+      justify-content: left;
       align-items: center;
       gap: 17.22px; }
       .blokas6 .blokas form input[type=email] {
