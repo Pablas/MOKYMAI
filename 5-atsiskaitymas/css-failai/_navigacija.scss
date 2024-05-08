@@ -126,7 +126,7 @@ nav {
         }
     }
 
-    .drop-menu:hover .dropdown-vidus {
+    .drop-menu:hover .dropdown-vidus, .drop-menu:active .dropdown-vidus {
         display: block;
     }
 

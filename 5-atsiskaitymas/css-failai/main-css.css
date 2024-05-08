@@ -105,7 +105,7 @@ nav {
     color: #ffb548; }
   nav .drop-menu:hover img {
     transform: rotate(180deg); }
-  nav .drop-menu:hover .dropdown-vidus {
+  nav .drop-menu:hover .dropdown-vidus, nav .drop-menu:active .dropdown-vidus {
     display: block; }
   nav .ikoneles {
     height: 30.1px;
@@ -767,7 +767,7 @@ body {
     padding: 0 15px; }
 
   .back {
-    width: 320px;
+    width: 100vh;
     height: 4450px; }
 
   .back-img-1 {
@@ -1038,14 +1038,16 @@ body {
       letter-spacing: 3px;
       text-align: left;
       height: 57.65px;
-      font-weight: 400; }
+      font-weight: 400;
+      width: 150px; }
     .blokas3 .block h3 {
       font-size: 18px;
       line-height: 18px;
       letter-spacing: 2px;
       padding-top: 82px;
       height: 25px;
-      font-weight: 400; }
+      font-weight: 400;
+      width: 150px; }
     .blokas3 .block .pirmas-o {
       top: 168px;
       left: -20px; }
@@ -1065,7 +1067,8 @@ body {
         line-height: 21px;
         letter-spacing: 2px;
         width: 200px;
-        font-weight: 400; }
+        font-weight: 400;
+        width: 188px; }
         .blokas3 .block .pastumtas h2:last-child {
           margin-top: 43px; }
       .blokas3 .block .pastumtas p {
@@ -1088,10 +1091,10 @@ body {
     display: block;
     position: absolute;
     background: radial-gradient(45.43% 53.19% at 50% 50%, rgba(255, 255, 255, 0) 0%, rgba(11, 10, 10, 0.43) 46.15%, #080A0B 100%);
-    width: 439.4px;
+    width: 290px;
     height: 322.6px;
     top: 385px;
-    left: -40px; }
+    left: 12px; }
   .blokas4 h3 {
     font-size: 18px;
     line-height: 18px;
@@ -1155,7 +1158,9 @@ body {
     margin: 0;
     width: 320px;
     height: 834px;
-    background-position: 0 0; }
+    background-position: -26% -54%;
+    background-size: 500px 500px;
+    background-repeat: no-repeat; }
 
   .blokas5 .kairys-block {
     position: relative;
