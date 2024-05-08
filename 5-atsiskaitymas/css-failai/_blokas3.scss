@@ -1,6 +1,10 @@
 .blokas3 {
     position: relative;
 
+    .gradient {
+        display: none;
+    }
+
     .block {
         position: absolute;
         width: 450px;
