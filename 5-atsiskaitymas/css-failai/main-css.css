@@ -23,9 +23,49 @@ h3 {
   margin: 0; }
 
 nav {
+  position: relative;
   margin: 0;
   display: flex;
   justify-content: space-between; }
+  nav .go-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    z-index: 20000;
+    opacity: 50%;
+    transition: 0.6s all;
+    right: 10vw;
+    top: 90vh;
+    text-decoration: none; }
+    nav .go-top p {
+      position: absolute;
+      margin: 0;
+      font-family: "Open Sans", sans-serif;
+      color: white;
+      text-decoration: none;
+      font-size: 0px;
+      transition: 0.3s all;
+      top: 19px; }
+    nav .go-top img {
+      transform: scale(1) rotate(180deg);
+      padding-top: 3px;
+      transition: 0.6s all; }
+    nav .go-top:hover {
+      border: 2px solid #ffb548;
+      opacity: 80%;
+      transform: scale(1.4);
+      background-color: rgba(255, 255, 255, 0.2); }
+      nav .go-top:hover img {
+        transform: scale(1.1) rotate(180deg) translate(0px, 5px); }
+      nav .go-top:hover p {
+        font-size: 9px; }
   nav .logo img {
     width: 87px;
     height: 93px;
@@ -105,7 +145,8 @@ nav {
     color: #ffb548; }
   nav .drop-menu:hover img {
     transform: rotate(180deg); }
-  nav .drop-menu:hover .dropdown-vidus, nav .drop-menu:active .dropdown-vidus {
+  nav .drop-menu:hover .dropdown-vidus,
+  nav .drop-menu:active .dropdown-vidus {
     display: block; }
   nav .ikoneles {
     height: 30.1px;
@@ -778,6 +819,9 @@ body {
 
   nav {
     width: 52px; }
+    nav .go-top {
+      opacity: 80%;
+      background-color: rgba(255, 255, 255, 0.2); }
     nav .logo img {
       width: 32.96px;
       height: 32.96px;

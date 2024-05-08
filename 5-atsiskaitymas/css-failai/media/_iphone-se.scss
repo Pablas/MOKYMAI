@@ -25,6 +25,11 @@
     nav {
         width: 52px;
 
+        .go-top {
+            opacity: 80%;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
         .logo {
             img {
                 width: 32.96px;
