@@ -488,15 +488,24 @@
             text-align: center;
         }
 
+        img {
+            width: 290px;
+            height: 316.58px;
+            position: absolute;
+            top: 172px;
+            left: 0;
+        }
+
         .sys-kvadratas {
+            
             position: relative;
             top: auto;
-            width: 270px;
-            height: 316.58px;
+            width: 263px;
+            height: 179.6px;
             padding: 7px;
             gap: 22px;
 
-            background-size: cover;
+            
 
             .settings {
                 width: calc((100% - 22px) / 2);
@@ -519,9 +528,28 @@
                 }
 
             }
+            
+        }
 
-            .big {
-                width: 100%;
+        .big {
+            top: 377px;
+            left: 7px;
+            width: 280px;
+
+            h3 {
+                font-size: 18px;
+                line-height: 18px;
+                letter-spacing: 2px;
+                text-align: left;
+                font-weight: 400;
+                height: 23px;
+            }
+
+            p {
+                font-size: 14px;
+                line-height: 16px;
+                text-align: left;
+                font-weight: 400;
             }
         }
 

@@ -18,6 +18,12 @@
         margin: 0 auto;
     }
 
+    img {
+        position: absolute;
+        top: 510px;
+        left: 2px;
+    }
+
     .sys-kvadratas {
         position: absolute;
         top: 512px;
@@ -27,13 +33,13 @@
         gap: 10px;
 
         width: 573.2px;
-        height: 400.69px;
+        height: 238.7px;
 
         padding: 19.41px 19.16px;
 
-        background-image: url("../img/kvadratas.svg");
-        background-size: contain;
-        background-repeat: no-repeat;
+        // background-image: url("../img/settingsai.png");
+        // background-size: contain;
+        // background-repeat: no-repeat;
 
 
         .settings {
@@ -60,11 +66,35 @@
             }
         }
 
-        .big {
-            width: 100%;
-        }
+        
     }
 
+    .big {
+        position: absolute;
+        width: 100%;
+
+        top: 782px;
+        left: 19.16px;
+        width: 550px;
+
+        h3 {
+            padding: 0;
+            margin: 0;
+            text-align: left;
+            color: $orange;
+        }
+
+        p { 
+            font-family: $font-2;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 22px;
+            text-align: left;
+            color: $white;
+            margin: 0;
+            padding: 0;
+        }
+    }
 
 
 }   

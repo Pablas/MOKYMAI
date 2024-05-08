@@ -2,7 +2,7 @@ h1 {
   color: white;
   font-family: "Bebas Neue", sans-serif;
   font-size: 80px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 80px;
   letter-spacing: 3px;
   margin: 0; }
@@ -10,14 +10,14 @@ h1 {
 h2 {
   font-family: "Bebas Neue", sans-serif;
   font-size: 36px;
-  font-weight: 700;
+  font-weight: 400;
   margin: 0; }
 
 h3 {
   color: white;
   font-family: "Bebas Neue", sans-serif;
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 24px;
   letter-spacing: 2px;
   margin: 0; }
@@ -367,6 +367,10 @@ nav {
     height: 73.64px;
     color: white;
     margin: 0 auto; }
+  .blokas4 img {
+    position: absolute;
+    top: 510px;
+    left: 2px; }
   .blokas4 .sys-kvadratas {
     position: absolute;
     top: 512px;
@@ -374,11 +378,8 @@ nav {
     flex-wrap: wrap;
     gap: 10px;
     width: 573.2px;
-    height: 400.69px;
-    padding: 19.41px 19.16px;
-    background-image: url("../img/kvadratas.svg");
-    background-size: contain;
-    background-repeat: no-repeat; }
+    height: 238.7px;
+    padding: 19.41px 19.16px; }
     .blokas4 .sys-kvadratas .settings {
       width: calc((100% - 10px) / 2);
       height: calc((100% - 10px * 2) / 3); }
@@ -396,8 +397,26 @@ nav {
         color: white;
         margin: 0;
         padding: 0; }
-    .blokas4 .sys-kvadratas .big {
-      width: 100%; }
+  .blokas4 .big {
+    position: absolute;
+    width: 100%;
+    top: 782px;
+    left: 19.16px;
+    width: 550px; }
+    .blokas4 .big h3 {
+      padding: 0;
+      margin: 0;
+      text-align: left;
+      color: #ffb548; }
+    .blokas4 .big p {
+      font-family: "Open Sans", sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 22px;
+      text-align: left;
+      color: white;
+      margin: 0;
+      padding: 0; }
 
 .blokas5 {
   position: relative; }
@@ -599,7 +618,7 @@ nav {
       color: white;
       opacity: 50%;
       top: 443px;
-      left: 37px; }
+      left: 20px; }
 
 footer {
   margin: 0;
@@ -1062,14 +1081,19 @@ body {
     line-height: 33px;
     letter-spacing: 3px;
     text-align: center; }
+  .blokas4 img {
+    width: 290px;
+    height: 316.58px;
+    position: absolute;
+    top: 172px;
+    left: 0; }
   .blokas4 .sys-kvadratas {
     position: relative;
     top: auto;
-    width: 270px;
-    height: 316.58px;
+    width: 263px;
+    height: 179.6px;
     padding: 7px;
-    gap: 22px;
-    background-size: cover; }
+    gap: 22px; }
     .blokas4 .sys-kvadratas .settings {
       width: calc((100% - 22px) / 2);
       height: calc((100% - 22px * 2) / 3); }
@@ -1085,8 +1109,22 @@ body {
         line-height: 16px;
         text-align: left;
         font-weight: 400; }
-    .blokas4 .sys-kvadratas .big {
-      width: 100%; }
+  .blokas4 .big {
+    top: 377px;
+    left: 7px;
+    width: 280px; }
+    .blokas4 .big h3 {
+      font-size: 18px;
+      line-height: 18px;
+      letter-spacing: 2px;
+      text-align: left;
+      font-weight: 400;
+      height: 23px; }
+    .blokas4 .big p {
+      font-size: 14px;
+      line-height: 16px;
+      text-align: left;
+      font-weight: 400; }
 
   .back-img-5 {
     margin: 0;
