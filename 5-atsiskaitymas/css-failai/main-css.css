@@ -746,6 +746,9 @@ footer {
       footer .apacia a:hover {
         color: #ffb548; }
 
+html {
+  scroll-behavior: smooth; }
+
 body {
   margin: 0; }
 

@@ -9,6 +9,9 @@
 @import 'blokas6.scss';
 @import 'footer.scss';
 
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     margin: 0;
