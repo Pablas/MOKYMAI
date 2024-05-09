@@ -763,45 +763,57 @@ body {
   width: 100%;
   height: 1279px;
   background-image: url("../img/bck-1.png");
-  background-size: cover; }
+  background-size: cover;
+  background-position: center;
+  overflow: hidden; }
 
 .back-img-2 {
   margin: 0;
   width: 100%;
   height: 1279px;
   background-image: url("../img/bck-2.png");
-  background-size: cover; }
+  background-size: cover;
+  background-position: center;
+  overflow: hidden; }
 
 .back-img-3 {
   margin: 0;
   width: 100%;
   height: 1179px;
   background-image: url("../img/bck-3.png");
-  background-size: cover; }
+  background-size: cover;
+  background-position: center;
+  overflow: hidden; }
 
 .back-img-4 {
   margin: 0;
   width: 100%;
   height: 1265.22px;
   background-image: url("../img/bck-4.png");
-  background-size: cover; }
+  background-size: cover;
+  background-position: center;
+  overflow: hidden; }
 
 .back-img-5 {
   margin: 0;
   width: 100%;
   height: 1260.16px;
   background-image: url("../img/bck-5.png");
-  background-size: cover; }
+  background-size: cover;
+  background-position: center;
+  overflow: hidden; }
 
 .back-img-6 {
   margin: 0;
   width: 100%;
-  height: 980.84px; }
+  height: 980.84px;
+  overflow: hidden; }
 
 .back-img-7 {
   margin: 0;
   width: 100%;
-  height: 310.24px; }
+  height: 310.24px;
+  overflow: hidden; }
 
 @media only screen and (max-width: 320px) {
   .container {
