@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Pavadinimas</h1>
+    <p id="turinys"></p>
+    <p class="kitas">Pradinis</p>
+    <button class="mygtukas">kazkas</button>
+
+    <script>
+        document.getElementById('turinys').innerHTML = 'tekstas'
+
+        // document.querySelector('#turinys').innerHTML = 'tekstas'
+
+        document.querySelector('.mygtukas').innerHTML = 'mygtukas'
+
+        document.querySelector('.kitas').innerHTML += ' PAKEISTAS TEKSTAS NES TAIP NORIU'
+        document.querySelector('.kitas').innerHTML += ' antras'
+    </script>
+</body>
+</html>
