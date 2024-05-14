@@ -2,7 +2,7 @@
 
 let vardas = 'Povilas';
 
-console.log('Mano vardas yra', vardas)
+console.log('Mano vardas yra', vardas, typeof vardas)
 
 // 4. Susikurkite kintamuosius studento akademinei grupei ir vidurkiui saugoti. Išveskite į konsolę, atskirose eilutėse pagalbinius tekstus, po kurių sektų dvitaškis ir atitinkamas kintamasis
 
@@ -30,7 +30,7 @@ console.log('Mano gyvūnas yra', pavadinimas+'. Jo kailio spalva:', kailio_spalv
 
 let Skaicius = 112
 
-console.log(Skaicius+''+Skaicius+''+Skaicius+''+Skaicius+''+Skaicius)
+console.log(`${Skaicius}${Skaicius}${Skaicius}${Skaicius}${Skaicius}`)
 
 // 8. Susikurkite skaičiaus kintamąjį, kurį išveskite penkis kartus toje pačioje eilutėje su tarpais tarp šių skaičių.
 
