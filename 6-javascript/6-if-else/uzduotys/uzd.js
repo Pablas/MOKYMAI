@@ -23,7 +23,7 @@ if (skaicius2 % 7 == 0) {
 let url = 'C://mokymai/failai/pamoka.js'
 
 if (url.endsWith(`.js`)) {
-    console.log(`Failas rastas: ${url}`)
+    console.log(`3. Failas rastas: ${url}`)
 } else {
-    console.log(`Failas nerastas.`)
+    console.log(`3. Failas nerastas.`)
 }
