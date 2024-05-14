@@ -48,5 +48,3 @@ if ('3' !== 4) {
 if (2 * 2 == '4') {
     console.log('yes sir')
 }
-
-
