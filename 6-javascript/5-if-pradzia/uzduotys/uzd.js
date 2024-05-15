@@ -144,7 +144,7 @@ console.log()
 console.log()
 //4. Susikurkite skaičiaus kintamąjį. Atlikite šiuos patikrinimus ir veiksmus:
 
-let skaicius = 73;
+let skaicius = 75;
 
 // 4.1 Jei skaičius dalinasi iš 5, tuomet išveskite šio skaičiaus daugybos lentelę nuo 1 iki 5.
 let daugiklis = 1;
