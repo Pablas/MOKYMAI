@@ -1,0 +1,21 @@
+.automobilio-blokas {
+    background-color: beige;
+    padding: 30px;
+}
+
+.automobilio-blokas h1 {
+    text-transform: uppercase;
+}
+
+.automobilio-blokas p {
+    background: #f8f8f8;
+    padding: 20px;
+}
+
+.automobilio-blokas p.ridos-info {
+    color: red;
+}
+
+.automobilio-blokas p.metu-info {
+    color: blueviolet;
+}
