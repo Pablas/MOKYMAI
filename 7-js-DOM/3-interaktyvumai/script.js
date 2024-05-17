@@ -34,3 +34,40 @@ document.querySelector(`.pirmas button`).addEventListener(`click`, () => {
 // document.querySelector('.pirmas button').onclick = () => {
 //     alert('Laimejai kavos!');
 // }
+
+
+//////////////
+//ANTRAS BLOKAS
+//////////////
+
+let antroMygtukas = document.querySelector(`.antras button`)
+let antroTekstas = document.querySelector(`.antras span`)
+let antroSk = 1;
+
+console.log(antroMygtukas, antroTekstas)
+
+antroMygtukas.addEventListener(`click`, () => {
+    antroTekstas.innerText = antroSk++;
+})
+
+
+/////////////
+//TRECIAS BLOKAS
+////////////
+
+let maziauMygtukas = document.querySelector(`.trecias p`).previousElementSibling;
+let daugiauMygtukas = maziauMygtukas.nextElementSibling.nextElementSibling;
+let trecioTekstas = maziauMygtukas.nextElementSibling;
+
+// console.log(maziauMygtukas, trecioTekstas, daugiauMygtukas)
+
+daugiauMygtukas.addEventListener(`click`, () => {
+    //console.log(typeof trecioTekstas.innerText, trecioTekstas.innerText)
+    let naujas = parseInt(trecioTekstas.textContent) + 1;
+    trecioTekstas.textContent = naujas;
+})
+
+maziauMygtukas.addEventListener(`click`, () => {
+    trecioTekstas.textContent = parseInt(trecioTekstas.textContent) - 1;
+})
+
