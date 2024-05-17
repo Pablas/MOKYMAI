@@ -144,5 +144,21 @@ document.querySelector(`.septintas button`).addEventListener(`click`, (event) =>
     }
 })
 
+////////////////////
+//ASTUNTAS BLOKAS
+////////////////////
+
+let astuntoInputas = document.querySelector(`.astuntas input`);
+// console.dir(astuntoInputas)
+
+astuntoInputas.addEventListener(`input`, () => {
+    // console.log(`pasikeite`)
+    // console.dir(astuntoInputas) 
+    console.log(astuntoInputas.value)
+    astuntoInputas.nextElementSibling.innerHTML = astuntoInputas.value;
+})
+
+
+
 
 
