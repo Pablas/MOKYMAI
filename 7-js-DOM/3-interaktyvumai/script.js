@@ -172,7 +172,10 @@ document.querySelector(`.devintas input`).addEventListener(`input`, (event) => {
 
     let divas = event.target.nextElementSibling ;
 
-    if (tekstas.length <= 5) {
+
+    if (tekstas.length == 0){
+        divas.innerHTML = `<p>Kolkas nieko neivesta</p>`
+    } else if (tekstas.length <= 5) {
         divas.innerHTML = `<p style="color: green">${tekstas}</p>`;
     } else if (tekstas.length <= 10){
         divas.innerHTML = `<p style="color: orange">${tekstas}</p>`
