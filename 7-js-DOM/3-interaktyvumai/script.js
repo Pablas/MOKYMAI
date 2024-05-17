@@ -214,4 +214,20 @@ desimtasMygtukas.addEventListener(`click`, () => {
 })
 
 
+///////////////////
+//SAVARANKISKAI
+///////////////////
 
+let skaiciusBTN = document.querySelector(`.pasibandymas button`);
+let reset = skaiciusBTN.nextElementSibling;
+let skaicius = 0;
+
+skaiciusBTN.addEventListener(`click`, () => {
+    skaicius++;
+    skaiciusBTN.textContent = skaicius;
+
+})
+
+reset.addEventListener(`click`, () => {
+    reset.textContent = `Pasispaude.`
+})
