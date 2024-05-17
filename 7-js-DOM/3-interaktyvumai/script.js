@@ -71,3 +71,24 @@ maziauMygtukas.addEventListener(`click`, () => {
     trecioTekstas.textContent = parseInt(trecioTekstas.textContent) - 1;
 })
 
+/////////////
+//KETVIRTAS BLOKAS
+/////////////  
+
+let ketvirtoTekstas = document.querySelector(`.ketvirtas p strong`);
+
+document.querySelector(`.ketvirtas .htmlp`).addEventListener(`click`, () => {
+    ketvirtoTekstas.innerText = `HTML - tai yra kalba...`
+})
+
+document.querySelector(`.ketvirtas .cssp`).addEventListener(`click`, (event) => {
+    ketvirtoTekstas.innerText = event.target.textContent;
+})
+
+document.querySelector(`.ketvirtas .jsp`).addEventListener(`click`, () => {
+    ketvirtoTekstas.innerText = `JavaScript - tai yra kalba...`
+})
+
+
+
+
