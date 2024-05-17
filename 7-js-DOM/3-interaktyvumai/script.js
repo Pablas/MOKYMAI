@@ -158,7 +158,30 @@ astuntoInputas.addEventListener(`input`, () => {
     astuntoInputas.nextElementSibling.innerHTML = astuntoInputas.value;
 })
 
+////////////////////
+//DEVINTAS BLOKAS
+////////////////////
 
+document.querySelector(`.devintas input`).addEventListener(`input`, (event) => {
+    // console.log(`ivyko`)
+
+    let tekstas = event.target.value;
+    // console.log(tekstas)
+
+    // event.target.nextElementSibling.innerHTML = `<p>${tekstas}</p>`;
+
+    let divas = event.target.nextElementSibling ;
+
+    if (tekstas.length <= 5) {
+        divas.innerHTML = `<p style="color: green">${tekstas}</p>`;
+    } else if (tekstas.length <= 10){
+        divas.innerHTML = `<p style="color: orange">${tekstas}</p>`
+    } else {
+        divas.innerHTML = `<p style="color: red">${tekstas}</p>`
+    }
+
+    
+})
 
 
 
