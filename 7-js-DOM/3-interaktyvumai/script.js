@@ -95,5 +95,20 @@ ketvirtoJsMygtukas.addEventListener(`click`, () => {
     ketvirtoTekstas.textContent = ketvirtoJsMygtukas.textContent;
 })
 
+// =======================================================
+// PENKTAS BLOKAS
+// =======================================================
+
+let penktoMygtukas = document.querySelector('.penktas button');
+let penktoSk = 1;
+
+// console.log(penktoMygtukas)
+
+penktoMygtukas.addEventListener(`click`, () => {
+    // console.log(`buvo paspausta`)
+    // console.dir(penktoMygtukas.querySelector(`span`).textContent)
+    penktoMygtukas.querySelector(`span`).textContent = penktoSk++;
+})
+
 
 
