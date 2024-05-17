@@ -85,10 +85,15 @@ document.querySelector(`.ketvirtas .cssp`).addEventListener(`click`, (event) => 
     ketvirtoTekstas.innerText = event.target.textContent;
 })
 
-document.querySelector(`.ketvirtas .jsp`).addEventListener(`click`, () => {
-    ketvirtoTekstas.innerText = `JavaScript - tai yra kalba...`
-})
 
+let ketvirtoJsMygtukas = document.querySelector(`.ketvirtas .jsp`);
+
+ketvirtoJsMygtukas.addEventListener(`click`, () => {
+    // console.dir(ketvirtoJsMygtukas)
+    // console.log(ketvirtoJsMygtukas.textContent)
+
+    ketvirtoTekstas.textContent = ketvirtoJsMygtukas.textContent;
+})
 
 
 
