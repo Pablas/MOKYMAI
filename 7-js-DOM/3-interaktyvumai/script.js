@@ -182,8 +182,35 @@ document.querySelector(`.devintas input`).addEventListener(`input`, (event) => {
     } else {
         divas.innerHTML = `<p style="color: red">${tekstas}</p>`
     }
+})
 
-    
+///////////////////
+//DESIMTAS BLOKAS
+///////////////////
+
+let desimtoInput = document.querySelector(`.desimtas input`);
+let desimtasMygtukas = document.querySelector(`.desimtas button`);
+let desimtoRezultatas = document.querySelector(`.desimtas p`);
+
+// console.log(desimtasMygtukas, desimtoInput, desimtoRezultatas)
+
+desimtasMygtukas.addEventListener(`click`, () => {
+    // console.log(`paspaustas`)
+    console.dir(desimtoInput.value, desimtoInput.valueAsNumber);
+
+    let amzius = desimtoInput.valueAsNumber;
+
+    if (amzius <0 || amzius > 120){
+        desimtoRezultatas.textContent = `KLAIDA!!`
+    } else if (amzius < 10){
+        desimtoRezultatas.textContent = `Vaikas`;
+    } else if (amzius < 18){
+        desimtoRezultatas.textContent = `Paauglys`;
+    } else if (amzius < 65){
+        desimtoRezultatas.textContent = `Suauges`;
+    } else {
+        desimtoRezultatas.textContent = `Senjoras`;
+    }
 })
 
 
