@@ -110,5 +110,39 @@ penktoMygtukas.addEventListener(`click`, () => {
     penktoMygtukas.querySelector(`span`).textContent = penktoSk++;
 })
 
+///////////////////////
+//SESTAS BLOKAS
+///////////////////////
+
+let sestoSk = 0;
+// let sestoMygtuko = document.querySelector('.sestas button'); // 1 variantas pasiekti mygtuka
+
+document.querySelector(`.sestas button`).addEventListener(`click`, (event) => {
+    sestoSk++;
+    console.log(`veikia`, sestoSk)
+    // sestoMygtuko.textContent = sestoSk; // 1 variantas pakeisti mygtuko teksta
+    event.target.textContent = sestoSk;
+})
+
+
+////////////////////////
+//SEPTINTAS BLOKAS
+////////////////////////
+
+let septintoSk = 0;
+
+document.querySelector(`.septintas button`).addEventListener(`click`, (event) => {
+    septintoSk++;
+    console.log(septintoSk)
+    event.target.textContent = septintoSk;
+    if (septintoSk >= 10) {
+        event.target.textContent = 'VALIO!';
+        
+        event.target.disabled = true;
+    } else {
+        event.target.textContent = septintoSk;
+    }
+})
+
 
 
