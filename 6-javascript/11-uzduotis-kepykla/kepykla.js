@@ -43,7 +43,7 @@ if (uzsakymas <= kepalaiPerDiena){
 
 //4. (Papildomai) Įvertinkite tai, kad pajamas ir pelną galite gauti tik iš parduotų kepalų.
 
-let parduotaKepalu = 100;
+let parduotaKepalu = 67;
 
 if (parduotaKepalu <= 0){
     console.log(`Kepalų neparduota, nuostolis: ${kepalaiPerDiena * savikaina} eur`)
