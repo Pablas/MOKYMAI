@@ -44,3 +44,52 @@ paslauga3.style.letterSpacing = `10px`
 paslauga3.style.textDecoration = `underline`
 paslauga3.style.textAlign = `center`
 paslauga3.style.padding = `20px`
+
+
+// ===============================
+// TRECIAS BLOKAS
+// ===============================
+
+
+let trecioPar = document.querySelector(`.trecias p`);
+
+document.querySelector(`.trecias .raudonas-btn`).addEventListener(`click`, () =>{
+    // console.log(`paspaudziau ant raudonas`)
+    trecioPar.style.color = `red`;
+})
+
+document.querySelector(`.trecias .melinas-btn`).addEventListener(`click`, () =>{
+    trecioPar.style.color = `royalBlue`;
+})
+
+document.querySelector(`.trecias .zalias-btn`).addEventListener(`click`, () => {
+    trecioPar.style.color = `green`;
+})
+
+// ===============================
+// KETVIRTAS BLOKAS
+// ===============================
+
+let ketvirtoPirmas = document.querySelector(`.ketvirtas .mygtukas1`)
+let ketvirtoAntras = document.querySelector(`.ketvirtas .mygtukas2`)
+let ketvirtoTrecias = document.querySelector(`.ketvirtas .mygtukas3`)
+
+// console.log(ketvirtoAntras, ketvirtoPirmas, ketvirtoTrecias)
+
+ketvirtoPirmas.addEventListener(`click`, () => {
+    ketvirtoPirmas.style.fontWeight = `bold`
+    ketvirtoAntras.style.fontWeight = `normal`
+    ketvirtoTrecias.style.fontWeight = `normal`
+})
+
+ketvirtoAntras.addEventListener(`click`, () => {
+    ketvirtoPirmas.style.fontWeight = `normal`
+    ketvirtoAntras.style.fontWeight = `bold`
+    ketvirtoTrecias.style.fontWeight = `normal`
+})
+
+ketvirtoTrecias.addEventListener(`click`, () => {
+    ketvirtoPirmas.style.fontWeight = `normal`
+    ketvirtoAntras.style.fontWeight = `normal`
+    ketvirtoTrecias.style.fontWeight = `bold`
+})
