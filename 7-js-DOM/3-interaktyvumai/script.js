@@ -280,3 +280,14 @@ document.querySelector(`.atsiliepimas button.pirmas`).addEventListener(`click`, 
         alert(`Naujas mygtukas paspaustas`)
     })
 })
+
+///////////////////////
+//10 SEK PO UZSIKROVIMO
+///////////////////////
+
+//kai uzsikrove puslapis
+window.addEventListener(`load`, () => {
+    setTimeout(() => {
+        alert(`praejo 10 sek nuo uzsikrovimo`)
+    }, 10000);
+})
