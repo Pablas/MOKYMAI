@@ -10,3 +10,46 @@ body {
     padding: 20px;
     box-sizing: border-box;
 }
+
+.penktas .stilius1 {
+    color: red;
+    background: black;
+    padding: 20px 40px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.penktas .stilius2 {
+    color: white;
+    background: royalblue;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.penktas .stilius3 {
+    font-weight: bold;
+    font-size: 30px;
+    color: orangered;
+}
+
+.sestas .progreso-juosta {
+    background: lightgray;
+    height: 30px;
+    margin-top: 20px;
+}
+
+.sestas .progreso-juosta .uzpildyta {
+    width: 0%;
+    height: 100%;
+    background: red;
+    transition: 0.3s all;
+}
+
+.septintas p:not(.rodyti){
+    display: none;
+}
+
+.astuntas p:not(.rodyti){
+    display: none;
+}

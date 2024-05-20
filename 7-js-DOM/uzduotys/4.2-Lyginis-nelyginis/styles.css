@@ -1,0 +1,15 @@
+.atsakymas{
+    display: none;
+}
+
+.lyginis {
+    display: block;
+    background: green;
+    color: white;
+}
+
+.nelyginis {
+    display: block;
+    background: red;
+    color: white;
+}

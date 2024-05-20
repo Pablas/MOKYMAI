@@ -93,3 +93,77 @@ ketvirtoTrecias.addEventListener(`click`, () => {
     ketvirtoAntras.style.fontWeight = `normal`
     ketvirtoTrecias.style.fontWeight = `bold`
 })
+
+// ===============================
+// PENKTAS BLOKAS
+// ===============================
+
+let penktoParagrafas = document.querySelector(`.penktas p`);
+// console.log(penktoParagrafas)
+// console.log(penktoParagrafas.classList)
+
+document.querySelector(`.penktas .btn-stilius1`).addEventListener(`click`, () => {
+    penktoParagrafas.classList.add(`stilius1`)
+    penktoParagrafas.classList.remove(`stilius2`, `stilius3`)
+})
+
+document.querySelector(`.penktas .btn-stilius2`).addEventListener(`click`, () => {
+    penktoParagrafas.classList.add(`stilius2`)
+    penktoParagrafas.classList.remove(`stilius1`, `stilius3`)
+})
+
+document.querySelector(`.penktas .btn-stilius3`).addEventListener(`click`, () => {
+    penktoParagrafas.classList.add(`stilius3`)
+    penktoParagrafas.classList.remove(`stilius1`, `stilius2`)
+})
+
+// ===============================
+// SESTAS BLOKAS
+// ===============================
+
+let progresoJuosta = document.querySelector(`.sestas .progreso-juosta .uzpildyta`);
+let kiekProcentu = 0;
+let mazinimo = document.querySelector(`.sestas .mazinti`);
+let didinti = document.querySelector(`.sestas .didinti`)
+
+document.querySelector(`.sestas .mazinti`).addEventListener(`click`, () => {
+    // console.log(`mazinu`)
+    if(kiekProcentu > 0){
+        kiekProcentu -= 10;
+        progresoJuosta.style.width = kiekProcentu + `%`;
+    }
+})
+
+document.querySelector(`.sestas .didinti`).addEventListener(`click`, () => {
+    // console.log(`didinti`)
+    if(kiekProcentu < 100){
+        kiekProcentu += 10;
+        progresoJuosta.style.width = kiekProcentu + `%`;
+    }
+})
+
+// ===============================
+// SEPTINTAS BLOKAS
+// ===============================
+
+document.querySelector(`.septintas button`).addEventListener(`click`, () => {
+    document.querySelector(`.septintas p`).classList.toggle(`rodyti`);
+})
+
+// ===============================
+// ASTUNTAS BLOKAS
+// ===============================
+
+let astuntoMygtukas = document.querySelector(`.astuntas button`);
+let astuntoParagrafas = astuntoMygtukas.nextElementSibling;
+
+astuntoMygtukas.addEventListener(`click`, () => {
+    // console.log(`ar paragrafas turi klase rodyti`, astuntoParagrafas.classList.contains(`rodyti`))
+    if (astuntoParagrafas.classList.contains(`rodyti`)){
+        astuntoParagrafas.classList.remove(`rodyti`)
+        astuntoMygtukas.textContent = `Rodyti`;
+    } else {
+        astuntoParagrafas.classList.add(`rodyti`);
+        astuntoMygtukas.textContent = `Nerodyti`;
+    }
+})
