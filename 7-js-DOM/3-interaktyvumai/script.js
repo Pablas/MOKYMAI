@@ -264,3 +264,19 @@ blokai.forEach((blokas) => {
         alert(`paspausta ant:` + event.target.textContent) 
     })
 })
+
+/////////////////////
+//ATSILIEPIMO BLOKAS
+/////////////////////
+
+document.querySelector(`.atsiliepimas button.pirmas`).addEventListener(`click`, () =>{
+    console.log(`mygtukas`)
+
+    let naujasButton = document.createElement(`button`);
+    naujasButton.textContent = `Naujas mygtukas`;
+    document.querySelector(`.atsiliepimas`).appendChild(naujasButton);
+
+    naujasButton.addEventListener(`click`, () =>{
+        alert(`Naujas mygtukas paspaustas`)
+    })
+})
