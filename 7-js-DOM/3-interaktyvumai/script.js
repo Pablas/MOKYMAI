@@ -231,3 +231,36 @@ skaiciusBTN.addEventListener(`click`, () => {
 reset.addEventListener(`click`, () => {
     reset.textContent = `Pasispaude.`
 })
+
+
+////////////////////
+//KELIU MYGTUKU BLOKAS
+////////////////////
+/// skiriasi nuo let ir pasirenkant visus: mygtukai ir mygtukas!
+
+let mygtukai = document.querySelectorAll(`.keli-mygtukai button`);
+// console.log(mygtukai)
+
+mygtukai.forEach((mygtukas) => {
+    // console.log(mygtukas)
+    mygtukas.addEventListener(`click`, () => {
+        // console.log(`paspausta ant`, mygtukas)
+        console.log(mygtukas.textContent)
+        document.querySelector(`.keli-mygtukai p`).textContent = mygtukas.textContent;
+    })
+})
+
+
+////////////////////
+//KELIU BLOKU BLOKAS
+//////////////////////
+
+let blokai = document.querySelectorAll(`.keli-blokai div`);
+// console.log(blokai)
+
+blokai.forEach((blokas) => {
+    blokas.addEventListener(`click`, (event) => {
+        // console.log(event)
+        alert(`paspausta ant:` + event.target.textContent) 
+    })
+})
