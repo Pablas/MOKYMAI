@@ -1,15 +1,14 @@
 let mygtukas1 = document.querySelector(`.no1`)
 let mygtukas2 = document.querySelector(`.no2`)
 let mygtukas3 = document.querySelector(`.no3`)
-
 let input = document.querySelector(`.pirmas input`)
-
 let tekstas = document.querySelector(`p`)
 
 
 
-
-
+input.addEventListener(`input`, () => {
+    tekstas.style.fontSize = `${input.valueAsNumber}px`
+})
 
 mygtukas1.addEventListener(`click`, () => {
     tekstas.style.fontWeight = `normal`;
