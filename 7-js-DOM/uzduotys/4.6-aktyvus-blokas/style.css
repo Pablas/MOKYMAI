@@ -1,0 +1,36 @@
+.blokas {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.kvadratukas {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    height: 200px;
+    width: 100%;
+    background: lightgray;
+    cursor: pointer;
+    transition: 0.2s all;
+}
+
+.kvadratukas:hover {
+    background: #E0FFFF;
+}
+
+.aktyvus-blokas {
+    background: lightblue;
+}
+
+p {
+    display: none;
+    margin: auto 5px;
+}
+
+
+
+.aktyvus-p {
+    display: block;
+}

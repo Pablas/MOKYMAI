@@ -1,0 +1,26 @@
+table, tr, td {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+td {
+    padding: 5px;
+}
+
+button {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+.didinti {
+    font-size: 24px;
+}
+
+.didinti-h1 {
+    font-size: 50px;
+}
+
