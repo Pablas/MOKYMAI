@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5.3</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="block">
+            <h2>Pasirinkite receptą:</h2>
+            <div class="pasirinkimu-box">
+                <img class="icon" src="zalias.svg" alt="">
+                <div class="pirmas pasirinkimas">
+                    <img src="receptas1.png" alt="">
+                    <h3>Vištiena su salotom</h3>
+                    <p>Amet et at aliquam duis ut morbi turpis. Quis cursus tincidunt risus purus faucibus elit ut.
+                        Pellentesque montes.</p>
+                </div>
+                <div class="antras pasirinkimas">
+                    <img src="receptas2.png" alt="">
+                    <h3>Tortas su mėlynėm</h3>
+                    <p>Amet et at aliquam duis ut morbi turpis. Quis cursus tincidunt risus purus faucibus elit ut.
+                        Pellentesque montes.</p>
+                </div>
+                <div class="trecias pasirinkimas">
+                    <img src="receptas3.png" alt="">
+                    <h3>Makaronai su mėsa</h3>
+                    <p>Amet et at aliquam duis ut morbi turpis. Quis cursus tincidunt risus purus faucibus elit ut.
+                        Pellentesque montes.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="block">
+            <h2>Kiek porcijų gaminsite?</h3>
+            <input id="inputas" disabled type="range" min="1" max="25" value="0" oninput="this.nextElementSibling.value = this.value">
+            <output></output>
+        </div>
+
+        <div class="block atsakymai">
+            <h2>Jums reikės šių ingredientų, tokiais kiekiais:</h3>
+            <p class="ats"></p>
+        </div>
+
+    </div>
+
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
