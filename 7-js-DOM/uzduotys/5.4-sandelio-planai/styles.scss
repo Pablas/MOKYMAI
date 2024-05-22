@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    padding: 0;
+    margin-top: 100px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1320px;
+
+    header {
+        width: 100%;
+        border: 0px;
+        border-bottom: 1px;
+        border-color: rgba(196, 196, 196, 1);
+        border-style: solid;
+
+        button {
+            box-sizing: border-box;
+            margin: 0;
+            width: 300px;
+            height: 48px;
+            padding: 9px;
+            border: 0px;
+            border-bottom: 2px;
+            border-style: solid;
+            border-color: transparent;
+            background: transparent;
+
+            font-family: "Montserrat", sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 30px;
+            text-align: center;
+            cursor: pointer;
+            color: rgba(102, 102, 102, 1);
+        }
+
+        button:hover, .btn-paspaustas {
+            background: linear-gradient(180deg, rgba(62, 148, 31, 0) 0%, rgba(62, 148, 31, 0.15) 100%);
+            border-color: rgba(62, 148, 31, 1);
+            color: rgba(62, 148, 31, 1);
+
+        }
+
+        
+    }
+
+    .aukstas {
+        display: flex;
+        gap: 24px;
+        margin-top: 69px;
+
+        .stalas {
+
+            table {
+                border-collapse: collapse;
+                width: 648px;
+                font-family: "Montserrat", sans-serif;
+                font-size: 16px;
+            }
+
+            th {
+                border: 2px solid rgba(51, 51, 51, 1);
+                border-left: 0px;
+                border-right: 0px;
+                text-align: left;
+                padding: 12px 40px;
+                text-align: left;
+            }
+
+            td {
+                border: 1px solid rgba(153, 153, 153, 1);
+                border-left: 0px;
+                border-right: 0px;
+                text-align: left;
+                padding: 12px 40px;
+            }
+
+            image {
+                width: 648px;
+            }
+        }
+    }
+
+    h3 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: left;
+        margin: 0;
+    }
+
+    .admin {
+        margin-top: 25px;
+
+        img {
+            margin-bottom: 32px;
+        }
+    }
+
+
+
+    .hide {
+        display: none;
+    }
+}
