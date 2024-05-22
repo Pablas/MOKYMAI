@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- .blokas*3.blokas$[data-id=$]>lorem3 -->
+
+    <div class="blokas blokas1" data-id="1">
+        Lorem, ipsum dolor.
+    </div>
+    <div class="blokas blokas2" data-id="2">
+        Quibusdam, velit. Commodi!
+    </div>
+    <div class="blokas blokas3" data-id="3">
+        Itaque, laborum commodi?
+    </div>
+    
+    <script>
+        
+        let blokai = document.querySelectorAll(`.blokas`)
+
+        blokai.forEach(blokas = > {
+            blokas.addEventListener(`click`, () => {
+            console.log(`blokas:`,blokas)
+            console.log(`dataset:`, blokas.dataset.id)
+            console.log(`attributes:`, blokas.attributes[`data-id`])
+        })
+        })
+
+    </script>
+</body>
+</html>
