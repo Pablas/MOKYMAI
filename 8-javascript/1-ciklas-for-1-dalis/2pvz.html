@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2pvz</title>
+    <style>
+        .blokas {
+            border: 1px solid black;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="blokas blokas1">
+        <p>Labas</p>
+        <p>Labas</p>
+        <p>Labas</p>
+    </div>
+
+    <div class="blokas blokas2">
+
+    </div>
+
+    <script>
+        let blokas = document.querySelector(`.blokas2`)
+        
+        // paprastas budas:
+        // blokas.innerHTML += `<p>Labas</p>`;
+        // blokas.innerHTML += `<p>Labas</p>`;
+        // blokas.innerHTML += `<p>Labas</p>`;
+
+        for (let i = 0; i < 3; i++){
+            blokas.innerHTML += `<p>Labas</p>`;
+        }
+    </script>
+</body>
+</html>

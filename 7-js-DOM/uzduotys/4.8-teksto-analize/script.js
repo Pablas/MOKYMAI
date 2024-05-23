@@ -8,8 +8,6 @@ let simboliai = document.querySelector(`.simboliai`)
 
 let klaida = document.querySelector(`.blokas2 .klaida`)
 
-
-
 analizuoti.addEventListener(`click`, () => {
     
     atsakymas1.classList.remove(`hidden`)
@@ -21,18 +19,16 @@ analizuoti.addEventListener(`click`, () => {
     if (tekstas.textLength >= 1){
         isvalyti.classList.remove(`hidden`)
     }
-
+    
     if (tekstas.value === ""){
         atsakymas1.classList.add(`hidden`)
         atsakymas2.classList.add(`hidden`)
         klaida.classList.remove(`hidden`)
     }
-
+    
     if (tekstas.textLength >= 1) {
         klaida.classList.add(`hidden`)
     }
-
-
 })
 
 isvalyti.addEventListener(`click`, () => {
