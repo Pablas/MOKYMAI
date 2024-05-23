@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="parametrai">
+        <input type="number" id="ribaInput" placeholder="pvz: 10">
+        <button id="patvirtinti">Patvirtinti</button>
+    </div>
+
+    <div id="atsakymas"></div>
+
+    <script>
+        let inputas = document.getElementById(`ribaInput`);
+        let mygtukas = document.getElementById(`patvirtinti`);
+        let atsakymoBlokas = document.getElementById(`atsakymas`);
+
+        mygtukas.addEventListener(`click`, () => {
+            let riba = inputas.valueAsNumber;
+            // console.log(`Pasirinkta riba iki kurios spausdinti`, riba)
+
+            if (riba >= 1) {
+                atsakymoBlokas.innerHTML = ``;
+                for (let i = 1; i <= riba; i++) {
+                    atsakymoBlokas.innerHTML += `<p>Skaičius yra ${i}`;
+                }
+            } else {
+                // console.log(`Klaida`)
+                atsakymoBlokas.innerHTML = `<p style="background: red; color: white">
+                    Klaida: Įveskite teigiamą skaičių
+                    </p>`;
+            }
+        })
+
+    </script>
+</body>
+
+</html>

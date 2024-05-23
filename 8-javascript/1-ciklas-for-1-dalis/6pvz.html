@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .blokas {
+            border: 2px solid black;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .lyginis {
+            background-color: lightblue;
+            border: 1px solid blue;
+        }
+
+        .nelyginis {
+            background-color: lightcoral;
+            border: 1px solid brown;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="blokas blokas1">
+        <p>
+            Lorem ipsum dolor sit.
+        </p>
+        <p>
+            Necessitatibus blanditiis voluptatibus amet!
+        </p>
+        <p>
+            Quae nam eveniet quisquam.
+        </p>
+    </div>
+
+    <div class="blokas blokas2"></div>
+
+    <div class="blokas blokas3"></div>
+
+    <script>
+
+        // BLOKAS 2:
+
+        let blokas2 = document.querySelector(`.blokas2`);
+
+        for (let kelintas = 1; kelintas <= 10; kelintas++){
+            blokas2.innerHTML += `<p>Eilutė nr. ${kelintas}</p>`
+        }
+
+        // BLOKAS 3:
+
+        let blokas3 = document.querySelector(`.blokas3`)
+
+        for (let kelintas = 1; kelintas <= 10; kelintas++){
+            if (kelintas % 2 == 0){
+                blokas3.innerHTML += `<p class="lyginis"> Skaičius ${kelintas} yra lyginis`;
+            } else {
+                blokas3.innerHTML += `<p class="nelyginis"> Skaičius ${kelintas} yra nelyginis`;
+            }
+        }
+    </script>
+    
+</body>
+</html>
