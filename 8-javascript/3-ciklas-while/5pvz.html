@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .progreso-juosta {
+            margin: 20px;
+            height: 30px;
+            background: lightgray;
+        }
+
+        .uzpildyta {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            background: lightgreen;
+            height: 100%;
+            width: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="progreso-juosta">
+        <div class="uzpildyta">
+            <p>0</p>
+        </div>
+    </div>
+
+    <button>Krauti</button>
+    <button>Valyti</button>
+
+    <script>
+        document.querySelector(`button`).addEventListener(`click`, () => {
+            let kiekProcentu = 0;
+            let kiekPabaiga = 100;
+
+            while (kiekProcentu < kiekPabaiga) {
+                kiekProcentu++;
+                // console.log(kiekProcentu)
+                document.querySelector(`p`).textContent = kiekProcentu;
+                document.querySelector(`.uzpildyta`).style.transition = `3s all`;
+                document.querySelector(`.uzpildyta`).style.width = `${kiekProcentu}%`;
+            }
+        })
+
+        
+
+        document.querySelector(`button`).nextElementSibling.addEventListener(`click`, () => {
+            document.querySelector(`.uzpildyta`).style.transition = `0s all`;
+            document.querySelector(`.uzpildyta`).style.width = `0`;
+        }) 
+    </script>
+</body>
+
+</html>
