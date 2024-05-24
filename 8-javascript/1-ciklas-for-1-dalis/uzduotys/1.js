@@ -66,8 +66,8 @@ for (let i = pradzia; i <= pabaiga; i++) {
 console.log(`---7:`)
 //7. (papildomai, sunkiau) Be daugybos veiksmo programoje, sudauginti du skaičius.
 
-let skaicius1 = 2;
-let skaicius2 = 5;
+let skaicius1 = 5;
+let skaicius2 = 2;
 
 let suma = 0;
 
