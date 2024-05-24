@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="sandelys">
+        <p>Sandelyje alaus butelių turime <span>____</span> vnt.</p>
+    </div>
+
+    <div class="pirkimas">
+        <label for="pirkimoInput">Pasirinkite kiek perkate</label>
+        <input type="number" min="0" id="pirkimoInput">
+        <button>Pirkti</button>
+    </div>
+
+    <div class="rezultatas"></div>
+
+    <script>
+        let sandelioSpan = document.querySelector(`.sandelys span`)
+        let pirkimoInput = document.getElementById(`pirkimoInput`)
+        let pirkimoButton = document.querySelector(`.pirkimas button`)
+        let rezultatasDiv = document.querySelector(`.rezultatas`)
+
+        let sandelioLikutis = 90;
+
+        sandelioSpan.textContent = sandelioLikutis;
+
+        pirkimoButton.addEventListener(`click`, () => {
+            let kiekPerka = pirkimoInput.valueAsNumber;
+
+            if (kiekPerka <= sandelioLikutis) {
+                // console.log(`Galiu pirkti`)
+
+                rezultatasDiv.innerHTML = `<p style="color: green">Sėkmingai nupirkti  ${kiekPerka} vnt.</p>`
+
+                sandelioLikutis -= kiekPerka;
+
+                sandelioSpan.textContent = sandelioLikutis;
+
+                pirkimoInput.value = ``;
+
+            } else {
+                // console.log(`Virsiju limita`)
+
+                rezultatasDiv.innerHTML = `<p style="color: red">Negalima pirkti daugiau nei turime.</p>`
+            }
+        })
+
+    </script>
+</body>
+
+</html>
