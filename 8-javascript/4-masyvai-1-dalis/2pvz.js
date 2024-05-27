@@ -12,8 +12,8 @@ console.log(`==============================`)
 
 //pakeitimas su masyvu:
 let mokyklos = [`KTU`, `VDU`, `KU`];
-
 console.log(mokyklos)
+
 //specifiskai viena pasiimti, reikia prideti indeksa:
 console.log(mokyklos[0], mokyklos[1], mokyklos[2])
 

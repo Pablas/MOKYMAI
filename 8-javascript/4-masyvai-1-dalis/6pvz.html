@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Filmai</h1>
+
+    <h2>Įvedimas</h2>
+
+    <div class="forma">
+        <label for="filmasinput">Įveskite jums patinkantį filmą</label>
+        <input type="text" id="filmasinput">
+        <button>Įvesti</button>
+    </div>
+
+    <h2>Duomenys</h2>
+
+    <div class="duomenys">
+        <p>Kol kas nieko nėra</p>
+    </div>
+    
+    <script>
+        let filmai = [];
+        
+        let inputas = document.getElementById(`filmasinput`);
+        let buttonas = document.querySelector(`.forma button`);
+        let duomenuDiv = document.querySelector(`.duomenys`)
+
+        buttonas.addEventListener(`click`, () => {
+            let naujasFilmas = inputas.value;
+            filmai.push(naujasFilmas);
+            
+            duomenuDiv.innerHTML = ``;
+
+            for (let i = 0; i < filmai.length; i++){
+                duomenuDiv.innerHTML += `<p>${i + 1}. ${filmai[i]}</p>`;
+            }
+        })
+    </script>
+</body>
+</html>
