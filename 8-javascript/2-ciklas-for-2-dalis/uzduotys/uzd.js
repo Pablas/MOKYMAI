@@ -76,19 +76,19 @@ for (let i = 1; i <= 100; i++) {
 }
 
 //6. 
-console.log(`6: ---`)
+// console.log(`6: ---`)
 
-let suma6 = 0;
-let sk1 = 1;
-let sk2 = 1;
-let sk3 = 2;
-let sk4 = sk1 + sk2;
-let suma = sk12 + sk3;
+// let suma6 = 0;
+// let sk1 = 1;
+// let sk2 = 1;
+// let sk3 = 2;
+// let sk4 = sk1 + sk2;
+// let suma = sk12 + sk3;
 
-for (i = 2; i <= 100; i = +2 ){
+// for (i = 2; i <= 100; i = +2 ){
         
     
 
-    console.log(suma)
-}
+//     console.log(suma)
+// }
 
