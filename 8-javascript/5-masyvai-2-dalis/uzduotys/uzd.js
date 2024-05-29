@@ -134,8 +134,8 @@ let zodis = [`Kompiuteris`, `Puodelis`, `Kava`, `Arbata`, `Panda`]
 let suma10 = 0;
 
 for (let i = 0; i <zodis.length; i++){
-    console.log(zodis[i].length)
     suma10 += zodis[i].length;
+    console.log(zodis[i], `, raidžių:`, zodis[i].length)
 }
 
 console.log(`Bendra žodžių raidžių suma:`, suma10)

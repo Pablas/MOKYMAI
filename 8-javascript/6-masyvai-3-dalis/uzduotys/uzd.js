@@ -7,6 +7,7 @@ for (let i = 0; i < zodis1.length; i++){
     console.log(i, `-`, zodis1[i])
 }
 
+
 // 2. Susikurkite masyvą pirkinių sąrašui saugoti ir užpildykite jį duomenimis. Išveskite kiek pirkinių yra šiame sąraše. Taip pat, išveskite kiekvieną įrašą atskiroje eilutėje, prieš kiekvieną parašant brūkšniuką ar kokį kitą skirtuką.
 console.log(`2. =====`)
 
@@ -32,6 +33,7 @@ for (const pazymys of pazymiai) {
 console.log(`Pazymiai:`, pazymiai)
 console.log(`Pazymiu vidurkis:`, (suma / pazymiai.length))
 
+
 // 4. Susikurkite masyvą kelionės nuovažiuotiems kilometrams saugoti ir užpildykite jį duomenimis (pvz 120, 145, 90 ir pan., kur kiekvienas skaičius reiškia kiek km kurią dieną buvo nuvažiuota). Išveskite visus nuvažiuotus per dieną kilometrus, kurie yra didesni nei 150.
 console.log(`4. =====`)
 
@@ -47,6 +49,7 @@ for (const km of kilometrai) {
 
 console.log(`Bendra suma didesniu nei 150km kelioniu:`, sumakm)
 
+
 // 5. Susikurkite masyvą failų pavadinimams saugoti, užpildykite jį duomenimis. Jums reikės nuskaityti šiuos failus, todėl pirma norėsite patikrinti su kuriais galite dirbti. Išveskite į ekraną tik tuos failus, kurių galūnė yra .txt arba .json tipo.
 console.log(`5. =====`)
 
@@ -58,6 +61,7 @@ for (const file of failai) {
     }
 }
 
+
 // 6. Susikurkite masyvą automobilių markėms saugoti ir užpildykite jį duomenimis. Išveskite kiekvieną automobilį atskiroje eilutėje, nurodant kiek raidžių sudaro jo pavadinimą.
 console.log(`6. =====`)
 
@@ -66,6 +70,7 @@ let markes = [`Toyota`, `Subaru`, `Genesis`, `Jeep`, `Mitsubishi`]
 for (const marke of markes) {
     console.log(marke, `zodi sudaro`, marke.length, `raidziu/-es.`)
 }
+
 
 // 7. Susikurkite masyvą įvykusių klaidų kodams saugoti ir užpildykite šį masyvą duomenimis. Tuomet išveskite visas sukauptas klaidas administratoriui, taip, kad jis suprastų kas per klaidos įvyko. Pavyzdžiui, jeigu yra kodas "ui87", tai kad išvestų "Grafinės sąsajos klaida navigacijoje", arba jeigu kodas "sys12", tuomet "Trūksta operatyviosios atminties sistemoje" ir pan.
 console.log(`7. =====`)
@@ -84,6 +89,7 @@ for (const klaida of klaiduKodas) {
     }
 }
 
+
 // 8. Susikurkite masyvą sandėlio likučiams saugoti (kiekvienas atskiras narys masyve yra atskiros prekės likutis). Su kiekvienu likučiu paskaičiuokite per kiek dienų bus išpirktas, jei per dieną vidutiniškai yra nuperkami 5 vnt. Išveskite atsakymus atskirose eilutėse, nurodant kiek yra dabar ir kiek dienų užteks jo. Pavyzdžiui, jeigu yra likučiai 74, 54 ir 32, tai 74 vnt. prekės užteks maždaug 15 dienų, 54 vnt. prekės užteks maždaug 11 dienų ir t.t.
 console.log(`8. =====`)
 
@@ -92,6 +98,7 @@ let likuciai = [2, 44, 555, 92, 28, 43, 59]
 for (const liko of likuciai) {
     console.log(liko, `Uzteks prekiu likucio:`, Math.floor(liko / 5), `dienoms/-u.`)
 }
+
 
 // 9. Susikurkite masyvą studento pažymiams saugoti. Užpildykite šį masyvą atsitiktinai sugeneruotais pažymiais. Raskite vidurkį. Raskite kiek neigiamų pažymių studentas gavo (mažesnių nei 5). Išveskite visus teigiamus pažymius, gautą vidurkį ir neigiamų pažymių kiekį.
 console.log(`9. =====`)
@@ -118,6 +125,7 @@ console.log(`Teigiami pazymiai:`, teigiamiPaz);
 console.log(`Studento pazymiu vidurkis:`, (pazymiuSuma / studPazymiai.length))
 console.log(`Neigiamu pazymiu kiekis:`, neigiamiPaz.length)
 
+
 // 10. Susikurkite du pažymių masyvus, kur vienas masyvas reikš vieno studento pažymius, kitas masyvas kito studento pažymius. Raskite kiekvieno studento pažymių vidurkį. Išveskite abiejų studentų pažymius, vidurkius ir nurodykite kuris studentas turi didesnį vidurkį.
 console.log(`10. =====`)
 
@@ -141,6 +149,7 @@ console.log(`Pirmo studento pazymiai:`, pazymiai2)
 console.log(`Pirmo studento vidurkis:`, (suma2 / pazymiai2.length))
 
 if ((suma1 / pazymiai1.length) > (suma2 / pazymiai2.length) ? console.log(`Pirmas studentas geriau mokesi`) : console.log(`Antras studentas geriau mokesi`)){}
+
 
 // 11. Susikurkite masyvą norimiems žodžiams saugoti. Užpildykite šį masyvą duomenimis. Į kitą masyvą atrinkite tuos žodžius, kurie yra trumpi (sudaro mažiau nei 5 raidės). Išveskite pradinius duomenis ir atrinktus.
 console.log(`11. ====`)
