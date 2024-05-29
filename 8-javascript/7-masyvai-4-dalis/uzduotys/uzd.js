@@ -149,7 +149,7 @@ console.log(`10. =================`)
 
 let masyvas10 = [1, 2, 4, 5, 6, 7, 7, 8, 9, 10, 22, 10]
 
-
+jei containina daugiau, negu pats skaicius / nelygu, tada ismeta kaip dublikata, nes suma ju abieju neprilygsta vienai
 
 // 11. Parašykite programą, kuri galėtų masyvą išskaidyti į pasirinkto dydžio gabalėlius (chunk size). Pvz turint masyvą [1, 2, 3, 4, 5, 6] ir pasirinkus chunk size 2, turėtų gautis toks masyvas - [[1, 2], [3, 4], [5, 6]].
 console.log(`11. =================`)
