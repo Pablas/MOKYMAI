@@ -251,10 +251,68 @@ let vardaiAmzius = [`Tomas 24`, `Bronius 35`, `Tadas 15`, `Aukse 23`, `Robertas 
 let vardai = []
 
 for (const v of vardaiAmzius) {
-    v.split(` `)
-
+    vardai.push(v.slice(0, -3))
 }
-console.log(vardaiAmzius)
+
+console.log(vardai)
+
+// 27 Susikurkite masyvą, kur string pavidalu kiekviename elemente būtų sudėti vardai ir amžiai. Ištraukite iš tokio masyvo tik amžius, juos paverskite į skaičius ir raskite bendrą sumą. Pvz, jeigu masyvas yra [‘Tomas 34’, ‘Jonas 20’, ‘Gintarė 40’, ‘Inga 24’], tai išrinkus info gausis [34, 20, 40, 24] ir suradus sumą turėsime 118.
+console.log(`27. ==========`)
+
+let vardai27 = [`Tomas 24`, `Bronius 35`, `Tadas 15`, `Aukse 23`, `Robertas 66`]
+let amzius = []
+
+for (const x of vardai27) {
+    amzius.push(x.slice(-2))
+}
+
+// neisvedziau i skaicius
+
+console.log(amzius)
+
+
+
+// 28 Susikurkite masyvą prekių likučiams saugoti (tik likučių skaičiai). Išrinkite visus likučius, kurių liko mažai (mažiau nei 5 vnt.), ties kiekvienu likučiu paskaičiuokite kiek trūksta iki ribos. Pvz, jeigu turite masyvą [74, 2, 54, 3, 1, 87], išfiltravus liks [2, 3, 1], o paskaičiavus kiek kiekvieno trūksta iki 5, gausis [3, 2, 4].
+console.log(`28. ==========`)
+
+
+let prekiuLikuciai = [12, 44, 55, 6, 7, 1, 1, 5, 2]
+let mazaiLiko = []
+let ikiMazaiLikoRibos = []
+
+for (const x of prekiuLikuciai) {
+    if (x < 5){
+        mazaiLiko.push(x)
+    }
+}
+
+for (const x of mazaiLiko) {
+    ikiMazaiLikoRibos.push(5 - x)
+}
+
+console.log(mazaiLiko)
+console.log(ikiMazaiLikoRibos)
+
+
+// 29 Susikurkite masyvą studento pažymiams saugoti. Suraskite kiek studentas turi gerų pažymių (8 ar daugiau). Pvz, jeigu masyvas yra [7, 8, 10, 6, 5, 9], išfiltravus gausis [8, 10, 9], o tokių pažymių jis turi 3.
+console.log(`29. ==========`)
+
+
+let pazymiai29 = [2, 5, 7, 9, 6, 10]
+
+let geriPazymiai = pazymiai29.filter(x => x > 8)
+
+console.log(geriPazymiai)
+
+// 30 Susikurkite žodžių masyvą. Suraskite kiek iš viso šiame masyve per visus žodžius yra raidžių a (nesvarbu didžioji ar mažoji raidė). Pvz, jeigu masyvas yra [‘bananas’, ‘obelis’, ‘automobilis’], gausis kad yra 4 raidės.
+console.log(`30. ==========`)
+
+
+let zodziai30 = [`obuolys`, `Lietus`, `ok`, `dviratis`, `Asilas`]
+
+
+
+
 
 
 
