@@ -13,7 +13,7 @@ console.log(suma)
 /////////////////////////////
 // su .reduce funkcija:
 
-let suma1 = skaiciai.reduce((dalineSuma, skaicius) => dalineSuma + skaicius)// daline suma visada default = 0; // skaicius, tai paimta viena masyvo reiksme
+let suma1 = skaiciai.reduce((dalineSuma, skaicius) => dalineSuma + skaicius)// daline suma pirmas skaicius masyve; // skaicius, tai paimta viena masyvo reiksme
 console.log(suma1)
 
 

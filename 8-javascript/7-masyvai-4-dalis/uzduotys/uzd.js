@@ -146,13 +146,43 @@ console.log(`Miestas`, norimasMiestas, `,`, miestai9.indexOf(norimasMiestas), `i
 // O masyve [1, 2, 3, 4, 2] yra dublikatų (skaičius 2).
 console.log(`10. =================`)
 
+//jei vienas skaicius lygus kitam skaiciui tai juos isvesti
 
-let masyvas10 = [1, 2, 4, 5, 6, 7, 7, 8, 9, 10, 22, 10]
+let masyvas10 = [1, 2, 4, 2, 5, 6, 7, 7]
 
-jei containina daugiau, negu pats skaicius / nelygu, tada ismeta kaip dublikata, nes suma ju abieju neprilygsta vienai
+let dublikatai = masyvas10.filter((sk, indeksas) => masyvas10.indexOf(sk) !== indeksas);
+
+console.log(dublikatai); 
+
 
 // 11. Parašykite programą, kuri galėtų masyvą išskaidyti į pasirinkto dydžio gabalėlius (chunk size). Pvz turint masyvą [1, 2, 3, 4, 5, 6] ir pasirinkus chunk size 2, turėtų gautis toks masyvas - [[1, 2], [3, 4], [5, 6]].
 console.log(`11. =================`)
+
+
+let masyvas11 = [1, 2, 3, 4, 5, 6]
+let masyvas112 = []
+let skaidyti = 2;
+
+for (i = 0; i < masyvas11.length; i += skaidyti){
+    masyvas112.push(masyvas11.slice(i, i + skaidyti))
+}
+
+console.log(masyvas112)
+
+
+// 12. Susikurkite string tipo kintamąjį, kuriame būtų išsaugoti skaitmenys, pvz “01458”. Patikrinkite ar nurodytas “skaičius” yra palindromis, t.y. toks kuris yra vienodas tiek skaitant iš priekio, tiek iš galo (palindromio pvz: 01310). Hint: su string kintamuoju galima panaudoti ir dalį masyvų metodų.
+console.log(`12. =================`)
+
+
+let kintamasis12 = `01458`;
+let kintamasis12skaiciai = [];
+
+
+
+
+// 13. Susikurkite du skaičių masyvus. Susikurkite trečią, tačiau tuščią masyvą. Parašykite programą kuri sudėtų pirmų dviejų masyvų skaičius į trečiąjį, tačiau nekartojant jau trečiame egzistuojančių reikšmių (sudėtų tik unikalius skaičius). Pvz jeigu turime masyvus [1, 2, 3, 4] ir [2, 3, 5, 6], tai trečiasis turėtų gautis [1, 2, 3, 4, 5, 6].
+console.log(`13. =================`)
+
 
 
 
