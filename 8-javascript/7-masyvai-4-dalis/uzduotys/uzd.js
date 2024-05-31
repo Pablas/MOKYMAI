@@ -121,7 +121,6 @@ console.log(`8. =================`)
 
 let spalvos8 = [`Žalia`, `Balta`, `Geltona`, `Juoda`, `Raudona`, `Oranžinė`]
 let kopija8 = spalvos8.slice()
-
 spalvos8 = []
 
 console.log(spalvos8)
@@ -155,6 +154,21 @@ let dublikatai = masyvas10.filter((sk, indeksas) => masyvas10.indexOf(sk) !== in
 console.log(dublikatai); 
 
 
+// kitas budas:
+
+let myArray = [1, 2, 3, 4, 2, 3];
+let duplicates = [];
+for (const i in myArray) {
+    let tempArray = myArray.slice();
+    tempArray.splice(i,1);
+    if (tempArray.includes(myArray[i]) && !duplicates.includes(myArray[i])){
+        duplicates.push(myArray[i]);
+    }
+}
+console.log('Masyvas:', myArray);
+console.log('Duplikatai jame:', duplicates);
+
+
 // 11. Parašykite programą, kuri galėtų masyvą išskaidyti į pasirinkto dydžio gabalėlius (chunk size). Pvz turint masyvą [1, 2, 3, 4, 5, 6] ir pasirinkus chunk size 2, turėtų gautis toks masyvas - [[1, 2], [3, 4], [5, 6]].
 console.log(`11. =================`)
 
@@ -174,20 +188,54 @@ console.log(masyvas112)
 console.log(`12. =================`)
 
 
-let kintamasis12 = `01458`;
-let kintamasis12skaiciai = [];
+let skaitmenys = '01210';
+let skaitmenuMasyvas = skaitmenys.split('');
+let atvirkstinisMasyvas = skaitmenuMasyvas.slice().reverse();
 
-
+if (skaitmenys === atvirkstinisMasyvas.join('')) {
+    console.log('Skaičius yra palindromis');
+} else {
+    console.log('Skaičius nėra palindromis');
+}
 
 
 // 13. Susikurkite du skaičių masyvus. Susikurkite trečią, tačiau tuščią masyvą. Parašykite programą kuri sudėtų pirmų dviejų masyvų skaičius į trečiąjį, tačiau nekartojant jau trečiame egzistuojančių reikšmių (sudėtų tik unikalius skaičius). Pvz jeigu turime masyvus [1, 2, 3, 4] ir [2, 3, 5, 6], tai trečiasis turėtų gautis [1, 2, 3, 4, 5, 6].
 console.log(`13. =================`)
 
 
+let A = [1, 2, 3, 4];
+let B = [2, 3, 5, 6];
+
+let AirB = [];
+
+AirB = new Set ([...A, ...B]);
+console.log(AirB);
 
 
+// 14. 
+console.log(`14. =================`)
 
 
+let skaiciai14 = [1, 2, 3, 4];
+let skaiciai142 = [2, 3, 5, 6];
+let vienodiSkaiciai = skaiciai14.filter(value => skaiciai142.includes(value));
+console.log(vienodiSkaiciai);
+
+
+//15.
+console.log(`15. ===============`)
+
+let skaiciai = [1, 8, 4, 7, 2, 6, 9, 5];
+let minTeigiamas = 1;
+
+while (skaiciai.includes(minTeigiamas)) {
+    minTeigiamas++;
+}
+console.log("Mažiausias neegzistuojantis teigiamas skaičius:", minTeigiamas);
+
+
+//16.
+console.log(`16. ================`)
 
 
 

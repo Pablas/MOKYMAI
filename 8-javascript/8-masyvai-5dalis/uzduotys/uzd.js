@@ -57,6 +57,8 @@ let skaiciai7 = [2, 7, 561, 59, 996, 4, 3]
 let arVisiTeigiami = skaiciai7.every(sk => sk > 0)
 console.log(`Visi skaiciai teigiami? -`, arVisiTeigiami)
 
+
+
 // 8. Susikurkite skaičių masyvą. Patikrinkite ar šiame masyve visi skaičiai yra lyginiai. Pvz, jeigu masyvas yra [2, 4, 8, 6], tai atsakymas true, o jeigu masyvas [7, 3, 6, 8, 10], tai atsakymas false.
 console.log(`8. ==========`)
 
@@ -64,6 +66,8 @@ let skaiciai8 = [2, 7, 561, 59, 996, 4, 3]
 
 let arVisiSkaiciaiLyginiai = skaiciai8.every(sk => sk % 2 == 0)
 console.log(`Visi skaiciai lyginiai? -`, arVisiSkaiciaiLyginiai)
+
+
 
 // 9. Susikurkite skaičių masyvą. Patikrinkite ar šiame masyve yra bent vienas skaičius, kuris yra mažesnis nei 5. Pvz, jeigu masyvas [8, 20, 5, 97, 44], tai atsakymas false, bet jeigu masyvas [20, 3, 7, 9], tai atsakymas true.
 console.log(`9. ==========`)
@@ -73,6 +77,8 @@ let skaiciai9 = [1, 2, 44, 5, 6, -772, 8, 6]
 let arYraMazesnisNei5 = skaiciai9.some(sk => sk < 5)
 console.log(`Ar yra skaicius mazesnis uz 5? -`, arYraMazesnisNei5)
 
+
+
 // 10. Susikurkite skaičių masyvą, kuriame būtų teigiamų ir neigiamų skaičių. Patikrinkite ar šiame masyve yra bent vienas teigiamas skaičius (didesnis nei 0). Pvz, jeigu masyvas [7, 2, -3, -6], tai atsakymas yra true, o jeigu masyvas yra [-8, -6, -4], tai atsakymas yra false.
 console.log(`10. ==========`)
 
@@ -81,6 +87,8 @@ let skaiciai10 = [1, 2, 44, 5, 6, -772, 8, 6]
 let arYraDidesnisNei0 = skaiciai10.some(sk => sk > 0)
 console.log(`Ar yra skaicius didesnis uz 0? -`, arYraDidesnisNei0)
 
+
+
 // 11 Susikurkite žodžių masyvą. Patikrinkite ar visi šiame masyve esantys žodžiai yra sudaryti iš 3 ar daugiau raidžių. Pvz, jeigu masyvas yra [‘antis’, ‘ožka’, ‘arklys’], tai atsakymas true, o jeigu masyvas [‘abc’, ‘de’, ‘fgia’], tai atsakymas false.
 console.log(`11. ==========`)
 
@@ -88,6 +96,8 @@ let zodziai11 = [`Obuolys`, `Lietus`, `Ok`, `Dviratis`, `Neprisikiskiakopustelia
 
 let daugiauNei3zodziai = zodziai11.every(zd => zd.length >= 3)
 console.log(`Ar visi zodziai turi daugiau nei 3 raides? -`, daugiauNei3zodziai)
+
+
 
 // 12 Susikurkite žodžių masyvą. Patikrinkite ar šiame masyve yra bent vienas žodis prasidedantis raide a (turi surasti nepriklausomai tai didžioji ar mažoji raidė). Pvz, jeigu masyvas [‘bananas’, ‘agurkas’, ‘pomidoras’], tai atsakymas true, o jeigu masyvas [‘kaunas’, ‘vilnius’, ‘klaipėda’], tai atsakymas false.
 console.log(`12. ==========`)
@@ -162,12 +172,9 @@ console.log(`19. ==========`)
 let skaiciai19 = [2, 5, 7, -1, 6]
 let skaiciaiPlius1 = []
 
-for (const sk of skaiciai19) {
-    skaiciaiPlius1.push(sk + 1)
-}
+skaiciaiPlius1.skaiciaiPlius1 = skaiciai19.map(sk => sk + 1)
 
-skaiciai19 = skaiciaiPlius1;
-console.log(skaiciai19)
+console.log(skaiciaiPlius1)
 
 // 20 Susikurkite žodžių masyvą. Kiekvieną žodį iš šio masyvo paverskite į variantą iš didžiųjų raidžių. Pvz, jeigu turite masyvą [‘bananas’, ‘baba’, ‘klėtis’], tai turi gautis [‘BANANAS’, ‘BABA’, ‘KLĖTIS’].
 console.log(`20. ==========`)
@@ -247,14 +254,20 @@ console.log(zodziuSimboliuKiekiai)
 // 26 Susikurkite masyvą, kur string pavidalu kiekviename elemente būtų sudėti vardai ir amžiai. Ištraukite iš tokio masyvo tik vardus. Pvz, jeigu masyvas yra [‘Tomas 34’, ‘Jonas 20’, ‘Gintarė 40’, ‘Inga 24’], tai turi gautis [‘Tomas’, ‘Jonas’, ‘Gintarė’, ‘Inga’].
 console.log(`26. ==========`)
 
-let vardaiAmzius = [`Tomas 24`, `Bronius 35`, `Tadas 15`, `Aukse 23`, `Robertas 66`]
-let vardai = []
-
-for (const v of vardaiAmzius) {
-    vardai.push(v.slice(0, -3))
-}
-
-console.log(vardai)
+let vardai26 = [
+    'Gabrielius 25',
+    'Emilija 50',
+    'Matas 34',
+    'Elena 18',
+    'Kazimieras 72',
+    'Aurora 17',
+    'Gediminas 45',
+    'Rugilė 29',
+    'Arnoldas 31',
+    'Ieva 36'
+];
+let tikVardai26 = vardai26.map(vardas => vardas.split(' ')[0]);
+console.log(tikVardai26);
 
 // 27 Susikurkite masyvą, kur string pavidalu kiekviename elemente būtų sudėti vardai ir amžiai. Ištraukite iš tokio masyvo tik amžius, juos paverskite į skaičius ir raskite bendrą sumą. Pvz, jeigu masyvas yra [‘Tomas 34’, ‘Jonas 20’, ‘Gintarė 40’, ‘Inga 24’], tai išrinkus info gausis [34, 20, 40, 24] ir suradus sumą turėsime 118.
 console.log(`27. ==========`)
@@ -276,22 +289,13 @@ console.log(amzius)
 console.log(`28. ==========`)
 
 
-let prekiuLikuciai = [12, 44, 55, 6, 7, 1, 1, 5, 2]
-let mazaiLiko = []
-let ikiMazaiLikoRibos = []
+let likuciai = [3, 7, 8, 2, 7, 9, 8, 9, 4];
 
-for (const x of prekiuLikuciai) {
-    if (x < 5){
-        mazaiLiko.push(x)
-    }
-}
+let filtruota = likuciai.filter(l => l < 5);
+console.log(filtruota);
 
-for (const x of mazaiLiko) {
-    ikiMazaiLikoRibos.push(5 - x)
-}
-
-console.log(mazaiLiko)
-console.log(ikiMazaiLikoRibos)
+let trukumas = filtruota.map(l => 5-l);
+console.log(trukumas);
 
 
 // 29 Susikurkite masyvą studento pažymiams saugoti. Suraskite kiek studentas turi gerų pažymių (8 ar daugiau). Pvz, jeigu masyvas yra [7, 8, 10, 6, 5, 9], išfiltravus gausis [8, 10, 9], o tokių pažymių jis turi 3.
@@ -307,8 +311,10 @@ console.log(geriPazymiai)
 // 30 Susikurkite žodžių masyvą. Suraskite kiek iš viso šiame masyve per visus žodžius yra raidžių a (nesvarbu didžioji ar mažoji raidė). Pvz, jeigu masyvas yra [‘bananas’, ‘obelis’, ‘automobilis’], gausis kad yra 4 raidės.
 console.log(`30. ==========`)
 
+let mas = ['bAnanAs', 'obelis', 'automobilis'];
 
-let zodziai30 = [`obuolys`, `Lietus`, `ok`, `dviratis`, `Asilas`]
+console.log('Ats.:', mas.join('').split(``).filter(k => k.toLowerCase() == 'a').length);
+
 
 
 
