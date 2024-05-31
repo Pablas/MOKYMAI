@@ -37,7 +37,7 @@ let filmas = {
 
 console.log(filmas)
 
-console.log(`Filmo pelnas:`, filmas.uzdirbis -filmas.biudzetas)
+console.log(`Filmo pelnas:`, filmas.uzdirbis - filmas.biudzetas)
 console.log(`Filme vaidino:`, filmas.aktoriai.length, `aktoriai.`)
 console.log(`Filmas yra`, 2024 - filmas.isleidimoMetai, `metu senumo.`)
 
