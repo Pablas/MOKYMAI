@@ -62,7 +62,7 @@ let bendrasDakSk = duomenys2.map(sk => sk.ligonine1.daktaruSk + sk.ligonine2.dak
 console.log(bendrasDakSk)
 
 console.log(`Vidutinis slaugytoju skaicius:`)
-let slaugytojos = duomenys2.map(x => x.ligonine1.slaugytojuSk + x.ligonine2.slaugytojuSk).reduce((a, b) => a + b) / duomenys2[0].length; /// ??? nedirba
+let slaugytojos = duomenys2.map(x => x.ligonine1.slaugytojuSk + x.ligonine2.slaugytojuSk).reduce((a, b) => a + b) / Object.keys(duomenys2[0]).length;
 console.log(slaugytojos)
 
 console.log(`Automobiliu skaicius:`)
