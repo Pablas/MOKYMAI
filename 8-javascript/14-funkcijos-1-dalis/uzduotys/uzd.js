@@ -119,7 +119,7 @@ function random10() {
         skaiciai.push(Math.ceil(Math.random() * 10))
     }
 
-    console.log(skaiciai.toString())
+    console.log(skaiciai.join(`, `))
 }
 
 
