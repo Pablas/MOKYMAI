@@ -17,7 +17,7 @@ console.log(`2. =================`)
 
 function eilerastis(){
     console.log(`Eilėrašis, la la la`)
-    console.log(`visdar la la la`)
+    console.log(`visdar, la la la`)
     console.log(`nesibaigia, la la la`)
     console.log(`liko nedaug, la la la`)
     console.log(`paskutinis, la la la`)
