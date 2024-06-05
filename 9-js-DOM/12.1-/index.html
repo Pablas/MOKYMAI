@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12.1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="pirmas">
+        <h1 id="pirma-antraste">Pirma antraštė</h1>
+        <p id="pirmas-paragrafas">Pirmas paragrafas</p>
+    </div>
+
+    <div id="antras">
+        <p id="paragrafo-tekstas">
+            Šį teksta turite matyti consoleje
+        </p>
+    </div>
+
+    <div id="trecias">
+        <p>
+            Turime matyti konsoleje arba tik teksta
+        </p>
+    </div>
+
+    <div id="ketvirtas">
+        <button onclick="document.getElementById(`paragrafas-pakeitimui`).innerHTML = `Pakeistas paragrafo tekstas`">
+            Pakeisti teksta
+        </button>
+        <p id="paragrafas-pakeitimui">Nepakeistas paragrafo tekstas</p>
+    </div>
+
+    <div id="penktas">
+        <button onclick="document.getElementById(`paragrafas-5`).style.fontSize = `35px`">
+            Pakeisti dydi
+        </button>
+        <button onclick="document.getElementById(`paragrafas-5`).style.color = `red`">
+            Pakeisti spalva
+        </button>
+        <p id="paragrafas-5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, dolorum!
+        </p>
+    </div>
+
+    <div id="sestas">
+        <p>
+            <img src="pic_bulboff.gif" alt="lempute" id="lempute">
+        </p>
+
+        <button onclick="document.getElementById(`lempute`).src = `pic_bulbon.gif`">
+            Įjungti lemputę
+        </button>
+
+        <button onclick="document.getElementById(`lempute`).src = `pic_bulboff.gif`">
+            Išjungti lemputę
+        </button>
+    </div>
+
+    <div id="septintas">
+        <button onclick="pakeisti()">
+            Pakeisti teksta
+        </button>
+        <p id="septinto-tekstas">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, ea.
+        </p>
+    </div>
+
+    
+
+    <script src="script.js"></script>
+</body>
+
+</html>
