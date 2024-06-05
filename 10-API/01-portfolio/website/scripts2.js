@@ -3,6 +3,8 @@ fetch(`http://localhost:7788/work-experience/latest/2`)
     .then(duomenys => {
         let block = document.querySelector(`.work-experience-list`);
         
+        block.innerHTML = ``;
+
         for (const duomuo of duomenys) {
             block.innerHTML += `
         <div>
