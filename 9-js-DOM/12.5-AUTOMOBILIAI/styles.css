@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    background: #f8f8f8;
+}
+
+.automobiliu-blokas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px;
+}
+
+.automobiliu-blokas .automobilis {
+    width: calc((100% - 3 * 20px) / 4);
+    background: white;
+    padding: 10px 20px;
+    box-sizing: border-box;
+
+}
