@@ -1,0 +1,103 @@
+/* ========
+GENERIC STYLES: 
+ ========*/
+
+body {
+    margin: 0;
+
+}
+
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 50px 0;
+}
+
+.section h2 {
+    margin: 0 0 50px;
+    text-align: center;
+}
+
+.badge {
+    background: lightgreen;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #222;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #222;
+}
+
+/* ========
+NAV STYLES:
+ ========*/
+
+ nav {
+    background: #222;
+    padding: 20px 40px;
+ }
+
+ nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ nav a {
+    text-decoration: none;
+    color: white;
+ }
+
+ nav a:hover {
+    color: lightgreen;
+ }
+
+ nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    gap: 20px;
+ }
+
+ /* ========
+HEADER STYLES:
+ ========*/
+
+ header {
+    background: lightgreen;
+    padding: 75px 0;
+    text-align: center;
+ }
+
+  /* ========
+HOME PROJECTS STYLES:
+ ========*/
+
+ .latest-projects .projects-list {
+    display: flex;
+    gap: 20px;
+ }
+
+ .project-box {
+    flex: 1;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px 20px;
+ }
