@@ -21,3 +21,23 @@ fetch(`http://localhost:7788/projects/latest/3`) // uzklausa i serverio adresa
             </div>`;
         }
     })
+
+fetch(`http://localhost:7788/projects/technologies`)
+    .then(response => response.json())
+    .then(ob => {
+
+        let block = document.querySelector(`header .technologies`);
+
+        block.innerHTML = ``;
+
+        for (const x of ob) {
+            block.innerHTML += `<div>
+                <p>
+                ${
+                    ob.map(x => `<span class="badge2">${x}</span>`).join(``)
+                }
+                </p>
+                </div>`
+                break;
+        }
+    })

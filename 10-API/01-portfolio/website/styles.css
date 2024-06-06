@@ -35,6 +35,17 @@ body {
     text-transform: uppercase;
 }
 
+.badge2 {
+   background: rgb(116, 37, 116);
+   color: white;
+   padding: 5px 10px;
+   border-radius: 5px;
+   margin: 5px;
+   font-size: 10px;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+}
+
 .button {
     display: inline-block;
     padding: 10px 20px;
@@ -84,6 +95,11 @@ HEADER STYLES:
     background: lightgreen;
     padding: 75px 0;
     text-align: center;
+ }
+
+ header .technologies {
+   margin: 0;
+   padding: 0;
  }
 
   /* ========
