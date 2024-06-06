@@ -1,0 +1,17 @@
+.services-section {
+    padding: 30px 0;
+}
+
+.services-section .services-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.services-section .service-box {
+    width: calc((100% - 2 * 100px) / 3);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+}

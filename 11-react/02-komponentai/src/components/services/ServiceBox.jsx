@@ -1,7 +1,10 @@
 
 const ServiceBox = () => {
     return (
-        <div>ServiceBox</div>
+        <div className="service-box">
+            <h3>Paslauga</h3>
+            <p>Aprasymas</p>
+        </div>
     )
 }
 
