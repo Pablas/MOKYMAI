@@ -4,6 +4,7 @@ import Komp1 from './components/Komp1'
 import Komp3 from './components/Komp3'
 import Ketvirtas from './components/Ketvirtas'
 import Parduotuve from './components/Parduotuve'
+import Naujienos from './components/Naujienos'
 
 function App() {
     return (
@@ -19,6 +20,8 @@ function App() {
             <Ketvirtas></Ketvirtas>
 
             <Parduotuve></Parduotuve>
+
+            <Naujienos></Naujienos>
         </>
     )
 }
