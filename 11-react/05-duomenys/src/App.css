@@ -40,3 +40,21 @@
 .read-the-docs {
   color: #888;
 }
+
+.prekiu-blokas {
+  background: lightcyan;
+  padding: 100px 30px;
+}
+
+.prekiu-blokas .prekiu-sarasas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.prekiu-blokas .prekiu-sarasas .preke {
+  background-color: white;
+  padding: 20px;
+  width: calc((100% - 2 * 20px) / 3);
+  box-sizing: border-box;
+}
