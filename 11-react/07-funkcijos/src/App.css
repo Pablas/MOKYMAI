@@ -1,0 +1,13 @@
+body {
+    background: gray;
+    padding: 20px;
+}
+
+.blokas {
+    max-width: 500px;
+    margin: 30px auto;
+    background: white;
+    padding: 30px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.178);
+}
