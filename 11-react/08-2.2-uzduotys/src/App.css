@@ -1,0 +1,16 @@
+body {
+  background-color: black;
+}
+
+.the-block {
+  padding: 20px;
+}
+
+.block {
+  margin: 0 auto;
+  padding: 30px 15px;
+  background: lightgray;
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+}
