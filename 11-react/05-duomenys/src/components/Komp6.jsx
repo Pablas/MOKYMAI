@@ -7,7 +7,6 @@ const Komp6 = () => {
 
 
     //ternary operator: {klausymas ? taip : ne}
-    //{klausymas && taip} - jei klausymas yra true, tada atvaizduojama taip
 
     return (
         <div>
