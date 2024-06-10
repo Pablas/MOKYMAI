@@ -1,0 +1,11 @@
+body {
+  background: #f8f8f8;
+  padding: 30px;
+}
+
+.blokas {
+  background: white;
+  max-width: 500px;
+  padding: 20px 40px;
+  margin: 20px auto;
+}
