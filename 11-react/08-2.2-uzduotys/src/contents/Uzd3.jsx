@@ -11,7 +11,7 @@ const Uzd3 = () => {
     }
 
     const didziausias = (a, b, c) => {
-        
+        return Math.max(sk1, sk2, sk3)
     }
 
     const suma = (a, b, c) => {
