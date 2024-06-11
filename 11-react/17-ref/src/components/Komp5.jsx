@@ -23,6 +23,24 @@ const Komp5 = () => {
         }
 
         setAutomobiliai([...automobiliai, naujasAutomobilis])
+
+        //issivalymai laukelio po ivedimo:
+        markeRef.current.value = ``
+        modelisRef.current.value = ``
+        metaiRef.current.valueAsNumber = ``
+        ridaRef.current.valueAsNumber = ``
+    }
+
+    const naujausiasAuto = () => {
+        let naujausias = automobiliai[0];
+
+        for (const auto of automobiliai) {
+            if (auto.metai > naujausias.metai){
+                naujausias = auto;
+            }
+        }
+
+        return `${naujausias.marke} ${naujausias.modelis} pagamintas ${naujausias.metai} metais, nuvažiavo ${naujausias.rida}`
     }
 
     return (
@@ -76,6 +94,10 @@ const Komp5 = () => {
                         }
                     </tbody>
                 </table>
+            }
+            {
+                !automobiliai.length == 0 &&
+                <p>Naujausias auto: {naujausiasAuto()}</p>
             }
             {
                 automobiliai.length == 0 &&
