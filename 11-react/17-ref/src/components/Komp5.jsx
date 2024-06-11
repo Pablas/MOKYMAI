@@ -7,28 +7,44 @@ const Komp5 = () => {
         { marke: `BMW`, modelis: `320`, metai: 2015, rida: 150000 },
     ])
 
+    const markeRef = useRef()
+    const modelisRef = useRef()
+    const metaiRef = useRef()
+    const ridaRef = useRef()
 
+    const newCarHandler = (e) => {
+        e.preventDefault()
+
+        let naujasAutomobilis = {
+            marke: markeRef.current.value,
+            modelis: modelisRef.current.value,
+            metai: metaiRef.current.valueAsNumber,
+            rida: ridaRef.current.valueAsNumber,
+        }
+
+        setAutomobiliai([...automobiliai, naujasAutomobilis])
+    }
 
     return (
         <div className="blokas">
             <h2>Automobiliai</h2>
             <h3>Naujo ivedimas</h3>
-            <form>
+            <form onSubmit={newCarHandler}>
                 <div>
                     <label htmlFor="markeInput" >Marke </label>
-                    <input type="text" id="markeInput" />
+                    <input ref={markeRef} type="text" id="markeInput" />
                 </div>
                 <div>
                     <label htmlFor="modelisInput" >Modelis </label>
-                    <input type="text" id="modelisInput" />
+                    <input ref={modelisRef} type="text" id="modelisInput" />
                 </div>
                 <div>
                     <label htmlFor="metaiInput" >Metai </label>
-                    <input type="text" id="metaiInput" />
+                    <input ref={metaiRef} type="number" id="metaiInput" />
                 </div>
                 <div>
                     <label htmlFor="ridaInput" >Rida </label>
-                    <input type="text" id="ridaInput" />
+                    <input ref={ridaRef} type="number" id="ridaInput" />
                 </div>
                 <div>
                     <button type="submit">SUBMIT</button>
