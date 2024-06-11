@@ -38,8 +38,7 @@ const Komp3 = () => {
             <button onClick={buttonHandler}>Ivesti</button>
             <p>Pirmas zodis: {zodis}, Antras zodis: {zodis2}</p>
             <p>{daugiauAraidziu()}</p>
-        </div>
-        
+        </div> 
     )
 }
 
