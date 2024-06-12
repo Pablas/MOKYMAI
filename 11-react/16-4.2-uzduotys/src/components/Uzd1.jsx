@@ -22,7 +22,7 @@ const Uzd1 = () => {
             return <p>Pirmas bėgikas greitesnis!</p>
         } else if (pirmas == antras) {
             return <p>Abu bėgikai nubėgo lygiai.</p>
-        } 
+        }
 
         return <p></p>
     }
