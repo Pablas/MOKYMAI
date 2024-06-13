@@ -11,7 +11,7 @@ const Parduotuve = () => {
     ])
 
     const naujosPrekesPridejimas = (x) => {
-        setPrekes([...prekes, x])
+        setPrekes([x, ...prekes])
     }
 
     return (

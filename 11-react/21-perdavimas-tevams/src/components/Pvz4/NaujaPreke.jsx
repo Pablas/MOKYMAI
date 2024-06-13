@@ -49,7 +49,13 @@ const NaujaPreke = (props) => {
 
         if (!arYraKlaida){ //false jei reiksme, tas pats kaip `arYraKlaida == false`;
             props.onPrekeSukurta(naujaPreke)
+
+            //issivalyti laukelius:
+            pavadinimasRef.current.value = ``
+            kainaRef.current.value = ``
         }
+
+
         
     }
  
