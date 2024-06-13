@@ -1,3 +1,4 @@
+import Papildomas from "./components/Papildomas"
 import TekstoBendras from "./components/Pvz1/TekstoBendras"
 import Parduotuve from "./components/Pvz2/Parduotuve"
 import Paslaugos from "./components/Pvz3/Paslaugos"
@@ -18,6 +19,8 @@ function App() {
       <Imone />
       <Savaite />
       <Servisas />
+
+      <Papildomas />
     </>
   )
 }
