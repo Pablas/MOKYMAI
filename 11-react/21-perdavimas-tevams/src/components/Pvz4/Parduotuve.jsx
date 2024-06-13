@@ -14,7 +14,7 @@ const Parduotuve = () => {
         <div className="blokas">
             <h2>Parduotuve</h2>
             <NaujaPreke />
-            <PrekiuIsvedimas />
+            <PrekiuIsvedimas data={prekes}/>
 
         </div>
     )
