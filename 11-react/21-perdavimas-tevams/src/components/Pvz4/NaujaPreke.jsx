@@ -1,6 +1,7 @@
 import { useRef, useState } from "react"
+import PropTypes from 'prop-types'
 
-const NaujaPreke = () => {
+const NaujaPreke = (props) => {
 
     const [klaidaPavadinimas, setKlaidaPavadinimas] = useState(``);
     const [klaidaKaina, setKlaidaKaina] = useState(``);
@@ -47,7 +48,7 @@ const NaujaPreke = () => {
 
 
         if (!arYraKlaida){ //false jei reiksme, tas pats kaip `arYraKlaida == false`;
-            console.log(naujaPreke)
+            props.onPrekeSukurta(naujaPreke)
         }
         
     }
@@ -74,6 +75,10 @@ const NaujaPreke = () => {
             </form>
         </div>
     )
+}
+
+NaujaPreke.propTypes = {
+    onPrekeSukurta: PropTypes.func.isRequired
 }
 
 export default NaujaPreke

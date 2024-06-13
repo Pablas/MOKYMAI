@@ -10,12 +10,15 @@ const Parduotuve = () => {
         { id: 3, pavadinimas: `Kefyras`, kaina: 2 },
     ])
 
+    const naujosPrekesPridejimas = (x) => {
+        setPrekes([...prekes, x])
+    }
+
     return (
         <div className="blokas">
             <h2>Parduotuve</h2>
-            <NaujaPreke />
+            <NaujaPreke onPrekeSukurta={naujosPrekesPridejimas}/>
             <PrekiuIsvedimas data={prekes}/>
-
         </div>
     )
 }
