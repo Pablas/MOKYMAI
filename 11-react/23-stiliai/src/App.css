@@ -6,3 +6,16 @@
 .tekstas1 {
     background: black;
 }
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.skiltis {
+    padding: 20px 0;
+}
+
+p {
+    margin: 0;
+}

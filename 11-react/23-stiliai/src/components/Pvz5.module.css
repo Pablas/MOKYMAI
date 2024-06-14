@@ -1,0 +1,29 @@
+.pirma {
+    color: red;
+}
+
+.antra {
+    color: blue;
+}
+
+.teksto_dydis {
+    font-size: 20px;
+}
+
+.teksto_spalva {
+    text-align: center;
+}
+
+.blokas {
+    padding: 30px;
+    background: #f4f4f4;
+}
+
+.blokas .kazkas {
+    background: red;
+}
+
+.kartojasi {
+    margin: 20px;
+    border: 1px solid red;
+}
