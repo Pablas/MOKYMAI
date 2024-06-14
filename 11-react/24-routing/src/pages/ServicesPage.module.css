@@ -1,0 +1,14 @@
+.header {
+    padding: 20px;
+    background-color: burlywood;
+}
+
+.services_list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.services_list > div {
+    width: calc((100% - 20px) / 2);
+}
