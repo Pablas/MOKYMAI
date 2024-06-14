@@ -7,6 +7,7 @@ import HomePage from './pages/HomePage'
 import AboutUsPage from './pages/AboutUsPage'
 import ServicesPage from './pages/ServicesPage'
 import NewsPage from './pages/NewsPage'
+import NotFoundPage from './pages/NotFoundPage'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
                     <Route path='/about-us' element={<AboutUsPage />} />
                     <Route path='/services' element={<ServicesPage />} />
                     <Route path='/news' element={<NewsPage />} />
+                    <Route path='*' element={<NotFoundPage />} /> 
                 </Route>
             </Routes>
         </BrowserRouter>
