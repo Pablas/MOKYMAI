@@ -1,0 +1,28 @@
+.pvz2-zalias {
+    color: green;
+}
+
+.pvz2-geltonas {
+    color: orange;
+}
+
+.pvz2-raudonas {
+    color: red;
+    transition: 1s all;
+}
+
+
+
+.pvz2-tekstas {
+    padding: 20px 40px;
+    color: white;
+}
+
+.pvz2-fonas-zalias {
+    background: green;
+}
+
+.pvz2-fonas-raudonas {
+    background: red;
+    transition: 1s all;
+}

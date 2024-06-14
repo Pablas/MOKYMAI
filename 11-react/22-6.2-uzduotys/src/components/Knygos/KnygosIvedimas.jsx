@@ -7,16 +7,14 @@ const KnygosIvedimas = (props) => {
     const kainaRef = useRef()
     const metaiRef = useRef()
 
-    const [naujaKnyga, setNaujaKnyga] = useState()
-
     const irasytiKnygaHandle = (e) => {
         e.preventDefault()
 
-        setNaujaKnyga({
+        let naujaKnyga = {
             pavadinimas: pavadinimasRef.current.value,
             kaina: kainaRef.current.valueAsNumber,
             metai: metaiRef.current.valueAsNumber
-        },)
+        }
 
         //issiusti:
         props.onNaujaKnyga(naujaKnyga)
