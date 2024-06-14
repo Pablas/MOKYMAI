@@ -1,0 +1,27 @@
+.nav {
+    background: #222;
+    padding: 20px 40px;
+}
+
+.nav_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    text-transform: uppercase;
+}
+
+.links {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.links a {
+    font-size: 14px;
+    color: white;
+}
