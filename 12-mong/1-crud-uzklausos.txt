@@ -2,6 +2,10 @@ use duomenu_baze
 
 //SURASTI:
 db.kolekcija.find({ --- })
+db.kolekcija.find({ --- , --- }) //pagal kelias salygas galima ieskoti, pvz: {gender: `Female` , age : 20}
+
+db.kolekcija.find({ --- {$gt : --- }}) //gt - greater than, daugiau uz nurodyta sk., pvz { age : {$gt : 20}}
+db.kolekcija.find({ --- {$gt : --- , $lt : --- }}) //nustatyta riba nuo kiek iki kiek, pvz { age : {$gt : 20 , $lt : 30}}
 
 //PRIDETI NAUJA OBJEKTA:
 db.kolekcija.insertOne({ --- })
@@ -12,3 +16,6 @@ db.kolekcija.updateOne({ --- }, {$set:{ --- }})
 
 //ISTRINTI:
 db.kolekcija.deleteOne({ --- })
+
+//SURASTI KIEK TOKIU DOKUMENTU YRA, PAGAL UZKLAUSA:
+db.kolekcija.countDocuments({ --- })
