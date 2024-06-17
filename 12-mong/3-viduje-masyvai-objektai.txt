@@ -1,0 +1,12 @@
+use todos_app
+
+db.todos.insertMany([
+    {name: `Nusipirkti duonos`, completed: false},
+    {name: `Nusivalyti langus`, completed: true},
+    {name: `Isspresti rebusa`, completed: false, subTasks: []},
+    {name: `Nukirpti katinui nagus`, completed: true, subTasks: [
+        `Pasiimti zirkles`,
+        `Ikalinti katina`,
+        `Nukirpti`
+    ]}
+])
