@@ -1,0 +1,14 @@
+use duomenu_baze
+
+//SURASTI:
+db.kolekcija.find({ --- })
+
+//PRIDETI NAUJA OBJEKTA:
+db.kolekcija.insertOne({ --- })
+db.kolekcija.insertMany([{ --- }, { --- }, { --- }])
+
+//ATNAUJINTI INFO:
+db.kolekcija.updateOne({ --- }, {$set:{ --- }})
+
+//ISTRINTI:
+db.kolekcija.deleteOne({ --- })
