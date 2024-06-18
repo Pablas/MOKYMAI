@@ -3,6 +3,8 @@ const express = require('express')
 const app = express()
 const port = 3000
 
+app.use(express.json()) //middleware
+
 //endpoint arba route
 //localhost:3000
 app.get('/', (req, res) => {
@@ -60,6 +62,38 @@ app.get(`/paslaugos`, (req, res) => {
         {id: 2, pavadinimas: `Kosmoso stoties valytojas`},
         {id: 3, pavadinimas: `Arbatos skonio tikrintojas`}
     ])
+})
+
+////////////////////////////////
+//NEPRIVALOMI PARAMETRAI:
+
+app.get(`/filtruoti`, (req, res) => {
+
+    let studentai = [
+        { vardas: `Jonas`, vidurkis: 7.5, mokykla: `KTU`},
+        { vardas: `Ona`, vidurkis: 6, mokykla: `Vilniaus univeras`},
+        { vardas: `Maryte`, vidurkis: 9, mokykla: `Klaipedos mokykla`},
+    ]
+
+    if (req.query.mokykla){
+        studentai = studentai.filter(stud => stud.mokykla == req.query.mokykla)
+    }
+
+    if (req.query.vidurkisNuo){
+        studentai = studentai.filter(stud => stud.vidurkis >= parseFloat(req.query.vidurkisNuo))
+    }
+
+    res.send(studentai)
+})
+
+app.post(`/sukurti`, (req, res) => {
+    
+    let irasas = {
+        id: Date.now(),
+        ...req.body
+    }
+
+    res.send(irasas)
 })
 
 app.listen(port, () => {

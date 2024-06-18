@@ -28,3 +28,27 @@ GET http://localhost:3000/gyveni/Lietuva
 ###
 
 GET http://localhost:3000/paslaugos
+
+
+###
+// FILTRUOTI:
+
+GET http://localhost:3000/filtruoti?vidurkisNuo=7
+
+###
+
+GET http://localhost:3000/filtruoti?mokykla=KTU&virukisNuo=7
+
+
+// irasa i duomenu baze:
+###
+
+POST http://localhost:3000/sukurti
+Content-Type: application/json
+
+{
+    "vardas": "Jonas",
+    "pavarde": "Jonaitis",
+    "mokykla": "KTU",
+    "vidurkis": 8
+}
