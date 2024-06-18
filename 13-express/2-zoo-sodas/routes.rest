@@ -24,6 +24,25 @@ Content-Type: application/json
 }
 
 ###
+//patchinti
+
+POST http://localhost:9688/gyvunai Content-Type: application/json
+
+{
+"vardas": "Šokliukas"
+}
+
+###
+
+POST http://localhost:9688/gyvunai Content-Type: application/json
+
+{
+"vardas": "K", "rusis": "a", "amzius": -5
+}
+
+###
 //deletinti gyvuna:
 
 DELETE http://localhost:9688/gyvunai/2
+
+

@@ -1,0 +1,39 @@
+
+//get /places
+GET http://localhost:3000/places
+
+###
+//get /places/:id
+
+GET http://localhost:3000/places/3
+
+###
+//POST /places
+
+POST http://localhost:3000/places
+Content-Type: application/json
+
+{
+    "adresas": "Naujas adresas 2",
+    "tipas": "Namas",
+    "kvadratura": 28,
+    "privalumai": ["naujai pakeisti vamzdynai", "naujai isdazytos lubos"],
+    "kaina": 150000
+}
+
+###
+//PUT arba PATCH /places/:id
+
+PATCH http://localhost:3000/places/2
+Content-Type: application/json
+
+{
+    "adresas": "Pakoreguotas adresas",
+    "tipas": "namas",
+    "kaina": 200000
+}
+
+###
+//DELETE /places/:id
+
+DELETE http://localhost:3000/places/1718717956948
