@@ -2,4 +2,12 @@ GET http://localhost:9688/
 
 ###
 
-GET http://localhost:9688/gyvunai
+GET http://localhost:9688/
+
+###
+
+GET http://localhost:9688/gyvunai/2
+
+###
+//jeigu klaida ir neatpazysta kaip skaiciaus:
+GET http://localhost:9688/gyvunai/4

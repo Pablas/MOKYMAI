@@ -15,13 +15,29 @@ let gyvunuDuomenys = [
     { id: 3, vardas: `Babe`, rusis: `Orangutangas`, amzius: 2},
 ]
 
+
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
+
 app.get(`/gyvunai`, (req, res) => {
     res.json(gyvunuDuomenys)
 })
 
+app.get(`/gyvunai/:id`, (req, res) => {
+    let id = parseInt(req.params.id)
 
-app.get('/', (req, res) => {
-  res.send('Hello World!')
+    if(isNaN(id)){ //jeigu id nera skaicius mes sita klaida:
+        return res.status(400).send(`id turi buti skaicius`)
+    }
+
+    let gyvunas = gyvunuDuomenys.find(gyv => gyv.id === id)
+
+    if(!gyvunas){ //jeigu skaicius per didelis tai neras tokio ir ismes tokia klaida:
+        return res.status(400).send(`Gyvunas nerastas`)
+    }
+
+    res.send(gyvunas)
 })
 
 app.listen(port, () => {
