@@ -1,0 +1,12 @@
+
+//////////////////////////////////////
+//GET /tracks
+GET http://localhost:3000/tracks
+
+
+###
+
+//////////////////////////////////////
+//GET /tracks/:id
+
+GET http://localhost:3000/tracks/1
