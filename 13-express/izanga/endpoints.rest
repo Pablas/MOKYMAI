@@ -15,3 +15,16 @@ GET http://localhost:3000/skaiciuoti
 ###
 
 GET http://localhost:3000/patikrinimai/64363542
+
+
+###
+
+GET http://localhost:3000/isvedimas/Povilas/Developer
+
+###
+
+GET http://localhost:3000/gyveni/Lietuva
+
+###
+
+GET http://localhost:3000/paslaugos

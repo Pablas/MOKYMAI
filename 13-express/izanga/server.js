@@ -32,8 +32,6 @@ app.get(`/skaiciuoti`, (req, res) => {
 })
 
 //localhost:3000/patikrinimai/5
-//localhost:3000/patikrinimai/10
-//localhost:3000/patikrinimai/235
 //adresas su betkokiu skaiciumi ivestu gali buti:
 app.get(`/patikrinimai/:skaicius`, (req, res) => {
     
@@ -41,6 +39,27 @@ app.get(`/patikrinimai/:skaicius`, (req, res) => {
     res.send({
         skaicius: gautasSk,
         arLyginis: gautasSk % 2 === 0})
+})
+
+
+//localhost:3000/isvedimas/vardas/profesija
+//irasytas vardas ir profesija, ir issives ko norim
+app.get(`/isvedimas/:vardas/:profesija`, (req, res) => {
+    res.send(`Labas, as esu ${req.params.vardas}, mano profesija ${req.params.profesija}`)
+})
+
+//localhost:3000/gyveni/salis
+app.get(`/gyveni/:salis`, (req, res) => {
+    res.send(`Gyvenu ${req.params.salis}, ji susideda is ${req.params.salis.length} raidziu.`)
+})
+
+//localhost:3000/paslaugos
+app.get(`/paslaugos`, (req, res) => {
+    res.json([
+        {id: 1, pavadinimas: `Lego figureliu surinkejas`},
+        {id: 2, pavadinimas: `Kosmoso stoties valytojas`},
+        {id: 3, pavadinimas: `Arbatos skonio tikrintojas`}
+    ])
 })
 
 app.listen(port, () => {
