@@ -6,8 +6,24 @@ GET http://localhost:9688/
 
 ###
 
-GET http://localhost:9688/gyvunai/2
+GET http://localhost:9688/gyvunai
 
 ###
 //jeigu klaida ir neatpazysta kaip skaiciaus:
 GET http://localhost:9688/gyvunai/4
+
+###
+//postinti i gyvunai:
+POST http://localhost:9688/gyvunai
+Content-Type: application/json
+
+{
+    "vardas": "Sokliukas",
+    "rusis": "Kengura",
+    "amzius": 3
+}
+
+###
+//deletinti gyvuna:
+
+DELETE http://localhost:9688/gyvunai/2

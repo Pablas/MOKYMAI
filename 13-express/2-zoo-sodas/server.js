@@ -2,6 +2,8 @@ const express = require('express')
 const app = express()
 const port = 9688
 
+app.use(express.json())
+
 // Dirbant su masyvu / viena esybe, dazniausiai buna tokie endpoints:
 // 1. GET /entities - grazina visus elementus
 // 2. GET /entities/:id - viena elementa grazinam
@@ -15,15 +17,17 @@ let gyvunuDuomenys = [
     { id: 3, vardas: `Babe`, rusis: `Orangutangas`, amzius: 2},
 ]
 
-
+// 1. GET /entities - grazina visus elementus
 app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
+// 1. GET /entities - grazina visus elementus
 app.get(`/gyvunai`, (req, res) => {
     res.json(gyvunuDuomenys)
 })
 
+// 2. GET /entities/:id - viena elementa grazinam
 app.get(`/gyvunai/:id`, (req, res) => {
     let id = parseInt(req.params.id)
 
@@ -39,6 +43,38 @@ app.get(`/gyvunai/:id`, (req, res) => {
 
     res.send(gyvunas)
 })
+
+// 3. POST /entities - sukuria nauja elementa
+app.post(`/gyvunai`, (req, res) => {
+    let naujasGyvunas = req.body
+    naujasGyvunas.id = Date.now()
+
+    if (!naujasGyvunas.vardas || !naujasGyvunas.rusis || !naujasGyvunas.amzius){
+        return res.status(400).send(`Visi laukai turi buti uzpildyti`)
+    }
+
+    gyvunuDuomenys.push(naujasGyvunas)
+    res.status(201).send(naujasGyvunas)
+})
+
+// 4. PUT arba PATCH /entities/:id - atnaujina elementa
+
+
+
+
+// 5. DELETE /entities/:id - istrina elementa
+app.delete(`/gyvunai/:id`, (req, res) => {
+    let id = parseInt(req.params.id)
+
+    if (isNaN(id)){//isNaN - isNotaNumber
+        return res.status(400).send(`id turi buti skaicius`)
+    }
+
+    gyvunuDuomenys = gyvunuDuomenys.filter(gyv => gyv.id !== id) //isfiltruojam ka palikti
+    res.send(`Gyvunas istrintas`)
+})
+
+
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
