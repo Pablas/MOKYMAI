@@ -1,0 +1,17 @@
+GET http://localhost:3000/
+
+###
+
+GET http://localhost:3000/apie
+
+###
+
+GET http://localhost:3000/projektai
+
+###
+
+GET http://localhost:3000/skaiciuoti
+
+###
+
+GET http://localhost:3000/patikrinimai/64363542
