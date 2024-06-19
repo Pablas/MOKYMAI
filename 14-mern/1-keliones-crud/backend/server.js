@@ -1,8 +1,11 @@
 const express = require('express')
 const mongoose = require('mongoose')
+const cors = require(`cors`) //cors biblioteka, kam leisti jungtis i backend
 
 const app = express()
 const port = 8675
+
+app.use(cors({ origin: 'http://localhost:5173'})) //leidzia kreiptis visiems i backend kas cia irasyta, svetaine kur patalpinta, adresas ('*' - leistu visiems)
 
 //////////////////////////////////////////////
 //localhost ir 127.0.0.1 yra vienas ir tas pats,
@@ -17,6 +20,7 @@ mongoose.connection.once(`open`, () => console.log(`Connected successfully to Mo
 //////////////////////////////////////////////
 
 //schema is ko musu duomenys susidarys:
+//id keliauja kartu, tai nebutina rasyti.
 const travelSchema = new mongoose.Schema({
     title: { type:String, required: true}, //bus privalomas tipas String ir privalo egzistuoti
     description: String,
@@ -32,7 +36,7 @@ const Travel = mongoose.model('Travel', travelSchema)
 //////////////////////////////////////////////
 
 
-//async ir await KARTU NAUDOJASI! await - IŠLAUKIAM KOL ATEIS DUOMENYS! Uztruks laiko uzklausa, ir palaukti reikia kol suras duomenis, ir tik ateis prisiskirs prie travelsData kintamojo.
+//async ir await KARTU NAUDOJASI! await - IŠLAUKIAM KOL ATEIS DUOMENYS, kad iskart neduotu ko nera! Uztruks laiko uzklausa, ir palaukti reikia kol suras duomenis, ir tik ateis prisiskirs prie travelsData kintamojo.
 app.get(`/travels`, async (req, res) => { 
     const travelsData = await Travel.find()
     return res.send(travelsData)
