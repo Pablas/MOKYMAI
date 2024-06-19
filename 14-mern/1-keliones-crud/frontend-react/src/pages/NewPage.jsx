@@ -1,7 +1,10 @@
 import styles from './NewPages.module.css'
+import { useNavigate } from 'react-router-dom' //kad galetume naviguoti i kita puslapi vartotoja po veiksmo
 
 const NewPage = () => {
 
+    const navigate = useNavigate()
+    
     const submitHandler = (event) => {
         event.preventDefault()
 
@@ -11,7 +14,7 @@ const NewPage = () => {
         // gauti is form elementus visus (+ name=`` prie kiekvieno input ideti!):
         const formData = new FormData(event.target)
 
-        //kokia info paims is 'names=""` nuo inputu:
+        //kokia info paims is 'names=""` nuo inputu (req.body bus server.js):
         let newTravel = {
             title: formData.get(`title`),
             description: formData.get('description'),
@@ -20,10 +23,24 @@ const NewPage = () => {
             price: parseInt(formData.get('price')) || 0
         }
 
-        
+        //////////////////////////////////////////////
+        //ISSIUSTI OBJEKTA I BACKEND:
+        fetch(`http://localhost:8675/travels`, { //kur kreipiames ENDPOINTAS.
+            method: `POST`, //POST budu kreipiuosi,
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(newTravel) //newTravel (objekta kuri susikureme) ^^ konvertuojam js i JSON nurodyti
+        })
+            .then(response => {
+                //console.log(response) - pasitikrinti koki response gaunam.
+                //status galima matyt koki serveris atiduoda ir tuomet ji ideti if'us pagal status:
+                if (response.status === 201){ //serverija parasyti su kokiu kodu vykdo gavimo komanda
+                    return response.json()
+                }
+            }).then(data => { //jeigu gaunam ta koda ^, tada darom veiksma:
+                // console.log(data) - parodo kokia info irase consoleje
+                navigate(`/`) //kai prides duomenis numes vartotoja i kur nurodysim kad mestu
+            })
 
-
-        
     }
 
     return (
@@ -45,11 +62,11 @@ const NewPage = () => {
                 </div>
                 <div className={styles.group}>
                     <label htmlFor="nightsInput">Naktys: </label>
-                    <input type="number" id="nightsInput" name='nights'/>
+                    <input type="number" id="nightsInput" name='nights' />
                 </div>
                 <div className={styles.group}>
                     <label htmlFor="priceInput">Kaina: </label>
-                    <input type="number" id="priceInput" name='price'/>
+                    <input type="number" id="priceInput" name='price' />
                 </div>
                 <button className="btn" type="submit">Sukurti</button>
             </form>

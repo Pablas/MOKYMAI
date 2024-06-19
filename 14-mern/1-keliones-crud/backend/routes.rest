@@ -3,3 +3,8 @@ GET http://localhost:8675
 ###
 
 GET http://localhost:8675/travels
+
+
+### 
+
+POST http://localhost:8675/travels

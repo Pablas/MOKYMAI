@@ -5,6 +5,11 @@ const cors = require(`cors`) //cors biblioteka, kam leisti jungtis i backend
 const app = express()
 const port = 8675
 
+app.use(express.json()) //kad serveris priimtu info kaip JSON!! Rasyti pries visus routes:
+
+
+
+
 app.use(cors({ origin: 'http://localhost:5173'})) //leidzia kreiptis visiems i backend kas cia irasyta, svetaine kur patalpinta, adresas ('*' - leistu visiems)
 
 //////////////////////////////////////////////
@@ -40,6 +45,18 @@ const Travel = mongoose.model('Travel', travelSchema)
 app.get(`/travels`, async (req, res) => { 
     const travelsData = await Travel.find()
     return res.send(travelsData)
+})
+
+
+
+/// NAUJA INFO KURIA PRIDESIME:
+//req.body tai ta informacija kuria gaunam!!!!!
+app.post(`/travels`, async (req, res) => {
+  
+  //gaunami duomenys, issaugomi ir idedami:
+  const newTravelData = new Travel(req.body)
+  const insertedData = await newTravelData.save()
+  return res.status(201).send(insertedData) //jei gaunam sita status, tada ir issiunciam ta info.
 })
 
 

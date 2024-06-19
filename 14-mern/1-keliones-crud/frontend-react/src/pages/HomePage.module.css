@@ -1,6 +1,6 @@
 .travels_list {
     display: flex;
-    flex: wrap;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
