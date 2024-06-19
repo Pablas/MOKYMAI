@@ -1,0 +1,19 @@
+.form {
+    max-width: 500px;
+}
+
+.group {
+    margin-bottom: 20px;
+}
+
+.group label,
+.group input,
+.group textarea {
+    display: block;
+    width: 100%;
+}
+
+.group input,
+.group textarea {
+    padding: 5px;
+}
