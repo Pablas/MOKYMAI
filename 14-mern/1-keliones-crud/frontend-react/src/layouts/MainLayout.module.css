@@ -1,0 +1,29 @@
+.nav {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    background: cadetblue;
+    padding: 20px 40px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: silver;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    padding: 20px 40px;
+}
