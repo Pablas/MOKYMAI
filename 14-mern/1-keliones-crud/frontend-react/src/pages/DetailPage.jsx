@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react" // kad useEffect veiktu ir useState
 import { useNavigate } from "react-router-dom" // kad galetume nureroutinti i kita vieta
 import { useParams } from "react-router-dom" //kad pagal id galetu ieiti i sita puslapi, ima pavadinimo gala (ne failo id), LINKO GALA IMA!!! (is Route /:id - sitas naudojamas cia)
+import { Link } from 'react-router-dom' // kad galetume naudoti <Link> nukreipima
 
 ////////////////////////////////////
 // KIEKVIENO IRASO DETALUS PUSLAPIS:
@@ -23,8 +24,8 @@ const DetailPage = () => {
     }, [id])
 
 
-
-    //mygtukas kuris deletins irasa:
+    /////////////////////////////////////////
+    // DELETE MYGTUKAS, TRYNTI IRASUS:
     const deleteHandler = () => {
         //duos lentele ar trynti, ir jei true issives, jei spaus no, tada nesuveiks if'as:
         if (confirm(`Ar tikrai norite trinti "${travel?.title}"?`)) {
@@ -40,6 +41,13 @@ const DetailPage = () => {
         }
     }
 
+    //////////////////////////////////////////
+    // nukreipti i EDIT puslapi:
+    const editHandler = () => {
+        
+    }
+
+
 
     return ( // ? - jeigu yra tas duomenis, o jei ne neisves nieko (saugiau, nemes klaidu jeigu nebus)
         <div>
@@ -49,6 +57,7 @@ const DetailPage = () => {
             <p>Naktys: {travel?.nights}</p>
             <p>Kaina: {travel?.price} eur.</p>
             <p>
+                <Link to={`/atnaujinti/` + id} className="btn">Atnaujinti</Link>
                 <button onClick={deleteHandler} className="btn btn-red">Trinti</button>
             </p>
         </div>

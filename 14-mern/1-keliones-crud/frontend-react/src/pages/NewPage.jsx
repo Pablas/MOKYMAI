@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom' //kad galetume naviguoti i kita p
 const NewPage = () => {
 
     const navigate = useNavigate()
-    
+
     const submitHandler = (event) => {
         event.preventDefault()
 
@@ -33,7 +33,7 @@ const NewPage = () => {
             .then(response => {
                 //console.log(response) - pasitikrinti koki response gaunam.
                 //status galima matyt koki serveris atiduoda ir tuomet ji ideti if'us pagal status:
-                if (response.status === 201){ //serverija parasyti su kokiu kodu vykdo gavimo komanda
+                if (response.status === 201) { //serverija parasyti su kokiu kodu vykdo gavimo komanda
                     return response.json()
                 }
             }).then(data => { //jeigu gaunam ta koda ^, tada darom veiksma:

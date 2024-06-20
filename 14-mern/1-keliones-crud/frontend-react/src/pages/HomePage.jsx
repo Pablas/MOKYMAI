@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom' //kad veiktu <Link> komanda
 
 const HomePage = () => {
 
+    ///////////////////////////////////////
+    // GAUTI FAILUS IS SERVERIO:
     const [travels, setTravels] = useState([])
 
     useEffect(() => {
