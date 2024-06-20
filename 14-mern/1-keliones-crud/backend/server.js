@@ -63,6 +63,19 @@ app.post(`/travels`, async (req, res) => {
 
 
 
+
+//////////////////////////////////////
+// DetailPage.jsx kad gautu info kuria reikia:
+app.get(`/travels/:id`, async (req, res) => {
+  
+  const travel = await Travel.findById(req.params.id)
+  return res.send(travel)
+})
+
+
+
+
+
 app.get('/', (req, res) => {
   res.send('Hello World!')
 })
