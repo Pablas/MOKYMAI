@@ -1,7 +1,7 @@
 import styles from './HomePage.module.css'
 //uzklausa i backend (kad gauti info){ useEffect }:
 import { useEffect, useState } from "react"
-
+import { Link } from 'react-router-dom' //kad veiktu <Link> komanda
 
 const HomePage = () => {
 
@@ -24,11 +24,16 @@ const HomePage = () => {
                 {
                     travels.map(travel => (
                         <div key={travel._id} className={styles.travel_box}>
-                            <h3>{travel.title}</h3>
+                            <h3> 
+                                <Link to={"/kelione/" + travel._id}>{travel.title}</Link>
+                            </h3>
                             <p>{travel.description}</p>
                             <p><strong>Metai:</strong> {travel.year}</p>
                             <p><strong>Kiek naktu:</strong> {travel.nights}</p>
                             <p><strong>Kaina:</strong> {travel.price} euru</p>
+                            <p>
+                                <Link to={"/kelione/" + travel._id} className='btn'>Placiau</Link>
+                            </p>
                         </div>
                     ))
                 }
