@@ -1,6 +1,10 @@
 import { useEffect, useState } from "react" // kad useEffect veiktu ir useState
 import { useParams } from "react-router-dom" //kad pagal id galetu ieiti i sita puslapi, ima pavadinimo gala (ne failo id), LINKO GALA IMA!!! (is Route /:id - sitas naudojamas cia)
 
+////////////////////////////////////
+// KIEKVIENO IRASO DETALUS PUSLAPIS:
+
+// Gaunam info is serverio (ka galesim atvaizduoti) ir kad adresas butu iraso ID:
 
 const DetailPage = () => {
 

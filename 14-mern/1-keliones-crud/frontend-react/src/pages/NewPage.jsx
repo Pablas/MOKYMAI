@@ -38,7 +38,7 @@ const NewPage = () => {
                 }
             }).then(data => { //jeigu gaunam ta koda ^, tada darom veiksma:
                 // console.log(data) - parodo kokia info irase consoleje
-                navigate(`/`) //kai prides duomenis numes vartotoja i kur nurodysim kad mestu
+                navigate(`/kelione/` + data._id) //kai prides duomenis numes vartotoja i kur nurodysim kad mestu, numes i _id adresa (naujai sukurta page DetailPage.jsx)
             })
 
     }
