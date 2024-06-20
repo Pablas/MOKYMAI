@@ -1,6 +1,7 @@
 const express = require('express')
 const mongoose = require('mongoose')
 const cors = require(`cors`) //cors biblioteka, kam leisti jungtis i backend
+require ('dotenv').config() // kad naudotu dotenv biblioteka, ja irasius (npm install dotenv)
 
 const app = express()
 const port = 8675
@@ -10,13 +11,13 @@ app.use(express.json()) //kad serveris priimtu info kaip JSON!! Rasyti pries vis
 
 
 
-app.use(cors({ origin: 'http://localhost:5173'})) //leidzia kreiptis visiems i backend kas cia irasyta, svetaine kur patalpinta, adresas ('*' - leistu visiems)
+app.use(cors({ origin: process.env.FRONTEND_URL })) //leidzia kreiptis visiems i backend kas cia irasyta, svetaine kur patalpinta, adresas ('*' - leistu visiems)
 
 //////////////////////////////////////////////
 //localhost ir 127.0.0.1 yra vienas ir tas pats,
 //mongoose reikalauja 127... neveikia localhost.
 //"travel_destinations" - mongoDB kuri duomenu baze naudojama:
-mongoose.connect('mongodb://127.0.0.1:27017/travel_destinations')
+mongoose.connect( process.env.MONGO_URL )
 
 //patikrinti ar veikia connection:
 //terminale rodys situs isejimus consolej, kaip sekesi prisijungti:
