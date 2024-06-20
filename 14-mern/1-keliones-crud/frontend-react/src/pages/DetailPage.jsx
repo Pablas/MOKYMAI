@@ -36,8 +36,7 @@ const DetailPage = () => {
 
                 //po trinimo koks veiksmas bus (cia nukreipiam i "/" page):
                 //reikia import ir const funkcija nusistatyt!!!
-                .then(() => navigate(`/`)) 
-
+                .then(() => navigate(`/`))
         }
     }
 

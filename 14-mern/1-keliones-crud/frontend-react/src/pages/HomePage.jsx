@@ -17,6 +17,23 @@ const HomePage = () => {
             })
     }, [])
 
+
+    ////////////////////////////////////////
+    // DELETE FAILA:
+    const onDeleteTravel = (id, title) => {
+        if (confirm(`Ar tikrai norite trinti "${title}"?`)){
+            fetch(`${import.meta.env.VITE_BACKEND_URL}/travels/${id}`, { method: `DELETE`})
+                .then(response => response.json())
+                //--istryne
+                .then(deletedData => { //deletedData - tai kas istrynta
+                    // atnaujinsim masyva, ir taip neberodys istrinto objekto:
+                    setTravels(travels.filter(travel => travel._id !== deletedData._id)) 
+                    //perziuri kad nesutaptu info su istrinta info ir nerodytu kas yra istrinta^
+                })
+                
+        }
+    }
+
     return (
         <div>
             <h1>Keliones</h1>
@@ -33,7 +50,9 @@ const HomePage = () => {
                             <p><strong>Kaina:</strong> {travel.price} euru</p>
                             <p>
                                 <Link to={"/kelione/" + travel._id} className='btn'>Placiau</Link>
+                                <Link onClick={() => onDeleteTravel(travel._id, travel.title)} className='btn btn-red'>Trinti</Link>
                             </p>
+
                         </div>
                     ))
                 }
