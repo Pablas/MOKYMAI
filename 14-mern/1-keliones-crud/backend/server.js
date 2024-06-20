@@ -1,7 +1,7 @@
 const express = require('express')
 const mongoose = require('mongoose')
 const cors = require(`cors`) //cors biblioteka, kam leisti jungtis i backend
-require ('dotenv').config() // kad naudotu dotenv biblioteka, ja irasius (npm install dotenv)
+require('dotenv').config() // kad naudotu dotenv biblioteka, ja irasius (npm install dotenv)
 
 const app = express()
 const port = 8675
@@ -17,7 +17,7 @@ app.use(cors({ origin: process.env.FRONTEND_URL })) //leidzia kreiptis visiems i
 //localhost ir 127.0.0.1 yra vienas ir tas pats,
 //mongoose reikalauja 127... neveikia localhost.
 //"travel_destinations" - mongoDB kuri duomenu baze naudojama:
-mongoose.connect( process.env.MONGO_URL )
+mongoose.connect(process.env.MONGO_URL)
 
 //patikrinti ar veikia connection:
 //terminale rodys situs isejimus consolej, kaip sekesi prisijungti:
@@ -28,7 +28,7 @@ mongoose.connection.once(`open`, () => console.log(`Connected successfully to Mo
 //schema is ko musu duomenys susidarys:
 //id keliauja kartu, tai nebutina rasyti.
 const travelSchema = new mongoose.Schema({
-    title: { type:String, required: true}, //bus privalomas tipas String ir privalo egzistuoti
+    title: { type: String, required: true }, //bus privalomas tipas String ir privalo egzistuoti
     description: String,
     year: Number,
     nights: Number,
@@ -43,7 +43,7 @@ const Travel = mongoose.model('Travel', travelSchema)
 
 
 //async ir await KARTU NAUDOJASI! await - IŠLAUKIAM KOL ATEIS DUOMENYS, kad iskart neduotu ko nera! Uztruks laiko uzklausa, ir palaukti reikia kol suras duomenis, ir tik ateis prisiskirs prie travelsData kintamojo.
-app.get(`/travels`, async (req, res) => { 
+app.get(`/travels`, async (req, res) => {
     const travelsData = await Travel.find()
     return res.send(travelsData)
 })
@@ -53,36 +53,46 @@ app.get(`/travels`, async (req, res) => {
 /// NAUJA INFO KURIA PRIDESIME:
 //req.body tai ta informacija kuria gaunam!!!!!
 app.post(`/travels`, async (req, res) => {
-  
-  //gaunami duomenys, issaugomi ir idedami:
-  const newTravelData = new Travel(req.body)
-  const insertedData = await newTravelData.save()
-  return res.status(201).send(insertedData) //jei gaunam sita status, tada ir issiunciam ta info.
+
+    //gaunami duomenys, issaugomi ir idedami:
+    const newTravelData = new Travel(req.body)
+    const insertedData = await newTravelData.save()
+    return res.status(201).send(insertedData) //jei gaunam sita status, tada ir issiunciam ta info.
 })
-
-
 
 
 
 //////////////////////////////////////
 // DetailPage.jsx kad gautu info kuria reikia:
 app.get(`/travels/:id`, async (req, res) => {
-  
-  const travel = await Travel.findById(req.params.id)
-  return res.send(travel)
+
+    const travel = await Travel.findById(req.params.id)
+    return res.send(travel)
 })
+
+
+
+
+/////////////////////////////////////
+// TRINIMO IRASO VEIKSMAS:
+app.delete(`/travels/:id`, async (req, res) => {
+    const travel = await Travel.findByIdAndDelete(req.params.id)
+    return res.send(travel)
+})
+
+
 
 
 
 
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+    res.send('Hello World!')
 })
 
 
 // port || 3000
 // imam port, o jei neveikia tada 3000
 app.listen(port, () => {
-  console.log(`Travels backend listening on port ${port}`)
+    console.log(`Travels backend listening on port ${port}`)
 })
