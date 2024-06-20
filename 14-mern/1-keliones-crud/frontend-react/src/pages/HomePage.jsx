@@ -9,7 +9,7 @@ const HomePage = () => {
 
     useEffect(() => {
         // console.log('komponentas uzsikrove') - prasitestavimas.
-        fetch('http://localhost:8675/travels')
+        fetch(import.meta.env.VITE_BACKEND_URL + '/travels') //adresas backendo, bet dabar kadangi ideta i .env faila, galima daryti sitaip, ir tik ten pakeitus, veiks visad.
             .then(response => response.json()) //i json, javascripta mano info persirase
             .then(data => { //data ir yra masyvas su duomenimis (galima uzvadinti kaip norima)
                 // console.log(data) - pasitikrinti pries, kokius gaunam duomenis

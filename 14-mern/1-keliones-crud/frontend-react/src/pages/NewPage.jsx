@@ -25,7 +25,7 @@ const NewPage = () => {
 
         //////////////////////////////////////////////
         //ISSIUSTI OBJEKTA I BACKEND:
-        fetch(`http://localhost:8675/travels`, { //kur kreipiames ENDPOINTAS.
+        fetch(import.meta.env.VITE_BACKEND_URL + `/travels`, { //kur kreipiames ENDPOINTAS.
             method: `POST`, //POST budu kreipiuosi,
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(newTravel) //newTravel (objekta kuri susikureme) ^^ konvertuojam js i JSON nurodyti
