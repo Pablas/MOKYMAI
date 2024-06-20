@@ -14,3 +14,4 @@ POST http://localhost:8675/travels
 // prasitestuoti pagal tam tikra id, ka gaunam:
 
 GET http://localhost:8675/travels/66728cb528e8158647e0c5a7
+
