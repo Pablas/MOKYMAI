@@ -1,0 +1,9 @@
+.main_block {
+    position: absolute;
+    right: 0;
+    background: orange;
+    width: 600px;
+    height: 500px;
+    
+    transition: 0.3s all;
+}
