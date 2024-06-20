@@ -72,6 +72,15 @@ app.get(`/travels/:id`, async (req, res) => {
 
 
 
+/////////////////////////////////////
+// ATNAUJINIMAS INFO EditPage.jsx'E ESANTIS:
+app.put(`/travels/:id`, async (req, res) => { // id, kad zinotu kokia kelione mes atnaujinti norim.
+    const travel = await Travel.findByIdAndUpdate(req.params.id, req.body, { new:true })
+    //params, ka mes atnaujinam, req.body - kokius duomenis mes atnaujinam ir parodys new versija po update ^
+    return res.send(travel) //issiunciam atgal atsakyma
+})
+
+
 
 /////////////////////////////////////
 // TRINIMO IRASO VEIKSMAS:
@@ -79,6 +88,7 @@ app.delete(`/travels/:id`, async (req, res) => {
     const travel = await Travel.findByIdAndDelete(req.params.id)
     return res.send(travel)
 })
+
 
 
 

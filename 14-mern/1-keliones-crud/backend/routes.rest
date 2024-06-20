@@ -15,3 +15,17 @@ POST http://localhost:8675/travels
 
 GET http://localhost:8675/travels/66728cb528e8158647e0c5a7
 
+
+###
+//updatinti info:
+
+PUT http://localhost:8675/travels/66728cb528e8158647e0c5a7
+Content-Type: application/json
+
+{
+    "title": "Portugalija - Lisabona ir Sintra",
+    "description": "Kelione po senamiescius, gamta ir t.t.",
+    "year": 2023,
+    "nights": 9,
+    "price": 2000
+}
