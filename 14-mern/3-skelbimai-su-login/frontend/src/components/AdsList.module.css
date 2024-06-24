@@ -1,0 +1,12 @@
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.item {
+    width: calc((100% - 3 * 20px) / 4);
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
