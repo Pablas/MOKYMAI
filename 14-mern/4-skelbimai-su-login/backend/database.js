@@ -18,7 +18,19 @@ const userSchema = new mongoose.Schema({
 
 const User = mongoose.model('User', userSchema)
 
+
+const adSchema = new mongoose.Schema({
+    title: { type: String, required: true },
+    price: { type: Number, required: true },
+    category: { type: String, required: true },
+    user: { type: String, required: true },
+})
+
+const Ad = mongoose.model('Ad', adSchema)
+
+
 module.exports = {
     db,
-    User
+    User,
+    Ad
 }

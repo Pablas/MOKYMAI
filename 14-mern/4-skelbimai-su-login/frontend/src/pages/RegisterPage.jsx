@@ -8,21 +8,28 @@ const RegisterPage = () => {
     const [error, setError] = useState('')
     const [showPassword, setShowPassword] = useState(false)
 
+    const signIn = useSignIn()
     const navigate = useNavigate()
 
     const submitFormHandler = (event) => {
         event.preventDefault()
+        // alert('submitinam forma')
+        // console.log(event.target.username.value)
 
         const userData = {
             username: event.target.username.value,
             password: event.target.password.value
         }
+        // console.log(userData);
+
+        // fetch('http://localhost:9858/auth/register', { method: 'POST', body: JSON.stringify(userData) })
 
         axios.post(import.meta.env.VITE_BACKEND + '/auth/register', userData)
             .then(response => {
+                // console.log(response);
 
                 if (response.status === 201) {
-
+                    // alert('Registracija sėkminga')
                     if (signIn({
                         auth: {
                             token: response.data.token,
@@ -30,19 +37,21 @@ const RegisterPage = () => {
                         },
                         userState: response.data.user
                     })) {
+                        // Redirect or do-something
+                        // alert('sekmingai')
                         navigate('/skelbimai/mano')
                     } else {
-                        setError(`Nepavyko prisijungti`)
+                        //Throw error
+                        // alert('nesekmingai')
+                        setError('Nepavyko prisijungti')
                     }
                 }
-
             }).catch(err => {
+                // console.log(err);
                 // console.log(err.response.data.message);
                 setError(err.response.data.message)
             })
     }
-
-
 
     return (
         <div>

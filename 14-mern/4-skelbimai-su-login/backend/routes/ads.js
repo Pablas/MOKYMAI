@@ -1,10 +1,13 @@
 const express = require('express')
 
 const router = express.Router()
+const db = require('../database')
 
 // GET http://localhost:9858/ads/all
-router.get('/all', (req, res) => {
-    return res.status(501).send('Get all ads not implemented')
+router.get('/all', async (req, res) => {
+    // return res.status(501).send('Get all ads not implemented')
+    const ads = await db.Ad.find()
+    return res.json(ads)
 })
 
 // GET http://localhost:9858/ads/all-current-user

@@ -1,13 +1,22 @@
 import AdsList from "../../components/AdsList"
-import { useState } from "react"
+import { useState,useEffect } from "react"
+import axios from 'axios'
 
 const AllAdvertsPage = () => {
     const [ads, setAds] = useState([
-        { _id: 1, title: 'parduodu siela', price: 100000, category: 'Kita' },
-        { _id: 2, title: 'parduodu kede', price: 30, category: 'Baldai' },
-        { _id: 3, title: 'ieskau dviracio', price: 200, category: 'Pramogos' },
-        { _id: 4, title: 'taisau baldus', price: 200, category: 'Paslaugos' },
+
     ])
+
+    useEffect (() => {
+        axios.get(import.meta.env.VITE_BACKEND + '/ads/all')
+            .then(response => {
+                if (response.status === 200){
+                    setAds(response.data)
+                }
+            }).catch(error => {
+                //
+            })
+    }, [])
 
     return (
         <div>
