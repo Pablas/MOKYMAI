@@ -106,6 +106,34 @@ router.post('/login', async (req, res) => {
     }
 })
 
+const isLoggedIn = async (req, res, next) => {
+    // console.log(`isLoggedIn isvedimas`)
+
+    if (!req.headers.authorization){
+        return res.status(401).send({ message: `Informacija pasiekiama tik prisijungus`})
+    }
+
+    const token = req.headers.authorization.split(' ')[1]
+    console.log('token', token)
+    
+    if (!token){
+        return res.status(401).send({message: 'Informacija pasiekiama tik prisijungus'})
+    }
+
+    try {
+        const decoded = jwt.verify(token, process.env.JWT_SECRET)
+
+        const user = await db.User.findById(decoded.id)
+
+        req.user = user
+    } catch (error) {
+        return res.status(401).send({message: 'Informacija pasiekiama tik prisijungus'})
+    }
+
+    next() // tesiam darba su route
+}
+
 module.exports = {
-    router
+    router,
+    isLoggedIn,
 }

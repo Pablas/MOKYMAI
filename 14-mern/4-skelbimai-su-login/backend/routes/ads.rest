@@ -6,7 +6,21 @@ GET http://localhost:9858/ads/all-current-user
 
 ###
 
-GET http://localhost:9858/ads/get/1
+GET http://localhost:9858/ads/all-current-user
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2N2E4MTBiNTg5M2RkMzViOGQ0MmY5MiIsImlhdCI6MTcxOTMxMjU2OCwiZXhwIjoxNzIxOTA0NTY4fQ.UsaxC2DggScP1oWi_ZfOMqdXNDQsFafYQoLuiURb38I
+
+###
+
+GET http://localhost:9858/ads/all-current-user
+Authorization: Bearer
+
+###
+
+GET http://localhost:9858/ads/get/667a85cc134310e60c2e8f11
+
+###
+
+GET http://localhost:9858/ads/get/neegzistuoja
 
 ###
 
