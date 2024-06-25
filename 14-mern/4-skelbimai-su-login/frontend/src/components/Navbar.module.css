@@ -1,0 +1,36 @@
+.nav {
+    display: flex;
+    align-items: center;
+    background-color: #3963cd;
+    padding: 20px 40px;
+    gap: 50px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: rgb(119, 255, 203);
+}
+
+.nav .active_link {
+    color: rgb(255, 246, 119);
+}
+
+.nav .active_link:hover {
+    color: rgb(255, 226, 119);
+}
+
+.list {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list_middle {
+    flex-grow: 1;
+}

@@ -1,0 +1,13 @@
+GET http://localhost:9858/ads/all
+
+###
+
+GET http://localhost:9858/ads/all-current-user
+
+###
+
+GET http://localhost:9858/ads/get/1
+
+###
+
+POST http://localhost:9858/ads/create
